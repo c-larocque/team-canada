@@ -131,7 +131,7 @@
       margin-bottom: 15px; }
     #mainHome .homeSections p {
       clear: both;
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 0.875em;
       color: #fff;
       padding: 0 8px; }
@@ -164,7 +164,7 @@
       font-size: 1.875em;
       text-align: center; }
     #legacyPano #legacyInfo p {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 0.875em; }
   #legacyPano #legacyButCon {
     font-family: "Fjalla One", Helvetica, Arial, sans-serif;
@@ -210,7 +210,7 @@
     color: #202020;
     padding: 5px; }
   #mediaCentre #newsSection p {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     font-size: 1em;
     color: #000;
     line-height: 1.375em; }
@@ -233,10 +233,11 @@
   line-height: 1.875em; }
 #mediaCentre #socialSection div {
   clear: both; }
+#mediaCentre .socialImgs {
+  padding-bottom: 10px; }
 #mediaCentre .socials {
   display: block;
-  margin: 0 auto;
-  padding-bottom: 10px; }
+  margin: 0 auto; }
 #mediaCentre .socials:hover {
   box-shadow: 0px 0px 15px #000;
   z-index: 2;
@@ -268,7 +269,7 @@
   #merchCon .merch {
     display: block;
     margin: 0 auto;
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     text-align: center; }
   #merchCon .addToCart {
     display: block;
@@ -311,7 +312,7 @@
     font-size: 2.25em;
     padding: 10px; }
   #partnersInfo p {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     font-size: 1em;
     line-height: 22px; }
 
@@ -356,7 +357,7 @@
 #contactCon {
   background-color: #363636; }
   #contactCon #contactInfoMobile {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     color: #fff;
     text-align: justify;
     padding: 10px;
@@ -371,7 +372,7 @@
       border-bottom: 2px solid #a90000;
       padding: 5px 0 5px 20px; }
     #contactCon #partOpp p {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       padding: 0 8px;
       text-align: justify;
       line-height: 22px; }
@@ -451,15 +452,15 @@
   #aboutUs #whoWeAre {
     padding: 10px; }
     #aboutUs #whoWeAre p {
-      font-family: "Playfair Display", Times, serif; }
+      font-family: "Merriweather", Times, serif; }
   #aboutUs #vision {
     padding: 10px; }
     #aboutUs #vision p {
-      font-family: "Playfair Display", Times, serif; }
+      font-family: "Merriweather", Times, serif; }
   #aboutUs #mission {
     padding: 10px; }
     #aboutUs #mission li {
-      font-family: "Playfair Display", Times, serif; }
+      font-family: "Merriweather", Times, serif; }
   #aboutUs #values {
     padding: 10px;
     text-align: center;
@@ -471,7 +472,7 @@
     #aboutUs #values ul {
       margin: 0; }
     #aboutUs #values li {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       list-style: none;
       border-bottom: 1px solid #fff;
       padding: 3px 0;
@@ -487,7 +488,7 @@
     font-size: 2em;
     padding: 15px 5px 8px 15px; }
   #legacySeconds p {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     padding: 5px; }
   #legacySeconds #pillars {
     font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
@@ -559,7 +560,7 @@
       font-family: "Fjalla One", Helvetica, Arial, sans-serif;
       border-bottom: 1px solid #000; }
     #pillarSection .tabs-content p {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       padding: 2px 8px; }
     #pillarSection .tabs-content .tabs-panel {
       height: 400px;
@@ -574,7 +575,7 @@
     font-size: 2em;
     padding: 15px 5px 8px 15px; }
   #ssTour p {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     padding: 5px; }
   #ssTour #tourImg {
     display: block;
@@ -659,13 +660,13 @@
       padding: 5px;
       margin-bottom: 0; }
     #relatedNews .news h4 {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 1em;
       font-weight: bold;
       padding: 0 0 0 5px;
       margin-bottom: 15px; }
     #relatedNews .news p {
-      font-family: "Playfair Display", Times, serif;
+      font-family: "Merriweather", Times, serif;
       font-size: 1em; }
     #relatedNews .news .readMore {
       font-family: "Fjalla One", Helvetica, Arial, sans-serif;
@@ -805,7 +806,7 @@
     background-color: #363636; }
 
   #contactInfo {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     font-size: 1.25em;
     color: #fff;
     text-align: justify !important;
@@ -1091,7 +1092,7 @@
   background-color: #363636 !important;
   border: none; }
   .playerMobile p {
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     margin-bottom: 3px; }
   .playerMobile img {
     display: block;
@@ -1105,7 +1106,7 @@
   margin-top: 15px; }
 
 .accordion-content p {
-  font-family: "Playfair Display", Times, serif;
+  font-family: "Merriweather", Times, serif;
   margin-bottom: 3px; }
 
 .card {
@@ -1200,7 +1201,7 @@
 
 /*summit series timeline page*/
 #subHeader {
-  font-family: "Playfair Display", Times, serif;
+  font-family: "Merriweather", Times, serif;
   font-size: 1em;
   margin-top: 10px;
   text-align: center; }
@@ -1213,7 +1214,7 @@
   box-sizing: border-box; }
 
 #allTimeline {
-  font-family: "Playfair Display", Times, serif;
+  font-family: "Merriweather", Times, serif;
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px; }
@@ -1233,7 +1234,7 @@ time {
   text-align: center; }
   .container h3 {
     font-size: 1rem;
-    font-family: "Playfair Display", Times, serif;
+    font-family: "Merriweather", Times, serif;
     color: #fff;
     margin-top: 20px;
     padding-bottom: 40px;

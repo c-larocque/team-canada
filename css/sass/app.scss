@@ -1,5 +1,5 @@
 $mainFont: 'Fjalla One', Helvetica, Arial, sans-serif;
-$paraFont: 'Playfair Display', Times, serif;
+$paraFont: 'Merriweather', Times, serif;
 $grey: #363636;
 $red: #a90000;
 
@@ -128,7 +128,7 @@ $red: #a90000;
 
 //Homepage
 
-#myvid 
+#myvid
 {
   position: fixed;
   top: 0;
@@ -142,7 +142,7 @@ $red: #a90000;
 	position: relative;
 	border-bottom: 5px solid #000;
 
-	video 
+	video
 	{
 	  background-color: black;
 	  background-position: center center;
@@ -193,7 +193,7 @@ $red: #a90000;
 	.homeSections
 	{
 		padding: 15px;
-	
+
 		h3
 		{
 			font-family: $mainFont;
@@ -232,7 +232,7 @@ $red: #a90000;
 
 		.learnMoreBut:hover
 		{
-			box-shadow: 1px 1px 10px rgba(0,0,0,0.7); 
+			box-shadow: 1px 1px 10px rgba(0,0,0,0.7);
 		}
 	}
 }
@@ -244,7 +244,7 @@ $red: #a90000;
 	background-position: center;
 	padding-bottom: 20px;
 
-	#legacyInfo 
+	#legacyInfo
 	{
 		color: #fff;
 
@@ -291,7 +291,7 @@ $red: #a90000;
 	}
 }
 
-#mediaCentre 
+#mediaCentre
 {
 	h2
 	{
@@ -332,7 +332,7 @@ $red: #a90000;
 	#newsSection
 	{
 		margin-bottom: 20px;
-	
+
 
 		h4
 		{
@@ -381,12 +381,13 @@ $red: #a90000;
 	{
 		clear: both;
 	}
-
+		.socialImgs {
+			padding-bottom: 10px;
+		}
 	.socials
 	{
 		display: block;
 		margin: 0 auto;
-		padding-bottom: 10px;
 	}
 	.socials:hover
 	{
@@ -395,7 +396,7 @@ $red: #a90000;
 	    -webkit-transition: all 200ms ease-in;
 	    -webkit-transform: scale(1.05);
 	    -ms-transition: all 200ms ease-in;
-	    -ms-transform: scale(1.05);   
+	    -ms-transform: scale(1.05);
 	    -moz-transition: all 200ms ease-in;
 	    -moz-transform: scale(1.05);
     	transition: all 200ms ease-in;
@@ -461,12 +462,12 @@ $red: #a90000;
 		}
 	}
 
-	#socialNav 
+	#socialNav
 	{
 		display: block;
 		margin: 0 auto;
 		width: 225px;
-	
+
 		li
 		{
 			display: inline-block;
@@ -543,7 +544,7 @@ $red: #a90000;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);   
+    -ms-transform: scale(1.1);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.1);
     transition: all 200ms ease-in;
@@ -888,7 +889,7 @@ $red: #a90000;
 				color: #000;
 			}
 		}
-		
+
 		#educationPanel-label
 		{
 			padding: 15px 0;
@@ -1457,9 +1458,9 @@ $red: #a90000;
 		.readMore
 		{
 			float: left;
-			margin-top: 10px !important;			
+			margin-top: 10px !important;
 		}
-	}	
+	}
 }
 
 @media screen and (min-width: 60em) {
@@ -1474,7 +1475,7 @@ $red: #a90000;
 	#submitForm
 	{
 		width: 25% !important;
-	}	
+	}
 
 	#contactInfo
 	{
@@ -1573,7 +1574,7 @@ $red: #a90000;
 		}
 	}
 
-	#legacyPano 
+	#legacyPano
 	{
 		height: 335px;
 	}
@@ -1618,19 +1619,19 @@ $red: #a90000;
     		border: 6px solid #fff !important;
     		margin: 20px 0 10px 0;
     	}
-    	
+
     	li:hover
     	{
     		background-color: $grey;
     	}
-    	
+
     	a
     	{
     		padding: 25px 38px;
     	}
 	}
 
-	#mediaCentre 
+	#mediaCentre
 	{
 		width: 100%;
 		padding: 15px;
@@ -1736,7 +1737,7 @@ $red: #a90000;
 		line-height: 40px !important;
 	}
 
-	#legacyHeading 
+	#legacyHeading
 	{
 		height: 450px;
 		position: relative;
@@ -1763,7 +1764,7 @@ $red: #a90000;
 				font-size: 1.25em;
 			}
 		}
-		
+
 	}
 
 	#aboutUs
@@ -1813,7 +1814,7 @@ $red: #a90000;
 		p
 		{
 			font-size: 1em !important;
-		}		
+		}
 	}
 
 	.readMore
@@ -1835,17 +1836,17 @@ $red: #a90000;
 	}
 }
 
-@media screen and (min-width: 104em) 
+@media screen and (min-width: 104em)
 {
-	#legacyNav 
+	#legacyNav
 	{
     	right: 200px !important;
     }
 
-  	#mediaNav 
+  	#mediaNav
   	{
-    	right: 200px !important; 
-    } 
+    	right: 200px !important;
+    }
 }
 
 
@@ -1933,7 +1934,7 @@ $red: #a90000;
 			transform: rotateY(-180deg);
 }
 
-.card:hover .front 
+.card:hover .front
 {
 	-webkit-transform: rotateY(-180deg);
 			transform: rotateY(-180deg);
@@ -2066,7 +2067,7 @@ $red: #a90000;
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
-} 
+}
 time
 {
 	font-family: $mainFont;
@@ -2199,37 +2200,18 @@ time
   .timeline ul li {
     margin-left: 20px;
   }
-   
+
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
-   
+
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
-   
+
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent $red transparent transparent;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
