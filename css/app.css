@@ -1,0 +1,58 @@
+/*.boxHelper
+{
+	color: #fff;
+	background-color:#000;
+	text-align:center; 
+}
+
+#mainHeader
+{
+	background-color: red;
+	width: 100%;
+
+}
+
+#topBar
+{
+	height: 76px;
+	background-color: #fff;
+}
+
+#logo
+{
+	margin-left: 25%;
+}
+
+.menu-icon:after
+{
+	background: #000;
+	box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+}
+
+.menu-icon:hover::after
+{
+	background: #cc0000;
+	box-shadow: 0 7px 0 #cc0000, 0 14px 0 #cc0000;
+}
+
+#mainNav
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+}
+
+#mainNav li
+{
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+#mainNav li a
+{
+	display: block;
+	color: #fff;
+	padding: 5px;
+}*/

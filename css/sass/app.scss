@@ -1,0 +1,2235 @@
+$mainFont: 'Fjalla One', Helvetica, Arial, sans-serif;
+$paraFont: 'Playfair Display', Times, serif;
+$grey: #363636;
+$red: #a90000;
+
+#pano
+{
+	background-color: #666;
+}
+
+#aboutUs
+{
+	background-color: red;
+}
+
+#legacySeconds
+{
+	background-color: blue;
+}
+
+#socialMedia
+{
+	background-color: #ccc;
+}
+
+//Header and Navigation
+
+#mobileNav
+{
+	width: 100%;
+	background-color: #000;
+}
+
+.title-bar
+{
+	background-color: rgba(255,255,255,.9);
+}
+
+#logoMobile
+{
+	width: 60px;
+	height: 61px;
+	display: block;
+	margin: 0 auto;
+}
+
+#portalBut
+{
+	background-color: #000;
+	color: #fff;
+	font-family: $mainFont;
+	text-align: center;
+	padding: 5px;
+	display: block;
+	width: 100px;
+	float: right;
+	margin-right: 20px;
+	border-radius: 0 0 15px 15px;
+}
+
+#portalBut:hover
+{
+	background-color: $red;
+}
+
+.menu-icon:after
+{
+	background: #000;
+	box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+}
+
+.menu-icon:hover::after
+{
+	background: #cc0000;
+	box-shadow: 0 7px 0 #cc0000, 0 14px 0 #cc0000;
+}
+
+.mainNav
+{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	font-family: $mainFont;
+	font-weight: 500;
+}
+
+.mainNav li
+{
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+.mainNav li a
+{
+	display: block;
+	color: #fff;
+	padding: 5px;
+}
+
+.mainNav li:hover
+{
+	background-color: $red;
+}
+
+#mobilePortalBut
+{
+	background-color: $red;
+	padding: 5px 8px;
+}
+
+#mobilePortalBut:hover
+{
+	background-color: $grey;
+}
+
+#offCanvasNav
+{
+	background-color: #000;
+	height: 100%;
+}
+
+#offCanvasNav li a
+{
+	@extend .mainNav;
+	padding: 15px 0;
+	font-size: 1.375em;
+}
+
+//Homepage
+
+#myvid 
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#videoCon
+{
+	position: relative;
+	border-bottom: 5px solid #000;
+
+	video 
+	{
+	  background-color: black;
+	  background-position: center center;
+	  background-size: contain;
+	  object-fit: cover;
+	  width: 100%;
+	}
+
+	#overlay
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,255,255,0.7);
+	}
+
+	#textCon
+	{
+		color: #000;
+  		margin-top: 15%;
+
+  		h3, h4
+  		{
+  			font-family: $mainFont;
+  			width: 100%;
+  			text-align: center;
+  		}
+
+  		h3
+  		{
+  			font-size: 1.75em;
+  		}
+
+  		h4
+  		{
+  			font-size: 1em;
+  		}
+	}
+}
+
+#mainHome
+{
+	background-color: $grey;
+	text-align: left;
+
+	.homeSections
+	{
+		padding: 15px;
+	
+		h3
+		{
+			font-family: $mainFont;
+			color: #fff;
+			font-size: 1.875em;
+		}
+
+		.homeThumbnail
+		{
+			min-width: 125px;
+			float: left;
+			margin-right: 25px;
+			margin-bottom: 15px;
+		}
+
+		p
+		{
+			clear: both;
+			font-family: $paraFont;
+			font-size: 0.875em;
+			color: #fff;
+			padding: 0 8px;
+		}
+
+		.learnMoreBut
+		{
+			font-family: $mainFont;
+			font-size: 1.125em;
+			color: #fff;
+			background-color: $red;
+			padding: 5px 25px;
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
+
+		.learnMoreBut:hover
+		{
+			box-shadow: 1px 1px 10px rgba(0,0,0,0.7); 
+		}
+	}
+}
+
+#legacyPano
+{
+	background-color: $red;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 20px;
+
+	#legacyInfo 
+	{
+		color: #fff;
+
+		h3
+		{
+			font-family: $mainFont;
+			font-size: 2.5em;
+			text-align: center;
+			padding-top: 15px;
+		}
+
+		h4
+		{
+			font-family: $mainFont;
+			font-size: 1.875em;
+			text-align: center;
+		}
+
+		p
+		{
+			font-family: $paraFont;
+			font-size: 0.875em;
+		}
+	}
+
+	#legacyButCon
+	{
+		font-family: $mainFont;
+		font-size: 1.375em;
+		list-style-type: none;
+		text-align: center;
+
+		li
+		{
+			border: 3px solid #fff;
+			display: inline-block;
+			width: 140px;
+		}
+
+		li a
+		{
+			color: #fff;
+		}
+	}
+}
+
+#mediaCentre 
+{
+	h2
+	{
+		font-family: $mainFont;
+		color: #000;
+		font-size: 2.5em;
+		border-bottom: 3px solid $red;
+		width: 100%;
+		padding: 10px 0 0 20px;
+	}
+
+	#newsSection h3
+	{
+		font-family: $mainFont;
+		font-size: 1.5em;
+		color: #666;
+		float: left;
+		line-height: 1.875em;
+	}
+
+	#moreNews
+	{
+		color: #000;
+		font-size: 1.125em;
+		border: 2px solid #000;
+		padding: 5px;
+		display: block;
+		float: right;
+		margin-bottom: 10px;
+		font-family: $mainFont;
+	}
+
+	#moreNews:hover
+	{
+		background-color: $red;
+	}
+
+	#newsSection
+	{
+		margin-bottom: 20px;
+	
+
+		h4
+		{
+			font-family: $mainFont;
+			font-size: 1.375em;
+			color: #202020;
+			padding: 5px;
+		}
+
+		p
+		{
+			font-family: $paraFont;
+			font-size: 1em;
+			color: #000;
+			line-height: 1.375em;
+		}
+
+		#readMore
+		{
+			font-family: $mainFont;
+			display: block;
+			margin: 0 auto;
+			width: 140px;
+			color: #fff;
+			padding: 5px 10px;
+			background-color: $red;
+			text-align: center;
+		}
+
+		#readMore:hover
+		{
+			background-color: $grey;
+		}
+	}
+
+	#socialSection h3
+	{
+		font-family: $mainFont;
+		font-size: 1.5em;
+		color: #666;
+		float: left;
+		line-height: 1.875em;
+	}
+
+	#socialSection div
+	{
+		clear: both;
+	}
+
+	.socials
+	{
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	.socials:hover
+	{
+		box-shadow: 0px 0px 15px #000;
+		z-index: 2;
+	    -webkit-transition: all 200ms ease-in;
+	    -webkit-transform: scale(1.05);
+	    -ms-transition: all 200ms ease-in;
+	    -ms-transform: scale(1.05);   
+	    -moz-transition: all 200ms ease-in;
+	    -moz-transform: scale(1.05);
+    	transition: all 200ms ease-in;
+    	transform: scale(1.05);
+	}
+}
+
+#merchCon
+{
+	background-color: $grey;
+	color: #fff;
+	padding: 20px 0;
+
+	h2
+	{
+		font-family: $mainFont;
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+	#storeBut
+	{
+		font-family: $mainFont;
+		text-align: center;
+		color: #fff;
+		font-size: 1.125em;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+
+	.merch
+	{
+		display: block;
+		margin: 0 auto;
+		font-family: $paraFont;
+		text-align: center;
+	}
+
+	.addToCart
+	{
+		display: block;
+		margin: 0 auto;
+		font-family: $mainFont;
+		width: 160px;
+		padding: 5px;
+		border: 2px #fff solid;
+		color: #fff;
+	}
+}
+
+#mainFooter
+{
+	background-color: #000;
+
+	#searchForm
+	{
+		margin-top: 20px;
+
+		#searchBut
+		{
+			background-color: $red;
+		}
+	}
+
+	#socialNav 
+	{
+		display: block;
+		margin: 0 auto;
+		width: 225px;
+	
+		li
+		{
+			display: inline-block;
+			margin: 10px;
+		}
+	}
+}
+
+#copyrightBar
+{
+	background-color: #111;
+	font-family: $mainFont;
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+	padding-top: 10px;
+}
+
+//Partners Page
+
+#partnersPano
+{
+	background-color: $red;
+}
+
+#partnersInfo
+{
+	color: #fff;
+
+	h2
+	{
+		font-family: $mainFont;
+		font-size: 2.25em;
+		padding: 10px;
+	}
+
+	p
+	{
+		font-family: $paraFont;
+		font-size: 1em;
+		line-height: 22px;
+	}
+}
+
+#partnersBut
+{
+	font-family: $mainFont;
+	font-size: 1.5em;
+	color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border: 3px solid #fff;
+    margin: 5px 0 20px 0;
+}
+
+#partnersBut:hover
+	{
+		border: 3px solid #000;
+		color: #000;
+	}
+
+.icons
+{
+	margin: 10px 0;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+.icons:hover
+{
+	box-shadow: 0px 0px 15px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+//Contact Page
+
+#contactPano
+{
+	background-color: $red;
+
+	h2
+	{
+		font-family: $mainFont;
+		color: #fff;
+		padding: 15px;
+	}
+}
+
+#contactCon
+{
+	background-color: $grey;
+
+	#contactInfoMobile
+	{
+		font-family: $paraFont;
+		color: #fff;
+		text-align: justify;
+		padding: 10px;
+		font-weight: bold;
+	}
+
+	#partOpp
+	{
+		color: #000;
+		background-color: #fff;
+		padding: 8px;
+		margin: 35px 0 20px 0;
+
+		h3
+		{
+			font-family: $mainFont;
+			border-bottom: 2px solid $red;
+			padding: 5px 0 5px 20px;
+		}
+
+		p
+		{
+			font-family: $paraFont;
+			padding: 0 8px;
+			text-align: justify;
+			line-height: 22px;
+		}
+
+		a
+		{
+			color: #000;
+			font-weight: bold;
+		}
+	}
+}
+
+#contactCon
+{
+	font-family: $mainFont;
+	padding: 10px;
+
+	#contactForm label
+	{
+		color: #fff;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	#contactForm input, textarea
+	{
+		box-shadow: 0 1px 3px rgba(0,0,0,.4) inset;
+	}
+
+	#submitForm
+	{
+		background-color: $red;
+		text-transform: uppercase;
+		box-shadow: none;
+		width: 90%;
+		color: #fff;
+		border: none;
+		padding: 5px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+//Legacy Page
+
+.backToTop
+{
+	font-family: $mainFont;
+	background-color: #000;
+	color: #fff;
+	padding: 5px 10px;
+	width: 100px;
+}
+
+#legacyHeading
+{
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 20px;
+	height: 300px;
+
+	h2
+	{
+		font-family: $mainFont;
+		color: #fff;
+		font-weight: bold;
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	#legacyNav
+	{
+		background-color: rgba(255,255,255,.7);
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 15px;
+
+		ul
+		{
+			margin: 0;
+		}
+
+		li
+		{
+			list-style: none;
+			padding: 8px;
+			border-bottom: 1px solid #000;
+		}
+
+		li:last-child
+		{
+			border-bottom: none;
+		}
+
+		a
+		{
+			font-family: $mainFont;
+			color: #000;
+			font-weight: bold;
+
+		}
+
+		a:hover
+		{
+			color: $red;
+		}
+	}
+}
+
+#aboutUs
+{
+	background-color: $grey;
+	color: #fff;
+	padding: 15px;
+
+	h2, h3
+	{
+		font-family: $mainFont;
+	}
+
+	h2
+	{
+		border-bottom: 2px solid $red;
+		font-size: 2em;
+		padding: 15px 5px 8px 15px;
+	}
+
+	#whoWeAre
+	{
+		padding: 10px;
+
+		p
+		{
+			font-family: $paraFont;
+		}
+	}
+
+	#vision
+	{
+		padding: 10px;
+
+		p
+		{
+			font-family: $paraFont;
+		}
+	}
+
+	#mission
+	{
+		padding: 10px;
+
+		li
+		{
+			font-family: $paraFont;
+		}
+	}
+
+	#values
+	{
+		padding: 10px;
+		text-align: center;
+		margin-bottom: 10px;
+
+		h3
+		{
+			background-color: $red;
+			padding: 5px 0;
+			margin-bottom: 0;
+		}
+
+		ul
+		{
+			margin: 0;
+		}
+
+		li
+		{
+			font-family: $paraFont;
+			list-style: none;
+			border-bottom: 1px solid #fff;
+			padding: 3px 0;
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+#legacySeconds
+{
+	background-color: $red;
+	padding: 15px;
+	color: #fff;
+
+	h2
+	{
+		font-family: $mainFont;
+		font-size: 2em;
+		padding: 15px 5px 8px 15px;
+	}
+
+	p
+	{
+		font-family: $paraFont;
+		padding: 5px;
+	}
+
+	#pillars
+	{
+		font-family: $mainFont;
+
+		ul
+		{
+			margin: 0;
+		}
+
+		li
+		{
+			list-style: none;
+			text-align: center;
+			padding: 5px 0;
+			font-size: 1.125em;
+			border-bottom: 1px solid #fff;
+		}
+
+		li:first-child
+		{
+			border-top: 1px solid #fff;
+		}
+	}
+
+	#ageTypes
+	{
+		font-family: $mainFont;
+		text-align: center;
+		padding: 0 5px 15px 5px;
+
+		ul
+		{
+			margin: 0;
+		}
+
+		li
+		{
+			list-style: none;
+			border: 1px solid #fff;
+			padding: 8px 5px;
+			margin: 5px 0;
+		}
+	}
+}
+
+#pillarSection
+{
+	background-color: #fff;
+	padding: 15px;
+
+	h2
+	{
+		font-family: $mainFont;
+		border-bottom: 2px solid $red;
+		font-size: 2em;
+		padding: 0 5px 8px 15px;
+		color: #000;
+		margin-bottom: 20px;
+	}
+
+	#legacy-tabs
+	{
+		background-color: $red;
+		font-family: $mainFont;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+
+		.tabs-title
+		{
+			width: 30%;
+			float: left;
+			margin-left: 3%;
+			border-right: 4px solid #fff;
+
+			a:hover
+			{
+				background: none;
+			}
+
+			a[aria-selected='true']
+			{
+				background: none;
+				color: #000;
+			}
+		}
+		
+		#educationPanel-label
+		{
+			padding: 15px 0;
+		}
+
+		#entertainmentPanel-label
+		{
+			padding: 15px 0;
+		}
+
+		li:last-child
+		{
+			border-right: none;
+		}
+
+		a
+		{
+			font-size: 1em;
+			color: #fff;
+			padding: 5px 0;
+		}
+
+		a:hover
+		{
+			color: #000;
+			background-color: transparent;
+		}
+	}
+
+	.tabs-content
+	{
+		background-color: #efefef;
+		margin-bottom: 15px;
+
+		h3
+		{
+			font-family: $mainFont;
+			border-bottom: 1px solid #000;
+		}
+
+		p
+		{
+			font-family: $paraFont;
+			padding: 2px 8px;
+		}
+
+		.tabs-panel
+		{
+			height: 400px;
+			overflow-y: scroll;
+		}
+	}
+}
+
+#ssTour
+{
+	background-color: $grey;
+	padding: 15px;
+	color: #fff;
+
+	h2
+	{
+		font-family: $mainFont;
+		font-size: 2em;
+		padding: 15px 5px 8px 15px;
+	}
+
+	p
+	{
+		font-family: $paraFont;
+		padding: 5px;
+	}
+
+	#tourImg
+	{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+//Media Centre Page
+
+#mediaHeading
+{
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 20px;
+	height: 300px;
+
+	h2
+	{
+		font-family: $mainFont;
+		color: #fff;
+		font-weight: bold;
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	#mediaNav
+	{
+		background-color: rgba(255,255,255,.7);
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 15px;
+
+		ul
+		{
+			margin: 0;
+		}
+
+		li
+		{
+			list-style: none;
+			padding: 8px;
+			border-bottom: 1px solid #000;
+		}
+
+		li:last-child
+		{
+			border-bottom: none;
+		}
+
+		a
+		{
+			font-family: $mainFont;
+			color: #000;
+			font-weight: bold;
+		}
+
+		a:hover
+		{
+			color: $red;
+		}
+	}
+}
+
+#socialMedia
+{
+	background-color: $grey;
+	padding: 15px;
+
+	h2
+	{
+		font-family: $mainFont;
+		border-bottom: 2px solid $red;
+		font-size: 2em;
+		padding: 0 5px 8px 15px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+
+	img
+	{
+		margin-bottom: 10px;
+	}
+
+	#instaWidget
+	{
+		min-height: 500px;
+	}
+
+	.widgetLabel
+	{
+		display: block;
+		font-family: $mainFont;
+		text-align: center;
+		width: 100%;
+		padding: 15px;
+		border: 3px solid #fff;
+		color: #fff;
+		margin: 20px 0;
+		font-size: 1.5em;
+	}
+
+	.widgetLabel:hover
+	{
+		background-color: $red;
+	}
+}
+
+#relatedNews
+{
+	background-color: #fff;
+	padding: 15px;
+
+	h2
+	{
+		font-family: $mainFont;
+		border-bottom: 2px solid $red;
+		font-size: 2em;
+		padding: 0 5px 8px 15px;
+		color: #000;
+		margin-bottom: 20px;
+	}
+
+	.news
+	{
+		margin-bottom: 20px;
+
+		img
+		{
+			margin-bottom: 10px;
+		}
+
+		h3
+		{
+			font-family: $mainFont;
+			font-size: 1.5em;
+			padding: 5px;
+			margin-bottom: 0;
+		}
+
+		h4
+		{
+			font-family: $paraFont;
+			font-size: 1em;
+			font-weight: bold;
+			padding: 0 0 0 5px;
+			margin-bottom: 15px;
+		}
+
+		p
+		{
+			font-family: $paraFont;
+			font-size: 1em;
+		}
+
+		.readMore
+		{
+			font-family: $mainFont;
+			display: block;
+			margin: 0 auto;
+			width: 140px;
+			color: #fff;
+			padding: 5px 10px;
+			background-color: $red;
+			text-align: center;
+		}
+
+		.readMore:hover
+		{
+			background-color: $grey;
+		}
+	}
+
+	#seeMore
+	{
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+		border: 4px solid #000;
+		text-align: center;
+		font-family: $mainFont;
+		font-size: 1.185em;
+		padding: 5px;
+		color: #000;
+	}
+
+	#seeMore:hover
+	{
+		background-color: $red;
+	}
+}
+
+@media screen and (min-width: 33.375em) {
+	#charityPanel-label
+	{
+		padding: 15px 0 !important;
+	}
+}
+
+@media screen and (min-width: 37.5em) {
+	.moreInfo
+	{
+		width: 50% !important;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	#logos
+	{
+		text-align: center;
+		width: 100%;
+		padding-left: 10%;
+	}
+
+	#logoToggle
+	{
+		width: 335px;
+		height: 105px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#videoCon
+	{
+		#textCon
+		{
+			width: 100%;
+
+			h3
+			{
+				font-size: 4em;
+			}
+
+			h4
+			{
+				text-align: center !important;
+			}
+		}
+	}
+
+	#mainHome
+	{
+		padding-bottom: 15px;
+
+		.homeSections
+		{
+			position: relative;
+			min-height: 520px;
+
+			p
+			{
+				line-height: 24px !important;
+				margin-bottom: 10px;
+			}
+
+			.learnMoreBut
+			{
+				position: absolute;
+				bottom: 0;
+				margin: 15px 0 5px 0;
+			}
+		}
+	}
+
+	#tourImg
+	{
+		clear: both;
+		float: right;
+		max-width: 380px;
+		padding: 15px;
+	}
+
+	#legacyInfo h3, h4, p
+	{
+		text-align: left !important;
+		margin-bottom: 0;
+	}
+
+	#legacyInfo h4
+	{
+		margin-bottom: 10px;
+	}
+
+	#legacyButCon
+	{
+		margin-top: 50px;
+    	min-width: 175px;
+
+		li
+		{
+			margin-bottom: 10px;
+		    border: 5px solid #fff !important;
+		    font-size: 23px;
+		    padding: 10px;
+		}
+	}
+
+	#newsContent
+	{
+		clear: both;
+		float: left;
+
+		img
+		{
+			float: left;
+    		margin-right: 15px;
+		}
+
+		h4
+		{
+			display: block;
+    		padding: 0 0 10px 0 !important;
+		}
+
+		p
+		{
+			line-height: 1.25em !important;
+    		margin-bottom: 14px;
+		}
+
+		a
+		{
+			float: left;
+		}
+	}
+
+	#socialSection
+	{
+		div
+		{
+			clear: both;
+		    float: left;
+		    display: inline-block;
+		    margin: 0 auto;
+		}
+
+		a
+		{
+			float: left;
+			margin-right: 3px;
+		}
+	}
+
+	#storeBut
+	{
+		margin-bottom: 20px !important;
+	}
+
+	.merch p
+	{
+		text-align: center !important;
+		margin: 10px;
+	}
+
+	.icons
+	{
+		min-width: 95px;
+	}
+
+	#partnersPano
+	{
+		padding: 10px 10px 20px 10px;
+	}
+
+	#partnersInfo
+	{
+		h2
+		{
+			font-size: 3em;
+			padding: 10px;
+			margin-bottom: 0;
+		}
+		p
+		{
+			padding-bottom: 20px;
+		}
+	}
+
+	#partnersBut
+	{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1.75em;
+		border: 6px solid #fff;
+	}
+
+	#partnersBut:hover
+	{
+		background-color: $grey;
+	}
+
+	#contactInfo
+	{
+		font-family: $paraFont;
+		font-size: 1.25em;
+		color: #fff;
+		text-align: justify !important;
+		padding: 20px 20px 10px 25px;
+		line-height: 34px;
+	}
+
+	#legacyHeading
+	{
+		height: 300px;
+		position: relative;
+
+		h2
+		{
+			font-size: 2.5em;
+			padding: 20px !important;
+		}
+
+		#legacyNav
+		{
+			position: absolute;
+			width: 200px;
+			top: 50px;
+		}
+	}
+
+	#pillars
+	{
+		ul
+		{
+			display: inline-block;
+			width: 100%;
+			padding: 20px 0;
+		}
+
+		li
+		{
+			border-bottom: none !important;
+    		border-top: none !important;
+    		border-left: 1px solid #fff;
+			float: left;
+			width: 33%;
+		}
+
+		li:first-child
+			{
+				border-left: none !important;
+			}
+	}
+
+	#ageTypes
+	{
+		padding-top: 20px !important;
+
+		ul
+		{
+			width: 70%;
+			display: block;
+			margin: 0 auto !important;
+		}
+	}
+
+	#mediaHeading
+	{
+		height: 300px;
+		position: relative;
+
+		h2
+		{
+			font-size: 2.5em;
+			padding: 20px !important;
+		}
+
+		#mediaNav
+		{
+			position: absolute;
+			width: 200px;
+			top: 50px;
+		}
+	}
+
+	.news
+	{
+		padding: 10px;
+
+		img
+		{
+			min-width: 250px;
+			float: left;
+			margin-right: 20px;
+		}
+
+		p
+		{
+			font-size: 0.95em;
+			padding: 5px;
+		}
+
+		.readMore
+		{
+			float: left;
+			margin-top: 10px !important;			
+		}
+	}	
+}
+
+@media screen and (min-width: 60em) {
+	#contactPano h2
+	{
+		font-size: 3em;
+		font-weight: bold;
+		margin-bottom: 0;
+		padding: 20px;
+	}
+
+	#submitForm
+	{
+		width: 25% !important;
+	}	
+
+	#contactInfo
+	{
+		margin-bottom: 60px;
+	}
+
+	#partOpp
+	{
+		width: 75%;
+		display: block;
+		margin: 0 auto !important;
+		padding: 20px !important;
+
+		h3
+		{
+			font-size: 1.5em;
+			padding: 0 10px 8px 10px !important;
+		}
+
+		p
+		{
+			font-size: 1.15em;
+			line-height: 30px !important;
+		}
+	}
+}
+
+
+@media screen and (min-width: 64em) {
+	#logos
+	{
+		padding-left: 7%;
+	}
+
+	#logoToggle
+	{
+		width: 865px;
+		height: 105px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	#videoCon
+	{
+		max-height: 750px;
+		overflow: hidden;
+		vertical-align: middle;
+		width: 100%;
+
+		#textCon
+		{
+			margin-top: 10%;
+
+			h3
+			{
+				font-size: 6em;
+			}
+
+			h4
+			{
+				font-size: 2em;
+			}
+		}
+	}
+
+	#mainHome
+	{
+		padding: 15px 30px;
+	}
+
+	.homeSections
+	{
+		position: relative;
+		min-height: 565px !important;
+
+		h3
+		{
+			font-size: 2.75em !important;
+		}
+
+		p
+		{
+			font-size: 1em !important;
+		}
+
+		.learnMoreBut
+		{
+			position: absolute;
+			bottom: 0;
+			margin: 15px 0 5px 0;
+		}
+
+		.learnMoreBut:hover
+		{
+			background-color: #000;
+		}
+	}
+
+	#legacyPano 
+	{
+		height: 335px;
+	}
+
+	#legacyInfo
+	{
+		width: 550px;
+    	margin: 8px 0 0 45px;
+    	text-align: left !important;
+
+		h3
+		{
+			font-size: 4.5em !important;
+			margin-bottom: 0;
+		}
+
+		h4
+		{
+			font-size: 3.25em !important;
+			float: left;
+		}
+
+		p
+		{
+			clear: both;
+			font-size: 1em !important;
+    		font-weight: bold;
+		}
+	}
+
+	#legacyButCon
+	{
+		width: 412px;
+    	margin: 0 0 0 17px;
+    	float: left;
+
+    	li
+    	{
+    		font-size: 2.8125em;
+    		float: left;
+    		width: 400px !important;
+    		border: 6px solid #fff !important;
+    		margin: 20px 0 10px 0;
+    	}
+    	
+    	li:hover
+    	{
+    		background-color: $grey;
+    	}
+    	
+    	a
+    	{
+    		padding: 25px 38px;
+    	}
+	}
+
+	#mediaCentre 
+	{
+		width: 100%;
+		padding: 15px;
+		display: block;
+		clear: both;
+	}
+
+	#newsContent
+	{
+		clear: left;
+		float: left;
+
+		img
+		{
+			float: left;
+			margin-right: 30px;
+		}
+
+		h4
+		{
+			font-size: 1.5em !important;
+			margin-left: 20px;
+			padding: 20px;
+		}
+
+		p
+		{
+			font-size: 1.125em !important;
+			margin-bottom: 30px;
+			width: 80%;
+			line-height: 34px !important;
+		}
+	}
+
+	#mediaHeading
+	{
+		height: 450px;
+		position: relative;
+
+		h2
+		{
+			font-size: 3.5em;
+		}
+
+		#mediaNav
+		{
+			width: 385px;
+			position: absolute;
+			top: 70px;
+			right: 100px;
+
+			li
+			{
+				padding: 15px;
+			}
+
+			a
+			{
+				font-size: 1.25em;
+			}
+
+
+		}
+	}
+
+	h2
+	{
+		font-size: 3.25em;
+	}
+
+	h3
+	{
+		float: left;
+	}
+
+	#partnersInfo p
+	{
+		font-size: 1.25em;
+		line-height: 32px;
+		margin-top: 5px;
+	}
+
+	#partnersBut
+	{
+		padding: 30px 20px;
+	    font-size: 2.5em;
+	    margin: 0 0 30px 10px;
+	}
+	.icons
+	{
+		margin: 20px 0;
+	}
+
+	#partOpp h3
+	{
+		padding: 0 110px 8px 10px !important;
+	}
+
+	#partOpp p
+	{
+		clear: both;
+		font-size: 1.25em;
+		line-height: 40px !important;
+	}
+
+	#legacyHeading 
+	{
+		height: 450px;
+		position: relative;
+
+		h2
+		{
+			font-size: 3.75em;
+		}
+
+		#legacyNav
+		{
+			width: 385px;
+			position: absolute;
+			top: 70px;
+			right: 100px;
+
+			li
+			{
+				padding: 15px;
+			}
+
+			a
+			{
+				font-size: 1.25em;
+			}
+		}
+		
+	}
+
+	#aboutUs
+	{
+		p, ul
+		{
+			clear: both;
+		}
+
+		#mission li
+		{
+			line-height: 38px !important;
+		}
+
+		#values h3
+		{
+			width: 100%;
+		}
+	}
+
+	.initiatives p
+	{
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	#relatedNews
+	{
+		h2
+		{
+			font-size: 2.5em !important;
+		}
+	}
+
+	.news
+	{
+		h3
+		{
+			font-size: 1.75em !important;
+		}
+
+		h4
+		{
+			clear: both;
+		}
+
+		p
+		{
+			font-size: 1em !important;
+		}		
+	}
+
+	.readMore
+	{
+		margin-top: 20px !important;
+	}
+
+	#twitter-widget-0 element.style
+	{
+		max-height: 500px !important;
+	}
+
+}
+
+@media screen and (min-width: 90em) {
+	#legacyButCon
+	{
+		margin: 0 0 0 70px;
+	}
+}
+
+@media screen and (min-width: 104em) 
+{
+	#legacyNav 
+	{
+    	right: 200px !important;
+    }
+
+  	#mediaNav 
+  	{
+    	right: 200px !important; 
+    } 
+}
+
+
+
+.mainTitle
+	{
+		font-family: $mainFont;
+		color: #fff;
+		font-size: 2.5em;
+		margin-top: 10px;
+	}
+
+#hoverTitle
+		{
+			color: #fff;
+		}
+
+
+ /* player card page */
+
+.playerMobile
+{
+	padding: 0;
+	background-color: $grey !important;
+	border: none;
+
+	p
+	{
+		font-family: $paraFont;
+		margin-bottom: 3px;
+	}
+
+	img
+	{
+		display: block;
+		margin: 0 auto;
+	}
+
+}
+
+.playerMobileCard
+{
+	font-family: $mainFont;
+	color: #000;
+	border-bottom: 1px solid $red;
+	font-size: 1em;
+	margin-top: 15px;
+}
+
+.accordion-content p
+{
+	font-family: $paraFont;
+	margin-bottom: 3px;
+}
+
+
+
+
+
+
+.card
+{
+	position: relative;
+}
+
+
+.front, .back
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.front, .back
+{
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 1s;
+			transition: transform 1s;
+}
+
+.back
+{
+	-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+}
+
+.card:hover .front 
+{
+	-webkit-transform: rotateY(-180deg);
+			transform: rotateY(-180deg);
+}
+
+.card:hover .back
+{
+	-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+}
+
+#playerCon
+{
+	background-color: #363636;
+
+	h3
+	{
+	font-family: $mainFont;
+	color: #fff;
+	font-size: 1em;
+	border-bottom: solid 1px $red;
+	}
+}
+
+.playerRow
+{
+	height: 400px;
+	margin-top: 10px;
+}
+.two
+{
+	left: 24%;
+	margin-left: 10px;
+}
+.three
+{
+	left: 49%;
+	margin-left: 10px;
+}
+
+/* gallery page */
+
+#galleryPage h2
+{
+	font-family: $mainFont;
+	font-size: 2.5em;
+	color: #000;
+	margin: 5px 0 10px 10px;
+}
+
+.accordion-title
+{
+	background-color: $red;
+	color: #fff;
+	font-family: $mainFont;
+	font-size: 1em;
+}
+
+.accordion-title:focus
+{
+	background-color: transparent;
+	color: #000;
+}
+
+.slide
+{
+	overflow: auto;
+	white-space:nowrap;
+}
+
+#galleryLargeSlider{
+	width: 1100px;
+}
+
+.pic
+{
+	width: 400px;
+	height: 400px;
+}
+
+#div2, #div3
+{
+	display: none;
+}
+
+.galleryLargeCon
+{
+	background-color: $grey;
+	margin-top: 15px;
+}
+
+.ssGallery
+{
+	padding: 15px 0;
+
+	h2
+	{
+		font-family: $mainFont;
+		color: #fff;
+		border-bottom: 3px solid $red;
+		padding: 15px 0 3px 20px;
+		margin-bottom: 25px;
+	}
+}
+
+
+
+/*summit series timeline page*/
+
+
+#subHeader
+{
+	font-family: $paraFont;
+	font-size: 1em;
+	margin-top: 10px;
+	text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#allTimeline
+{
+  font-family: $paraFont;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+} 
+time
+{
+	font-family: $mainFont;
+	margin: 10px;
+	font-size: 2em;
+}
+
+.intro {
+  padding: 50px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+	h3 {
+  font-size: 1rem;
+  font-family: $paraFont;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $red;
+}
+}
+
+
+/* TIMELINE */
+
+#allTimeline
+{
+	background-color: $grey;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #000;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: $red;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent $red transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent $red;
+}
+
+.moreInfo
+{
+	font-family: $mainFont;
+	color: #fff;
+	padding: 10px;
+	border: 1px solid #fff;
+	display: block;
+	text-align: center;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.moreInfo:hover
+{
+	background-color: $grey;
+	color: #fff;
+}
+
+.timeline p
+{
+	margin-bottom: 25px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+   
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+   
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+   
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $red transparent transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
