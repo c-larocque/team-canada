@@ -1365,5 +1365,16 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #a90000 transparent transparent; } }
+.porthead h1 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+.porthead .portallogo {
+  margin-bottom: 20px; }
+.porthead .portalinfo {
+  margin-bottom: 30px; }
+.porthead p {
+  font-family: "Merriweather", Times, serif;
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

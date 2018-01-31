@@ -64,7 +64,7 @@ Summit Series, particularly those highlighting what can be achieved through tea
               <div class="small-12 medium-4 large-4 columns" id="legacyButCon">
                 <ul>
                   <li><a href="legacy.html">LEARN MORE</a></li>
-                  <li><a href="#">PORTAL</a></li>
+                  <li><a href="portal.php">PORTAL</a></li>
                 </ul>
               </div>
             </section>
