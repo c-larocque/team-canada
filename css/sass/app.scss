@@ -383,11 +383,14 @@ $red: #a90000;
 	}
 		.socialImgs {
 			padding-bottom: 10px;
+			width: 100%;
+			display: inline-block;
 		}
 	.socials
 	{
 		display: block;
 		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 	.socials:hover
 	{
@@ -401,6 +404,21 @@ $red: #a90000;
 	    -moz-transform: scale(1.05);
     	transition: all 200ms ease-in;
     	transform: scale(1.05);
+	}
+	.fb {
+		max-height: 50px;
+	}
+	.twit {
+		max-height: 50px;
+	}
+	.facebook {
+		background-color: #3b5998;
+		height: 150px;
+	}
+
+	.twitter {
+		background-color: #00aced;
+		height:	150px;
 	}
 }
 

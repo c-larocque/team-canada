@@ -27,6 +27,10 @@
 
     <?php include 'includes/header.php';?>
 
+
+          <div><!--content goes here-->
+
+
             <section id="playerCon">
               <section class="row">
                 <div class="small-12 columns">
@@ -892,7 +896,12 @@
                   </div>
                 </section>end of section 9 of player cards
               </div>
+
             </section>end of player con-->
+
+
+            </section><!-- end of player con-->
+          </div>
 
 
               <?php include 'includes/footer.php';?>
