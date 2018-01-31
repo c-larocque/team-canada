@@ -85,9 +85,11 @@ Summit Series, particularly those highlighting what can be achieved through tea
 
             <section class="small-12 columns" id="socialSection">
               <h3>SOCIAL MEDIA</h3>
-              <div class="socialImgs">
-                <a href="http://www.facebook.com/teamcanada1972"><img data-interchange="[images/facebook_small.png, small], [images/facebook_medium.png, medium], [images/facebook_large.png, large]" alt="Facebook Link" class="socials"></a>
-                <a href="http://www.twitter.com/teamcanada1972"><img data-interchange="[images/twitter_small.png, small], [images/twitter_medium.png, medium], [images/twitter_large.png, large]" alt="Twitter Link" class="socials"></a>
+              <div class="socialImgs small-12">
+                <div class="small-12 medium-5 medium-push-1 columns facebook socials">
+                  <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a></div>
+                <div class="small-12 medium-5 medium-push-1 columns twitter socials">
+                  <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a></div>
               </div>
             </section>
           </section>
