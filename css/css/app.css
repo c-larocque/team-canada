@@ -1087,6 +1087,25 @@
   color: #fff; }
 
 /* player card page */
+.cardInfo {
+  background-color: white;
+  padding: 20px; }
+  .cardInfo h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #a90000; }
+  .cardInfo h4 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 20px; }
+  .cardInfo p {
+    font-family: "Merriweather", Times, serif;
+    margin-top: 10px;
+    font-size: 16px; }
+  .cardInfo li {
+    font-family: "Merriweather", Times, serif;
+    margin-top: 10px;
+    font-size: 16px; }
+
 .playerMobile {
   padding: 0;
   background-color: #363636 !important;

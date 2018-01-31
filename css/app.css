@@ -1,58 +1,1337 @@
-/*.boxHelper
-{
-	color: #fff;
-	background-color:#000;
-	text-align:center; 
-}
+#pano {
+  background-color: #666; }
 
-#mainHeader
-{
-	background-color: red;
-	width: 100%;
+#aboutUs {
+  background-color: red; }
 
-}
+#legacySeconds {
+  background-color: blue; }
 
-#topBar
-{
-	height: 76px;
-	background-color: #fff;
-}
+#socialMedia {
+  background-color: #ccc; }
 
-#logo
-{
-	margin-left: 25%;
-}
+#mobileNav {
+  width: 100%;
+  background-color: #000; }
 
-.menu-icon:after
-{
-	background: #000;
-	box-shadow: 0 7px 0 #000, 0 14px 0 #000;
-}
+.title-bar {
+  background-color: rgba(255, 255, 255, 0.9); }
 
-.menu-icon:hover::after
-{
-	background: #cc0000;
-	box-shadow: 0 7px 0 #cc0000, 0 14px 0 #cc0000;
-}
+#logoMobile {
+  width: 60px;
+  height: 61px;
+  display: block;
+  margin: 0 auto; }
 
-#mainNav
-{
-	list-style-type: none;
-	text-align: center;
-	margin: 0;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 500;
-}
+#portalBut {
+  background-color: #000;
+  color: #fff;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  width: 100px;
+  float: right;
+  margin-right: 20px;
+  border-radius: 0 0 15px 15px; }
 
-#mainNav li
-{
-	background-color: #000;
-	border-bottom: 1px solid #fff;
-}
+#portalBut:hover {
+  background-color: #a90000; }
 
-#mainNav li a
-{
-	display: block;
-	color: #fff;
-	padding: 5px;
-}*/
+.menu-icon:after {
+  background: #000;
+  box-shadow: 0 7px 0 #000, 0 14px 0 #000; }
+
+.menu-icon:hover::after {
+  background: #cc0000;
+  box-shadow: 0 7px 0 #cc0000, 0 14px 0 #cc0000; }
+
+.mainNav, #offCanvasNav li a {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+
+.mainNav li, #offCanvasNav li a li {
+  background-color: #000;
+  border-bottom: 1px solid #fff; }
+
+.mainNav li a, #offCanvasNav li a li a {
+  display: block;
+  color: #fff;
+  padding: 5px; }
+
+.mainNav li:hover, #offCanvasNav li a li:hover {
+  background-color: #a90000; }
+
+#mobilePortalBut {
+  background-color: #a90000;
+  padding: 5px 8px; }
+
+#mobilePortalBut:hover {
+  background-color: #363636; }
+
+#offCanvasNav {
+  background-color: #000;
+  height: 100%; }
+
+#offCanvasNav li a {
+  padding: 15px 0;
+  font-size: 1.375em; }
+
+#myvid {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+#videoCon {
+  position: relative;
+  border-bottom: 5px solid #000; }
+  #videoCon video {
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    width: 100%; }
+  #videoCon #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); }
+  #videoCon #textCon {
+    color: #000;
+    margin-top: 15%; }
+    #videoCon #textCon h3, #videoCon #textCon h4 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      width: 100%;
+      text-align: center; }
+    #videoCon #textCon h3 {
+      font-size: 1.75em; }
+    #videoCon #textCon h4 {
+      font-size: 1em; }
+
+#mainHome {
+  background-color: #363636;
+  text-align: left; }
+  #mainHome .homeSections {
+    padding: 15px; }
+    #mainHome .homeSections h3 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      color: #fff;
+      font-size: 1.875em; }
+    #mainHome .homeSections .homeThumbnail {
+      min-width: 125px;
+      float: left;
+      margin-right: 25px;
+      margin-bottom: 15px; }
+    #mainHome .homeSections p {
+      clear: both;
+      font-family: "Merriweather", Times, serif;
+      font-size: 0.875em;
+      color: #fff;
+      padding: 0 8px; }
+    #mainHome .homeSections .learnMoreBut {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      font-size: 1.125em;
+      color: #fff;
+      background-color: #a90000;
+      padding: 5px 25px;
+      margin: 0 auto;
+      display: block;
+      text-align: center; }
+    #mainHome .homeSections .learnMoreBut:hover {
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7); }
+
+#legacyPano {
+  background-color: #a90000;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px; }
+  #legacyPano #legacyInfo {
+    color: #fff; }
+    #legacyPano #legacyInfo h3 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      font-size: 2.5em;
+      text-align: center;
+      padding-top: 15px; }
+    #legacyPano #legacyInfo h4 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      font-size: 1.875em;
+      text-align: center; }
+    #legacyPano #legacyInfo p {
+      font-family: "Merriweather", Times, serif;
+      font-size: 0.875em; }
+  #legacyPano #legacyButCon {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 1.375em;
+    list-style-type: none;
+    text-align: center; }
+    #legacyPano #legacyButCon li {
+      border: 3px solid #fff;
+      display: inline-block;
+      width: 140px; }
+    #legacyPano #legacyButCon li a {
+      color: #fff; }
+
+#mediaCentre h2 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 2.5em;
+  border-bottom: 3px solid #a90000;
+  width: 100%;
+  padding: 10px 0 0 20px; }
+#mediaCentre #newsSection h3 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #666;
+  float: left;
+  line-height: 1.875em; }
+#mediaCentre #moreNews {
+  color: #000;
+  font-size: 1.125em;
+  border: 2px solid #000;
+  padding: 5px;
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+#mediaCentre #moreNews:hover {
+  background-color: #a90000; }
+#mediaCentre #newsSection {
+  margin-bottom: 20px; }
+  #mediaCentre #newsSection h4 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 1.375em;
+    color: #202020;
+    padding: 5px; }
+  #mediaCentre #newsSection p {
+    font-family: "Merriweather", Times, serif;
+    font-size: 1em;
+    color: #000;
+    line-height: 1.375em; }
+  #mediaCentre #newsSection #readMore {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #a90000;
+    text-align: center; }
+  #mediaCentre #newsSection #readMore:hover {
+    background-color: #363636; }
+#mediaCentre #socialSection h3 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #666;
+  float: left;
+  line-height: 1.875em; }
+#mediaCentre #socialSection div {
+  clear: both; }
+#mediaCentre .socialImgs {
+  padding-bottom: 10px; }
+#mediaCentre .socials {
+  display: block;
+  margin: 0 auto; }
+#mediaCentre .socials:hover {
+  box-shadow: 0px 0px 15px #000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.05);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.05);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.05);
+  transition: all 200ms ease-in;
+  transform: scale(1.05); }
+
+#merchCon {
+  background-color: #363636;
+  color: #fff;
+  padding: 20px 0; }
+  #merchCon h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 2.5em; }
+  #merchCon #storeBut {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.125em;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  #merchCon .merch {
+    display: block;
+    margin: 0 auto;
+    font-family: "Merriweather", Times, serif;
+    text-align: center; }
+  #merchCon .addToCart {
+    display: block;
+    margin: 0 auto;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    width: 160px;
+    padding: 5px;
+    border: 2px #fff solid;
+    color: #fff; }
+
+#mainFooter {
+  background-color: #000; }
+  #mainFooter #searchForm {
+    margin-top: 20px; }
+    #mainFooter #searchForm #searchBut {
+      background-color: #a90000; }
+  #mainFooter #socialNav {
+    display: block;
+    margin: 0 auto;
+    width: 225px; }
+    #mainFooter #socialNav li {
+      display: inline-block;
+      margin: 10px; }
+
+#copyrightBar {
+  background-color: #111;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  padding-top: 10px; }
+
+#partnersPano {
+  background-color: #a90000; }
+
+#partnersInfo {
+  color: #fff; }
+  #partnersInfo h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 2.25em;
+    padding: 10px; }
+  #partnersInfo p {
+    font-family: "Merriweather", Times, serif;
+    font-size: 1em;
+    line-height: 22px; }
+
+#partnersBut {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  border: 3px solid #fff;
+  margin: 5px 0 20px 0; }
+
+#partnersBut:hover {
+  border: 3px solid #000;
+  color: #000; }
+
+.icons {
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+
+.icons:hover {
+  box-shadow: 0px 0px 15px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1); }
+
+#contactPano {
+  background-color: #a90000; }
+  #contactPano h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    color: #fff;
+    padding: 15px; }
+
+#contactCon {
+  background-color: #363636; }
+  #contactCon #contactInfoMobile {
+    font-family: "Merriweather", Times, serif;
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+    font-weight: bold; }
+  #contactCon #partOpp {
+    color: #000;
+    background-color: #fff;
+    padding: 8px;
+    margin: 35px 0 20px 0; }
+    #contactCon #partOpp h3 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      border-bottom: 2px solid #a90000;
+      padding: 5px 0 5px 20px; }
+    #contactCon #partOpp p {
+      font-family: "Merriweather", Times, serif;
+      padding: 0 8px;
+      text-align: justify;
+      line-height: 22px; }
+    #contactCon #partOpp a {
+      color: #000;
+      font-weight: bold; }
+
+#contactCon {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  padding: 10px; }
+  #contactCon #contactForm label {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px; }
+  #contactCon #contactForm input, #contactCon textarea {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset; }
+  #contactCon #submitForm {
+    background-color: #a90000;
+    text-transform: uppercase;
+    box-shadow: none;
+    width: 90%;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    display: block;
+    margin: 0 auto; }
+
+.backToTop {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  width: 100px; }
+
+#legacyHeading {
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px;
+  height: 300px; }
+  #legacyHeading h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px; }
+  #legacyHeading #legacyNav {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px; }
+    #legacyHeading #legacyNav ul {
+      margin: 0; }
+    #legacyHeading #legacyNav li {
+      list-style: none;
+      padding: 8px;
+      border-bottom: 1px solid #000; }
+    #legacyHeading #legacyNav li:last-child {
+      border-bottom: none; }
+    #legacyHeading #legacyNav a {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      color: #000;
+      font-weight: bold; }
+    #legacyHeading #legacyNav a:hover {
+      color: #a90000; }
+
+#aboutUs {
+  background-color: #363636;
+  color: #fff;
+  padding: 15px; }
+  #aboutUs h2, #aboutUs h3 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+  #aboutUs h2 {
+    border-bottom: 2px solid #a90000;
+    font-size: 2em;
+    padding: 15px 5px 8px 15px; }
+  #aboutUs #whoWeAre {
+    padding: 10px; }
+    #aboutUs #whoWeAre p {
+      font-family: "Merriweather", Times, serif; }
+  #aboutUs #vision {
+    padding: 10px; }
+    #aboutUs #vision p {
+      font-family: "Merriweather", Times, serif; }
+  #aboutUs #mission {
+    padding: 10px; }
+    #aboutUs #mission li {
+      font-family: "Merriweather", Times, serif; }
+  #aboutUs #values {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px; }
+    #aboutUs #values h3 {
+      background-color: #a90000;
+      padding: 5px 0;
+      margin-bottom: 0; }
+    #aboutUs #values ul {
+      margin: 0; }
+    #aboutUs #values li {
+      font-family: "Merriweather", Times, serif;
+      list-style: none;
+      border-bottom: 1px solid #fff;
+      padding: 3px 0;
+      display: block;
+      width: 100%; }
+
+#legacySeconds {
+  background-color: #a90000;
+  padding: 15px;
+  color: #fff; }
+  #legacySeconds h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    padding: 15px 5px 8px 15px; }
+  #legacySeconds p {
+    font-family: "Merriweather", Times, serif;
+    padding: 5px; }
+  #legacySeconds #pillars {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+    #legacySeconds #pillars ul {
+      margin: 0; }
+    #legacySeconds #pillars li {
+      list-style: none;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 1.125em;
+      border-bottom: 1px solid #fff; }
+    #legacySeconds #pillars li:first-child {
+      border-top: 1px solid #fff; }
+  #legacySeconds #ageTypes {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 0 5px 15px 5px; }
+    #legacySeconds #ageTypes ul {
+      margin: 0; }
+    #legacySeconds #ageTypes li {
+      list-style: none;
+      border: 1px solid #fff;
+      padding: 8px 5px;
+      margin: 5px 0; }
+
+#pillarSection {
+  background-color: #fff;
+  padding: 15px; }
+  #pillarSection h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #a90000;
+    font-size: 2em;
+    padding: 0 5px 8px 15px;
+    color: #000;
+    margin-bottom: 20px; }
+  #pillarSection #legacy-tabs {
+    background-color: #a90000;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+    #pillarSection #legacy-tabs .tabs-title {
+      width: 30%;
+      float: left;
+      margin-left: 3%;
+      border-right: 4px solid #fff; }
+      #pillarSection #legacy-tabs .tabs-title a:hover {
+        background: none; }
+      #pillarSection #legacy-tabs .tabs-title a[aria-selected='true'] {
+        background: none;
+        color: #000; }
+    #pillarSection #legacy-tabs #educationPanel-label {
+      padding: 15px 0; }
+    #pillarSection #legacy-tabs #entertainmentPanel-label {
+      padding: 15px 0; }
+    #pillarSection #legacy-tabs li:last-child {
+      border-right: none; }
+    #pillarSection #legacy-tabs a {
+      font-size: 1em;
+      color: #fff;
+      padding: 5px 0; }
+    #pillarSection #legacy-tabs a:hover {
+      color: #000;
+      background-color: transparent; }
+  #pillarSection .tabs-content {
+    background-color: #efefef;
+    margin-bottom: 15px; }
+    #pillarSection .tabs-content h3 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      border-bottom: 1px solid #000; }
+    #pillarSection .tabs-content p {
+      font-family: "Merriweather", Times, serif;
+      padding: 2px 8px; }
+    #pillarSection .tabs-content .tabs-panel {
+      height: 400px;
+      overflow-y: scroll; }
+
+#ssTour {
+  background-color: #363636;
+  padding: 15px;
+  color: #fff; }
+  #ssTour h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    padding: 15px 5px 8px 15px; }
+  #ssTour p {
+    font-family: "Merriweather", Times, serif;
+    padding: 5px; }
+  #ssTour #tourImg {
+    display: block;
+    margin: 0 auto; }
+
+#mediaHeading {
+  background-color: #ccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20px;
+  height: 300px; }
+  #mediaHeading h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px; }
+  #mediaHeading #mediaNav {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px; }
+    #mediaHeading #mediaNav ul {
+      margin: 0; }
+    #mediaHeading #mediaNav li {
+      list-style: none;
+      padding: 8px;
+      border-bottom: 1px solid #000; }
+    #mediaHeading #mediaNav li:last-child {
+      border-bottom: none; }
+    #mediaHeading #mediaNav a {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      color: #000;
+      font-weight: bold; }
+    #mediaHeading #mediaNav a:hover {
+      color: #a90000; }
+
+#socialMedia {
+  background-color: #363636;
+  padding: 15px; }
+  #socialMedia h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #a90000;
+    font-size: 2em;
+    padding: 0 5px 8px 15px;
+    color: #fff;
+    margin-bottom: 20px; }
+  #socialMedia img {
+    margin-bottom: 10px; }
+  #socialMedia #instaWidget {
+    min-height: 500px; }
+  #socialMedia .widgetLabel {
+    display: block;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 1.5em; }
+  #socialMedia .widgetLabel:hover {
+    background-color: #a90000; }
+
+#relatedNews {
+  background-color: #fff;
+  padding: 15px; }
+  #relatedNews h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #a90000;
+    font-size: 2em;
+    padding: 0 5px 8px 15px;
+    color: #000;
+    margin-bottom: 20px; }
+  #relatedNews .news {
+    margin-bottom: 20px; }
+    #relatedNews .news img {
+      margin-bottom: 10px; }
+    #relatedNews .news h3 {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+      padding: 5px;
+      margin-bottom: 0; }
+    #relatedNews .news h4 {
+      font-family: "Merriweather", Times, serif;
+      font-size: 1em;
+      font-weight: bold;
+      padding: 0 0 0 5px;
+      margin-bottom: 15px; }
+    #relatedNews .news p {
+      font-family: "Merriweather", Times, serif;
+      font-size: 1em; }
+    #relatedNews .news .readMore {
+      font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+      display: block;
+      margin: 0 auto;
+      width: 140px;
+      color: #fff;
+      padding: 5px 10px;
+      background-color: #a90000;
+      text-align: center; }
+    #relatedNews .news .readMore:hover {
+      background-color: #363636; }
+  #relatedNews #seeMore {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    border: 4px solid #000;
+    text-align: center;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 1.185em;
+    padding: 5px;
+    color: #000; }
+  #relatedNews #seeMore:hover {
+    background-color: #a90000; }
+
+@media screen and (min-width: 33.375em) {
+  #charityPanel-label {
+    padding: 15px 0 !important; } }
+@media screen and (min-width: 37.5em) {
+  .moreInfo {
+    width: 50% !important; } }
+@media screen and (min-width: 40em) {
+  #logos {
+    text-align: center;
+    width: 100%;
+    padding-left: 10%; }
+
+  #logoToggle {
+    width: 335px;
+    height: 105px;
+    display: inline-block;
+    margin: 0 auto; }
+
+  #videoCon #textCon {
+    width: 100%; }
+    #videoCon #textCon h3 {
+      font-size: 4em; }
+    #videoCon #textCon h4 {
+      text-align: center !important; }
+
+  #mainHome {
+    padding-bottom: 15px; }
+    #mainHome .homeSections {
+      position: relative;
+      min-height: 520px; }
+      #mainHome .homeSections p {
+        line-height: 24px !important;
+        margin-bottom: 10px; }
+      #mainHome .homeSections .learnMoreBut {
+        position: absolute;
+        bottom: 0;
+        margin: 15px 0 5px 0; }
+
+  #tourImg {
+    clear: both;
+    float: right;
+    max-width: 380px;
+    padding: 15px; }
+
+  #legacyInfo h3, h4, p {
+    text-align: left !important;
+    margin-bottom: 0; }
+
+  #legacyInfo h4 {
+    margin-bottom: 10px; }
+
+  #legacyButCon {
+    margin-top: 50px;
+    min-width: 175px; }
+    #legacyButCon li {
+      margin-bottom: 10px;
+      border: 5px solid #fff !important;
+      font-size: 23px;
+      padding: 10px; }
+
+  #newsContent {
+    clear: both;
+    float: left; }
+    #newsContent img {
+      float: left;
+      margin-right: 15px; }
+    #newsContent h4 {
+      display: block;
+      padding: 0 0 10px 0 !important; }
+    #newsContent p {
+      line-height: 1.25em !important;
+      margin-bottom: 14px; }
+    #newsContent a {
+      float: left; }
+
+  #socialSection div {
+    clear: both;
+    float: left;
+    display: inline-block;
+    margin: 0 auto; }
+  #socialSection a {
+    float: left;
+    margin-right: 3px; }
+
+  #storeBut {
+    margin-bottom: 20px !important; }
+
+  .merch p {
+    text-align: center !important;
+    margin: 10px; }
+
+  .icons {
+    min-width: 95px; }
+
+  #partnersPano {
+    padding: 10px 10px 20px 10px; }
+
+  #partnersInfo h2 {
+    font-size: 3em;
+    padding: 10px;
+    margin-bottom: 0; }
+  #partnersInfo p {
+    padding-bottom: 20px; }
+
+  #partnersBut {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.75em;
+    border: 6px solid #fff; }
+
+  #partnersBut:hover {
+    background-color: #363636; }
+
+  #contactInfo {
+    font-family: "Merriweather", Times, serif;
+    font-size: 1.25em;
+    color: #fff;
+    text-align: justify !important;
+    padding: 20px 20px 10px 25px;
+    line-height: 34px; }
+
+  #legacyHeading {
+    height: 300px;
+    position: relative; }
+    #legacyHeading h2 {
+      font-size: 2.5em;
+      padding: 20px !important; }
+    #legacyHeading #legacyNav {
+      position: absolute;
+      width: 200px;
+      top: 50px; }
+
+  #pillars ul {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0; }
+  #pillars li {
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: 1px solid #fff;
+    float: left;
+    width: 33%; }
+  #pillars li:first-child {
+    border-left: none !important; }
+
+  #ageTypes {
+    padding-top: 20px !important; }
+    #ageTypes ul {
+      width: 70%;
+      display: block;
+      margin: 0 auto !important; }
+
+  #mediaHeading {
+    height: 300px;
+    position: relative; }
+    #mediaHeading h2 {
+      font-size: 2.5em;
+      padding: 20px !important; }
+    #mediaHeading #mediaNav {
+      position: absolute;
+      width: 200px;
+      top: 50px; }
+
+  .news {
+    padding: 10px; }
+    .news img {
+      min-width: 250px;
+      float: left;
+      margin-right: 20px; }
+    .news p {
+      font-size: 0.95em;
+      padding: 5px; }
+    .news .readMore {
+      float: left;
+      margin-top: 10px !important; } }
+@media screen and (min-width: 60em) {
+  #contactPano h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 20px; }
+
+  #submitForm {
+    width: 25% !important; }
+
+  #contactInfo {
+    margin-bottom: 60px; }
+
+  #partOpp {
+    width: 75%;
+    display: block;
+    margin: 0 auto !important;
+    padding: 20px !important; }
+    #partOpp h3 {
+      font-size: 1.5em;
+      padding: 0 10px 8px 10px !important; }
+    #partOpp p {
+      font-size: 1.15em;
+      line-height: 30px !important; } }
+@media screen and (min-width: 64em) {
+  #logos {
+    padding-left: 7%; }
+
+  #logoToggle {
+    width: 865px;
+    height: 105px;
+    display: inline-block;
+    margin: 0 auto; }
+
+  #videoCon {
+    max-height: 750px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%; }
+    #videoCon #textCon {
+      margin-top: 10%; }
+      #videoCon #textCon h3 {
+        font-size: 6em; }
+      #videoCon #textCon h4 {
+        font-size: 2em; }
+
+  #mainHome {
+    padding: 15px 30px; }
+
+  .homeSections {
+    position: relative;
+    min-height: 565px !important; }
+    .homeSections h3 {
+      font-size: 2.75em !important; }
+    .homeSections p {
+      font-size: 1em !important; }
+    .homeSections .learnMoreBut {
+      position: absolute;
+      bottom: 0;
+      margin: 15px 0 5px 0; }
+    .homeSections .learnMoreBut:hover {
+      background-color: #000; }
+
+  #legacyPano {
+    height: 335px; }
+
+  #legacyInfo {
+    width: 550px;
+    margin: 8px 0 0 45px;
+    text-align: left !important; }
+    #legacyInfo h3 {
+      font-size: 4.5em !important;
+      margin-bottom: 0; }
+    #legacyInfo h4 {
+      font-size: 3.25em !important;
+      float: left; }
+    #legacyInfo p {
+      clear: both;
+      font-size: 1em !important;
+      font-weight: bold; }
+
+  #legacyButCon {
+    width: 412px;
+    margin: 0 0 0 17px;
+    float: left; }
+    #legacyButCon li {
+      font-size: 2.8125em;
+      float: left;
+      width: 400px !important;
+      border: 6px solid #fff !important;
+      margin: 20px 0 10px 0; }
+    #legacyButCon li:hover {
+      background-color: #363636; }
+    #legacyButCon a {
+      padding: 25px 38px; }
+
+  #mediaCentre {
+    width: 100%;
+    padding: 15px;
+    display: block;
+    clear: both; }
+
+  #newsContent {
+    clear: left;
+    float: left; }
+    #newsContent img {
+      float: left;
+      margin-right: 30px; }
+    #newsContent h4 {
+      font-size: 1.5em !important;
+      margin-left: 20px;
+      padding: 20px; }
+    #newsContent p {
+      font-size: 1.125em !important;
+      margin-bottom: 30px;
+      width: 80%;
+      line-height: 34px !important; }
+
+  #mediaHeading {
+    height: 450px;
+    position: relative; }
+    #mediaHeading h2 {
+      font-size: 3.5em; }
+    #mediaHeading #mediaNav {
+      width: 385px;
+      position: absolute;
+      top: 70px;
+      right: 100px; }
+      #mediaHeading #mediaNav li {
+        padding: 15px; }
+      #mediaHeading #mediaNav a {
+        font-size: 1.25em; }
+
+  h2 {
+    font-size: 3.25em; }
+
+  h3 {
+    float: left; }
+
+  #partnersInfo p {
+    font-size: 1.25em;
+    line-height: 32px;
+    margin-top: 5px; }
+
+  #partnersBut {
+    padding: 30px 20px;
+    font-size: 2.5em;
+    margin: 0 0 30px 10px; }
+
+  .icons {
+    margin: 20px 0; }
+
+  #partOpp h3 {
+    padding: 0 110px 8px 10px !important; }
+
+  #partOpp p {
+    clear: both;
+    font-size: 1.25em;
+    line-height: 40px !important; }
+
+  #legacyHeading {
+    height: 450px;
+    position: relative; }
+    #legacyHeading h2 {
+      font-size: 3.75em; }
+    #legacyHeading #legacyNav {
+      width: 385px;
+      position: absolute;
+      top: 70px;
+      right: 100px; }
+      #legacyHeading #legacyNav li {
+        padding: 15px; }
+      #legacyHeading #legacyNav a {
+        font-size: 1.25em; }
+
+  #aboutUs p, #aboutUs ul {
+    clear: both; }
+  #aboutUs #mission li {
+    line-height: 38px !important; }
+  #aboutUs #values h3 {
+    width: 100%; }
+
+  .initiatives p {
+    float: left;
+    margin-bottom: 10px; }
+
+  #relatedNews h2 {
+    font-size: 2.5em !important; }
+
+  .news h3 {
+    font-size: 1.75em !important; }
+  .news h4 {
+    clear: both; }
+  .news p {
+    font-size: 1em !important; }
+
+  .readMore {
+    margin-top: 20px !important; }
+
+  #twitter-widget-0 element.style {
+    max-height: 500px !important; } }
+@media screen and (min-width: 90em) {
+  #legacyButCon {
+    margin: 0 0 0 70px; } }
+@media screen and (min-width: 104em) {
+  #legacyNav {
+    right: 200px !important; }
+
+  #mediaNav {
+    right: 200px !important; } }
+.mainTitle {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 10px; }
+
+#hoverTitle {
+  color: #fff; }
+
+/* player card page */
+.playerMobile {
+  padding: 0;
+  background-color: #363636 !important;
+  border: none; }
+  .playerMobile p {
+    font-family: "Merriweather", Times, serif;
+    margin-bottom: 3px; }
+  .playerMobile img {
+    display: block;
+    margin: 0 auto; }
+
+.playerMobileCard {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  color: #000;
+  border-bottom: 1px solid #a90000;
+  font-size: 1em;
+  margin-top: 15px; }
+
+.accordion-content p {
+  font-family: "Merriweather", Times, serif;
+  margin-bottom: 3px; }
+
+.card {
+  position: relative; }
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s; }
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+
+.card:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+
+.card:hover .back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0); }
+
+#playerCon {
+  background-color: #363636; }
+  #playerCon h3 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 1em;
+    border-bottom: solid 1px #a90000; }
+
+.playerRow {
+  height: 400px;
+  margin-top: 10px; }
+
+.two {
+  left: 24%;
+  margin-left: 10px; }
+
+.three {
+  left: 49%;
+  margin-left: 10px; }
+
+/* gallery page */
+#galleryPage h2 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  color: #000;
+  margin: 5px 0 10px 10px; }
+
+.accordion-title {
+  background-color: #a90000;
+  color: #fff;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+.accordion-title:focus {
+  background-color: transparent;
+  color: #000; }
+
+.slide {
+  overflow: auto;
+  white-space: nowrap; }
+
+#galleryLargeSlider {
+  width: 1100px; }
+
+.pic {
+  width: 400px;
+  height: 400px; }
+
+#div2, #div3 {
+  display: none; }
+
+.galleryLargeCon {
+  background-color: #363636;
+  margin-top: 15px; }
+
+.ssGallery {
+  padding: 15px 0; }
+  .ssGallery h2 {
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    color: #fff;
+    border-bottom: 3px solid #a90000;
+    padding: 15px 0 3px 20px;
+    margin-bottom: 25px; }
+
+/*summit series timeline page*/
+#subHeader {
+  font-family: "Merriweather", Times, serif;
+  font-size: 1em;
+  margin-top: 10px;
+  text-align: center; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+#allTimeline {
+  font-family: "Merriweather", Times, serif;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px; }
+
+time {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  margin: 10px;
+  font-size: 2em; }
+
+.intro {
+  padding: 50px 0; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; }
+  .container h3 {
+    font-size: 1rem;
+    font-family: "Merriweather", Times, serif;
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #a90000; }
+
+/* TIMELINE */
+#allTimeline {
+  background-color: #363636; }
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #000; }
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit; }
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #a90000; }
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px; }
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #a90000 transparent transparent; }
+
+.timeline ul li:nth-child(even) div {
+  left: -439px; }
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #a90000; }
+
+.moreInfo {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  display: block;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto; }
+
+.moreInfo:hover {
+  background-color: #363636;
+  color: #fff; }
+
+.timeline p {
+  margin-bottom: 25px; }
+
+/*responsive*/
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px; }
+
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/ } }
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px; }
+
+  .timeline ul li div {
+    width: calc(100vw - 91px); }
+
+  .timeline ul li:nth-child(even) div {
+    left: 45px; }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #a90000 transparent transparent; } }
+
+/*# sourceMappingURL=app.css.map */
