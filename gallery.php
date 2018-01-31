@@ -1,79 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALLERY - Team Canada 1972</title>
-    <link href="http://fonts.googleapis.com/css?family=Fjalla+One%7CPlayfair+Display" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/foundation-icons.css">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/css/app.css">
+    <?php include 'includes/head.php';?>
+    <title>HOME - Team Canada 1972</title>
   </head>
 
   <body>
     <h1 class="hide">Team Canada 1972</h1>
-    
-<!--Mobile Header and Nav-->
-    <header class="row mainHeader show-for-small-only" data-sticky-container>
-      <h2 class="hide">Mobile Header</h2>
-      <nav class="small-12 columns">
-        <h2 class="hide">Mobile Navigation</h2>
-        <div class="title-bar" data-responsive-toggle="mobileNav">
-          <button class="menu-icon float-left" type="button" data-toggle></button>
-          <img src="images/logo.svg" alt="logo" width="60" height="61" class="title-bar-title" id="logoMobile">
-        </div>
 
-        <div id="mobileNav">
-          <ul class="mainNav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="theteam.html">THE TEAM</a></li>
-            <li><a href="summitseries.html">SUMMIT SERIES</a></li>
-            <li><a href="legacy.html">LEGACY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="media.html">MEDIA CENTRE</a></li>
-            <li><a href="partners.html">PARTNERS</a></li>
-            <li><a href="#">MERCHANDISE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="#" id="mobilePortalBut">PORTAL</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-<!--Mobile Header and Nav CLOSE-->
-
-<!--Medium/Large Header and Nav-->
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <nav class="off-canvas position-left mainNav" id="offCanvasNav" data-off-canvas>
-          <h2 class="hide">Medium/Large Navigation</h2>
-          <ul class="vertical menu" data-menu>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="theteam.html">THE TEAM</a></li>
-            <li><a href="summitseries.html">SUMMIT SERIES</a></li>
-            <li><a href="legacy.html">LEGACY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="media.html">MEDIA CENTRE</a></li>
-            <li><a href="partners.html">PARTNERS</a></li>
-            <li><a href="#">MERCHANDISE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-
-        <div class="off-canvas-content" data-off-canvas-content>
-          <header class="mainHeader hide-for-small-only expanded" data-sticky-container>
-            <h2 class="hide">Header - Medium/Large Screens</h2>
-            <div class="large-12 columns" data-sticky data-options="stickTo:top;stickyOn:small;marginTop:0" style="width:100%">
-              <div class="title-bar">
-                <a href="#" id="portalBut">PORTAL</a>
-                <button class="menu-icon" type="button" data-toggle="offCanvasNav"></button>
-                <div id="logos">
-                  <img data-interchange="[images/logo_medium.svg, medium], [images/logo_large.svg, large]" alt="Alternate Logos" id="logoToggle">
-                </div>
-              </div>
-            </div>
-          </header>
-<!--Medium/Large Header and Nav CLOSE-->
+    <?php include 'includes/header.php';?>
 
     <section class="row" id="galleryPage">
       <h2>GALLERY</h2>
@@ -305,19 +240,19 @@
         <a href="#" onclick="divVisibility('Div1');">
           <img src="images/gallery-ss-logo-cap.jpg" alt="Summit Series Logo" class="pic"/>
         </a>
-        
-        <a href="#" onclick="divVisibility('Div2');"> 
+
+        <a href="#" onclick="divVisibility('Div2');">
           <img src="images/gallery-pc-logo-cap.jpg" alt="Press Conference Logo" class="pic" />
         </a>
 
-        <a href="#" onclick="divVisibility('Div3');"> 
+        <a href="#" onclick="divVisibility('Div3');">
           <img src="images/gallery-ll-logo-cap.jpg" alt="Legends to Legacy Logo" class="pic"/>
         </a>
       </div>
     </section>
 
     <div class="galleryLargeCon hide-for-small-only">
-      
+
   <section id="Div1">
         <div class="row ssGallery">
         <h2>SUMMIT SERIES GAME ACTION</h2>
@@ -338,7 +273,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openImg3"><img src="images/gallery_ss_3.jpg" alt="SS Img 3"></a>
             <div class="reveal medium" id="openImg3" data-reveal>
@@ -494,14 +429,14 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div>  
+          </div>
         </div>
       </section>
     </div>
 
 
   <div class="galleryLargeCon hide-for-small-only">
-    
+
     <section id="Div2" style="display: none;">
         <div class="row ssGallery">
           <h2>PRESS CONFERENCE - AUGUST 27, 2014</h2>
@@ -522,7 +457,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openPCImg3"><img src="images/gallery_pc_3.jpg" alt="PC Img 3"></a>
             <div class="reveal medium" id="openPCImg3" data-reveal>
@@ -561,7 +496,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openPCImg7"><img src="images/gallery_pc_7.jpg" alt="PC Img 7"></a>
             <div class="reveal medium" id="openPCImg7" data-reveal>
@@ -608,7 +543,7 @@
 
     <div class="galleryLargeCon hide-for-small-only">
 
-    
+
     <section id="Div3" style="display: none;">
         <div class="row ssGallery">
           <h2>"LEGENDS TO LEGACY" REUNION GALA - OCTOBER 2, 2014</h2>
@@ -629,7 +564,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openLLImg3"><img src="images/gallery_ll_3.jpg" alt="LL Img 3"></a>
             <div class="reveal medium" id="openLLImg3" data-reveal>
@@ -668,7 +603,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openLLImg7"><img src="images/gallery_ll_7.jpg" alt="LL Img 7"></a>
             <div class="reveal medium" id="openLLImg7" data-reveal>
@@ -707,7 +642,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openLLImg11"><img src="images/gallery_ll_11.jpg" alt="LL Img 11"></a>
             <div class="reveal medium" id="openLLImg11" data-reveal>
@@ -746,7 +681,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openLLImg15"><img src="images/gallery_ll_15.jpg" alt="LL Img 15"></a>
             <div class="reveal medium" id="openLLImg15" data-reveal>
@@ -785,7 +720,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </div> 
+          </div>
           <div class="medium-3 large-3 columns">
             <a data-open="openLLImg19"><img src="images/gallery_ll_19.jpg" alt="LL Img 19"></a>
             <div class="reveal medium" id="openLLImg19" data-reveal>
@@ -808,36 +743,7 @@
       </section><!--end of div 2-->
     </div>
 
-          <footer id="mainFooter" class="row">
-            <h2 class="hide">Main Footer</h2>
-            <section class="small-12 show-for-small-only columns">
-              <h3 class="hide">Search Bar for Mobile</h3>
-              <form id="searchForm" action="search.php" method="get">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Search...">
-                  <div class="input-group-button">
-                    <input type="submit" class="button" id="searchBut" value="search">
-                  </div> 
-                </div>
-              </form>
-            </section>
-
-            <nav class="small-12 large-3 columns end">
-              <h3 class="hide">Social Media Navigation</h3>
-              <ul id="socialNav">
-                <li id="facebook"><a href="http://www.facebook.com/teamcanada1972"><img src="images/facebook.png" alt="facebook"></a></li>
-                <li id="twitter"><a href="http://www.twitter.com/teamcanada1972"><img src="images/twitter.png" alt="twitter"></a></li>
-                <li id="instagram"><a href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a></li>
-              </ul>
-            </nav>
-          </footer>
-
-          <section class="row" id="copyrightBar">
-            <h2 class="hide">Copyright Bar</h2>
-            <div class="small-12 columns">
-              <p>© 1972 Summit Series Hockey Team Inc. All Rights Reserved.</p>
-            </div>
-          </section>
+    <?php include 'includes/footer.php';?>
 
         </div>
       </div>

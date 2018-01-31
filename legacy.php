@@ -1,79 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE LEGACY - Team Canada 1972</title>
-    <link href="http://fonts.googleapis.com/css?family=Fjalla+One%7CPlayfair+Display" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/foundation-icons.css">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/css/app.css">
+    <?php include 'includes/head.php';?>
+    <title>HOME - Team Canada 1972</title>
   </head>
 
   <body>
     <h1 class="hide">Team Canada 1972</h1>
 
-<!--Mobile Header and Nav-->
-    <header class="row mainHeader show-for-small-only" data-sticky-container>
-      <h2 class="hide">Mobile Header</h2>
-      <nav class="small-12 columns">
-        <h2 class="hide">Mobile Navigation</h2>
-        <div class="title-bar" data-responsive-toggle="mobileNav">
-          <button class="menu-icon float-left" type="button" data-toggle></button>
-          <img src="images/logo.svg" alt="logo" width="60" height="61" class="title-bar-title" id="logoMobile">
-        </div>
-
-        <div id="mobileNav">
-          <ul class="mainNav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="theteam.html">THE TEAM</a></li>
-            <li><a href="summitseries.html">SUMMIT SERIES</a></li>
-            <li><a href="legacy.html">LEGACY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="media.html">MEDIA CENTRE</a></li>
-            <li><a href="partners.html">PARTNERS</a></li>
-            <li><a href="#">MERCHANDISE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="#" id="mobilePortalBut">PORTAL</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-<!--Mobile Header and Nav CLOSE-->
-
-<!--Medium/Large Header and Nav-->
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <nav class="off-canvas position-left mainNav" id="offCanvasNav" data-off-canvas>
-          <h2 class="hide">Medium/Large Navigation</h2>
-          <ul class="vertical menu" data-menu>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="theteam.html">THE TEAM</a></li>
-            <li><a href="summitseries.html">SUMMIT SERIES</a></li>
-            <li><a href="legacy.html">LEGACY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="media.html">MEDIA CENTRE</a></li>
-            <li><a href="partners.html">PARTNERS</a></li>
-            <li><a href="#">MERCHANDISE</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-
-        <div class="off-canvas-content" data-off-canvas-content>
-          <header class="mainHeader hide-for-small-only expanded" data-sticky-container>
-            <h2 class="hide">Header - Medium/Large Screens</h2>
-            <div class="large-12 columns" data-sticky data-options="stickTo:top;stickyOn:small;marginTop:0" style="width:100%">
-              <div class="title-bar">
-                <a href="#" id="portalBut">PORTAL</a>
-                <button class="menu-icon" type="button" data-toggle="offCanvasNav"></button>
-                <div id="logos">
-                  <img data-interchange="[images/logo_medium.svg, medium], [images/logo_large.svg, large]" alt="Alternate Logos" id="logoToggle">
-                </div>
-              </div>
-            </div>
-          </header>
-<!--Medium/Large Header and Nav CLOSE-->
+    <?php include 'includes/header.php';?>
 
           <div id="legacyHeading" data-interchange="[images/legacy_bg_3.jpg, small], [images/legacy_bg_2.jpg, medium], [images/legacy_bg_1.jpg, large]">
             <section class="row">
@@ -131,7 +66,7 @@
               </section>
 
               <a href="#top" class="backToTop">BACK TO TOP</a>
-              
+
             </section>
           </div>
 
@@ -218,7 +153,7 @@
                 <div class="tabs-panel" id="charityPanel">
                   <div class="initiatives" id="charity1">
                     <h3>We’re looking for partners!</h3>
-                    <p>The Team Canada 1972 brand carries a tremendous emotional connection for Canadians. In addition, The 1972 Summit Series story is captivating and inspirational, whether experiencing it for the first time or reliving it again. Now as part of the 28,800 Second initiative our brand, The Team of the Century, can help YOUR brand connect to YOUR customers. Partnering with our brand brings the passion and emotion for Team Canada 72 to the heart of your customers. Take that engagement to another level by creating customized experiences and events with our team members and some of hockey’s biggest legends, specifically for your target market, aligned with your marketing and promotion objectives.</p> 
+                    <p>The Team Canada 1972 brand carries a tremendous emotional connection for Canadians. In addition, The 1972 Summit Series story is captivating and inspirational, whether experiencing it for the first time or reliving it again. Now as part of the 28,800 Second initiative our brand, The Team of the Century, can help YOUR brand connect to YOUR customers. Partnering with our brand brings the passion and emotion for Team Canada 72 to the heart of your customers. Take that engagement to another level by creating customized experiences and events with our team members and some of hockey’s biggest legends, specifically for your target market, aligned with your marketing and promotion objectives.</p>
                     <p>In 1972 the country stopped – frozen in suspense, anticipation and finally jubilation. Authentically reconnecting with those powerful emotions provides your brand with an amazing opportunity to connect with customers. Help us establish the legacy of Team Canada 72 without sacrificing the ROI for your marketing dollars.</p>
                     <p>Under the "Education" and "Entertainment" tabs we’ve outlined some of the projects, interactive experiences and initiatives currently underway. These are our ideas and are turn-key marketing opportunities we’ve developed for your brand to be part of our legacy venture. Not the right fit? We’re ready to explore new ideas and opportunities designed to help you reach your marketing objectives. Our team is ready to work with your team.</p>
                     <p>Let’s get started!</p>
@@ -243,36 +178,7 @@
             <a href="#top" class="backToTop">BACK TO TOP</a>
           </section>
 
-          <footer id="mainFooter" class="row">
-            <h2 class="hide">Main Footer</h2>
-            <section class="small-12 show-for-small-only columns">
-              <h3 class="hide">Search Bar for Mobile</h3>
-              <form id="searchForm" action="search.php" method="get">
-                <div class="input-group">
-                  <input class="input-group-field" type="text" placeholder="Search...">
-                  <div class="input-group-button">
-                    <input type="submit" class="button" id="searchBut" value="search">
-                  </div> 
-                </div>
-              </form>
-            </section>
-
-            <nav class="small-12 large-3 columns end">
-              <h3 class="hide">Social Media Navigation</h3>
-              <ul id="socialNav">
-                <li id="facebook"><a href="http://www.facebook.com/teamcanada1972"><img src="images/facebook.png" alt="facebook"></a></li>
-                <li id="twitter"><a href="http://www.twitter.com/teamcanada1972"><img src="images/twitter.png" alt="twitter"></a></li>
-                <li id="instagram"><a href="http://www.instagram.com"><img src="images/instagram.png" alt="instagram"></a></li>
-              </ul>
-            </nav>
-          </footer>
-
-          <section class="row" id="copyrightBar">
-            <h2 class="hide">Copyright Bar</h2>
-            <div class="small-12 columns">
-              <p>© 1972 Summit Series Hockey Team Inc. All Rights Reserved.</p>
-            </div>
-          </section>
+    <?php include 'includes/footer.php';?>
 
         </div>
       </div>
