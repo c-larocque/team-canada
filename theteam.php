@@ -1,3 +1,20 @@
+<?php
+  ini_set('display_errors',1);
+    error_reporting(E_ALL);
+  require_once("admin/scripts/connect.php");
+  require_once("admin/scripts/config.php");
+?>
+
+<?php
+//Get Players
+  //Create query
+  $playersquery = 'SELECT * FROM tbl_players';
+
+  //Get Result
+  $playersresult = mysqli_query($link, $playersquery);
+ ?>
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -10,22 +27,71 @@
 
     <?php include 'includes/header.php';?>
 
-          <div><!--content goes here-->
-
             <section id="playerCon">
               <section class="row">
                 <div class="small-12 columns">
                   <h2 class="mainTitle">MEET THE TEAM</h2>
                   <h3 id="hoverTitle" class="show-for-large">Hover over each player card to see their stats!</h3>
                 </div>
+
+                <!--Filter Form-->
+                <div class="row">
+                  <div class="small-12 columns">
+
+                  </div>
+                </div>
+
               </section>
 
-                <!--Mobile Team Accordion-->
+              <section>
+
+                <div class="row small-up-1 medium-up-3 large-up-4">
+                <?php
+                while($row=mysqli_fetch_array($playersresult)) {
+                  $dcard = $row[1];
+                  $dcardBack = $row[2];
+                  $mcard = $row[3];
+                  $name = $row[4];
+                  $position = $row[5];
+                  $hometown = $row[6];
+                  $number = $row[7];
+                  $desc = $row[8];
+                  $career = $row[9];
+
+                  echo "<div class=\"column column-block\">
+                      <img data-interchange=\"[images/player_cards/{$mcard}, small], [images/player_cards/{$dcard}, large]\" alt=\"{$name}\"/>
+                      <div class=\"cardInfo\">
+                      <h2>{$name} - #{$number}</h2>
+                      <h4>{$position}</h4>
+                      <h4>{$hometown}</h4>
+                      <p>{$desc}</p>
+                      <ul>
+                        {$career}
+                      </ul>
+                      </div>
+                      </div>
+                  ";
+                }
+
+
+
+
+                ?>
+              </div>
+
+
+
+
+              </section>
+
+
+<!--
+                Mobile Team Accordion
               <section class="row hide-for-large" id="playerMobileCon">
               <ul class="accordion" data-accordion data-allow-all-closed="true">
                 <li class="accordion-item" data-accordion-item>
                   <h2 class="hide">Ed Johnston Stats</h2>
-                  <a href="#" class="accordion-title playerMobile"><img src="images/1-johnston-mobile.png"></a>
+                  <a href="#" class="accordion-title playerMobile"><img src="images/player_cards/1-johnston-mobile.png"></a>
                   <div class="accordion-content" data-tab-content>
                     <h3 class="playerMobileCard">SUMMIT SERIES '72:</h3>
                     <p>Ed was the team’s third goalie dressing as the backup for most of the series and starting the second game in Stockholm.</p>
@@ -486,10 +552,10 @@
                   <h2 class="hide">Section 1 of Players Cards</h2>
                   <div class="card large-3 medium-4 columns one">
                     <div class="front">
-                      <img src="images/1-johnston.png" alt="Johnston"/>
+                      <img src="images/player_cards/1-johnston.png" alt="Johnston"/>
                     </div>
                     <div class="back">
-                      <img src="images/1-johnston-back.png" alt="Johnston Stats"/>
+                      <img src="images/player_cards/1-johnston-back.png" alt="Johnston Stats"/>
                     </div>
                   </div>
 
@@ -519,7 +585,8 @@
                       <img src="images/4-orr-back.png" alt="Orr Stats"/>
                     </div>
                   </div>
-                </section><!--end of section 1-->
+                </section>
+                end of section 1
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 2 of Player Cards</h2>
@@ -558,7 +625,7 @@
                       <img src="images/8-gilbert-back.png" alt="Gilbert Stats"/>
                     </div>
                   </div>
-                </section><!--end of section 2-->
+                </section>end of section
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 3 for Player Cards</h2>
@@ -636,7 +703,7 @@
                       <img src="images/17-white-back.png" alt="White Stats"/>
                     </div>
                   </div>
-                </section><!--end of section 4-->
+                </section>end of section 4
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 5 for Player Cards</h2>
@@ -675,7 +742,8 @@
                       <img src="images/21-mikita-back.png" alt="Mikita Stats"/>
                     </div>
                   </div>
-                </section><!--end of section 5-->
+                </section>
+                end of section 5
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 6 of Player Cards</h2>
@@ -714,7 +782,7 @@
                       <img src="images/25-lapointe-back.png" alt="Lapointe Stats"/>
                     </div>
                   </div>
-                </section><!-- end of section 6 of player cards-->
+                </section> end of section 6 of player cards
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 7 of player cards</h2>
@@ -753,7 +821,7 @@
                       <img src="images/29-dryden-back.png" alt="Dryden Stats"/>
                     </div>
                   </div>
-                </section><!--end of section 7 of player cards-->
+                </section>end of section 7 of player cards
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 8 for Player Cards</h2>
@@ -792,7 +860,7 @@
                       <img src="images/35-esposito-back.png" alt="Tony Esposito Stats"/>
                     </div>
                   </div>
-                </section><!--end sectoin 8 of player cards-->
+                </section>end sectoin 8 of player cards
 
                 <section class="row playerRow">
                   <h2 class="hide">Section 9 of Player Cards</h2>
@@ -822,10 +890,10 @@
                       <img src="images/38-glennie-back.png" alt="Glennie Stats"/>
                     </div>
                   </div>
-                </section><!-- end of section 9 of player cards-->
+                </section>end of section 9 of player cards
               </div>
-            </section><!-- end of player con-->
-          </div>
+            </section>end of player con-->
+
 
               <?php include 'includes/footer.php';?>
 

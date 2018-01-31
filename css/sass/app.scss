@@ -1867,6 +1867,40 @@ $red: #a90000;
 
  /* player card page */
 
+.cardInfo {
+	//display: none;
+	background-color: white;
+	padding: 20px;
+
+	img {
+		
+	}
+
+
+	h2 {
+		font-family: $mainFont;
+		font-size: 24px;
+		color: $red;
+	}
+	h4 {
+		font-family: $mainFont;
+		font-size: 20px;
+	}
+
+	p {
+		font-family: $paraFont;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+
+	li {
+		font-family: $paraFont;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+}
+
+
 .playerMobile
 {
 	padding: 0;
