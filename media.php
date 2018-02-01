@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <?php include 'includes/head.php';?>
-    <title>HOME - Team Canada 1972</title>
+    <title>MEDIA CENTRE - Team Canada 1972</title>
   </head>
 
   <body>
@@ -19,9 +19,8 @@
                   <ul>
                     <li><a href="#socialMedia">SOCIAL MEDIA</a></li>
                     <li><a href="#relatedNews">RELATED NEWS</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="#">PRESS RELEASES</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.php">GALLERY</a></li>
+                    <li><a href="contact.php">CONTACT US</a></li>
                   </ul>
                 </nav>
               </div>
@@ -31,29 +30,27 @@
           <div id="socialMedia">
             <section class="row">
               <h2>SOCIAL MEDIA</h2>
-              <div class="small-12 medium-4 columns">
+              <div class="small-12 medium-6 columns">
                 <a href="http://www.facebook.com/teamcanada1972" class="widgetLabel">FACEBOOK</a>
                 <div class="hide-for-small-only">
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamcanada1972&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="370" height="500" style="border:none;overflow:hidden;max-width:100%" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fteamcanada1972&tabs=timeline&width=570&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="570" height="500" style="border:none;overflow:hidden;max-width:100%;" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
                 </div>
               </div>
 
-              <div class="small-12 medium-4 columns">
+              <div class="small-12 medium-6 columns">
                 <a href="http://www.twitter.com/teamcanada1972" class="widgetLabel">TWITTER</a>
                 <div class="hide-for-small-only">
                   <a class="twitter-timeline" data-height="500" href="https://twitter.com/TeamCanada1972">Tweets by TeamCanada1972</a>
                 </div>
               </div>
-
-              <div class="small-12 medium-4 columns">
-                <a href="http://www.instagram.com" class="widgetLabel">INSTAGRAM</a>
-                <img data-interchange="[images/instagram_widget_medium.jpg, medium], [images/instagram_widget_large.jpg, large]" alt="Instagram widget" id="instaWidget" class="hide-for-small-only">
-              </div>
             </section>
           </div>
 
           <section class="row" id="relatedNews">
-            <h2>RELATED NEWS</h2>
+            <div class="small-12 columns" id="newsHeading">
+              <h2>RELATED NEWS</h2>
+              <a href="#" id="seeAllBut">SEE ALL ></a>
+            </div>
             <section class="row news large-10 large-push-1 columns">
               <div class="small-12 medium-6 large-4 columns">
                 <img src="images/news_img1.jpg" alt="News Image 1">
@@ -91,9 +88,6 @@
                 <a href="#" class="readMore">READ MORE</a>
               </div>
             </section>
-
-            <a href="#" id="seeMore">SEE MORE</a>
-
           </section>
 
     <?php include 'includes/footer.php';?>

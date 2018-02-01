@@ -18,7 +18,7 @@
                   <h3 class="hide">Legacy Navigation</h3>
                   <ul>
                     <li><a href="#aboutUs">ABOUT US</a></li>
-                    <li><a href="summitseries.html">TIMELINE</a></li>
+                    <li><a href="summitseries.php">TIMELINE</a></li>
                     <li><a href="#legacySeconds">28,800 SECONDS VENTURE</a></li>
                     <li><a href="#pillarSection">3 PILLARS</a></li>
                     <li><a href="#ssTour">2016 CANADA TOUR</a></li>
@@ -28,7 +28,7 @@
             </section>
           </div>
 
-          <div id="aboutUs">
+          <div id="aboutUs" class="greyPano">
             <section class="row">
               <h2>ABOUT US</h2>
               <section class="small-12 columns" id="whoWeAre">
@@ -64,13 +64,10 @@
                   <li>Patriotism</li>
                 </ul>
               </section>
-
-              <a href="#top" class="backToTop">BACK TO TOP</a>
-
             </section>
           </div>
 
-          <div id="legacySeconds">
+          <div id="legacySeconds" class="redPano">
             <section class="row">
               <h2>28,800 SECONDS: The Power of Teamwork</h2>
               <div class="small-12 columns">
@@ -97,7 +94,6 @@
                   <p class="hide-for-small-only">For Canadians aged 50+, many experienced the 72 Summit Series first hand, remembering exactly where they were and what they were doing at the time. They have a very strong emotional connection to the series, and our goal is to reignite that passion within them. Canadians aged 35-50 may not have experienced the Series first hand, but they definitely understand the impact of this event - the legend of the 72 Summit Series would have been fresh in the memory of Canadians throughout the 70s and 80s. For those aged 20-35, many may have heard of the 72 Summit Series, but not fully understand it to any depth. This age group needs to hear the story of the Series, how it came to be, the impact it had on Canadians and the ripple effect it has had on sport, politics and Canadian society. Finally, the under 20 age group represents an amazing opportunity to reach back into Canadian history, using the 72 Summit Series as a medium to teach the next generation about “The Power of Teamwork.”</p>
                 </div>
               </div>
-              <a href="#top" class="backToTop">BACK TO TOP</a>
             </section>
           </div>
 
@@ -162,21 +158,20 @@
                 </div>
               </div>
             </div>
-
-            <a href="#top" class="backToTop">BACK TO TOP</a>
           </section>
 
-          <section class="row" id="ssTour">
-            <h2>2016 Canada Tour</h2>
-            <div class="small-12 columns">
-              <img src= "images/tour_2016.jpg" alt="2016 Tour Image" id="tourImg">
-              <p>In September 2016, members of Team Canada 1972 took part in a four-city tour of Canada, retracing their steps from the first half of the Summit Series.</p>
-              <p>It began in Montreal on the 2nd — exactly 44 years after Game One — the ’72 Summit Series Tour also appeared in front of fans in Toronto, Winnipeg and Vancouver.</p>
-              <p>Based on an informal, “hot-stove” discussion, audiences were immersed the team’s locker-room banter, as they shared memories of those memorable 27 days in that September to remember; a multimedia display brought back the sights and sounds of the historic event.</p>
-              <p>The tour is just part of Team Canada 1972’s “28-8” legacy project, which celebrates the power of teamwork.</p>
-            </div>
-            <a href="#top" class="backToTop">BACK TO TOP</a>
-          </section>
+          <div class="greyPano">
+            <section class="row" id="ssTour">
+              <h2>2016 Canada Tour</h2>
+              <div class="small-12 columns">
+                <img src= "images/tour_2016.jpg" alt="2016 Tour Image" id="tourImg">
+                <p>In September 2016, members of Team Canada 1972 took part in a four-city tour of Canada, retracing their steps from the first half of the Summit Series.</p>
+                <p>It began in Montreal on the 2nd — exactly 44 years after Game One — the ’72 Summit Series Tour also appeared in front of fans in Toronto, Winnipeg and Vancouver.</p>
+                <p>Based on an informal, “hot-stove” discussion, audiences were immersed the team’s locker-room banter, as they shared memories of those memorable 27 days in that September to remember; a multimedia display brought back the sights and sounds of the historic event.</p>
+                <p>The tour is just part of Team Canada 1972’s “28-8” legacy project, which celebrates the power of teamwork.</p>
+              </div>
+            </section>
+          </div>
 
     <?php include 'includes/footer.php';?>
 
