@@ -53,19 +53,19 @@
                     <legend class="hide">Contact Form</legend>
 
                     <label for="contactName">Name: (required)</label>
-                    <input type="text" name="name" id="contactName" required size="30">
+                    <input type="text" class="formInput" name="name" id="contactName" required size="30">
 
                     <label for="contactEmail">Email: (required)</label>
-                    <input type="email" name="email" id="contactEmail" required size="30">
+                    <input type="email" class="formInput" name="email" id="contactEmail" required size="30">
 
 					<label class="hide" for="contactEmail">Street: </label>
                     <input class="hide" type="text" name="street" id="contactStreet" size="30">
 
                     <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" size="30">
+                    <input type="text" class="formInput" name="subject" id="subject" size="30">
 
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="50" rows="7"></textarea>
+                    <textarea name="message" class="formInput" id="message" cols="50" rows="7"></textarea>
 
                     <input type="submit" name="submit" id="submitForm" value="Send">
                 </fieldset>

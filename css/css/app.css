@@ -400,8 +400,6 @@
     color: #fff;
     font-weight: bold;
     padding: 5px; }
-  #contactCon #contactForm input, #contactCon textarea {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset; }
   #contactCon #submitForm {
     background-color: #a90000;
     text-transform: uppercase;
@@ -412,6 +410,15 @@
     padding: 5px;
     display: block;
     margin: 0 auto; }
+  #contactCon #submitForm:hover {
+    background-color: #900000; }
+  #contactCon #contactForm .formInput {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset;
+    background-color: #F1F1F1; }
+  #contactCon #contactForm .formInput:focus {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5) inset;
+    border: 1px SOLID #ff5d5d;
+    background-color: #FFF; }
 
 .backToTop {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
