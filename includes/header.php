@@ -47,7 +47,7 @@
             <h2 class="hide">Header - Medium/Large Screens</h2>
             <div class="large-12 columns" data-sticky data-options="stickTo:top;stickyOn:small;marginTop:0" style="width:100%">
               <div class="title-bar">
-                <a href="#" id="portalBut">PORTAL</a>
+                <a href="portal.php" id="portalBut">PORTAL</a>
                 <button class="menu-icon" type="button" data-toggle="offCanvasNav"></button>
                 <div id="logos">
                   <a href="index.php"<img data-interchange="[images/logo_medium.svg, medium], [images/logo_large.svg, large]" alt="Alternate Logos" id="logoToggle"></a>

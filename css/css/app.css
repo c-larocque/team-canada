@@ -241,10 +241,13 @@
 #mediaCentre #socialSection div {
   clear: both; }
 #mediaCentre .socialImgs {
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  width: 100%;
+  display: inline-block; }
 #mediaCentre .socials {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 10px; }
 #mediaCentre .socials:hover {
   box-shadow: 0px 0px 15px #000;
   z-index: 2;
@@ -256,6 +259,16 @@
   -moz-transform: scale(1.05);
   transition: all 200ms ease-in;
   transform: scale(1.05); }
+#mediaCentre .fb {
+  max-height: 50px; }
+#mediaCentre .twit {
+  max-height: 50px; }
+#mediaCentre .facebook {
+  background-color: #3b5998;
+  height: 150px; }
+#mediaCentre .twitter {
+  background-color: #00aced;
+  height: 150px; }
 
 #merchCon {
   background-color: #363636;
@@ -1340,5 +1353,16 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #a90000 transparent transparent; } }
+.porthead h1 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+.porthead .portallogo {
+  margin-bottom: 20px; }
+.porthead .portalinfo {
+  margin-bottom: 30px; }
+.porthead p {
+  font-family: "Merriweather", Times, serif;
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
