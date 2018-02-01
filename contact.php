@@ -13,7 +13,7 @@
 		echo $email;
 		echo $message;
 		echo $street;*/
-		$direct = "contact.php";
+		$direct = "contact.php?success";
 
 		if($street === "") {
 			$sendMail = submitMessage($name, $email, $subject, $message, $direct);
@@ -21,6 +21,39 @@
 			//alert("Your email has been sent!")
 		}
 	}
+
+/*
+	// define variables and set to empty values
+	$nameErr = $emailErr = $subjectErr = $messageErr = "";
+	$name = $email = $subject = $message = "";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	  if (empty($_POST["name"])) {
+	    $nameErr = "Name is required";
+	  } else {
+	    $name = test_input($_POST["name"]);
+	  }
+
+	  if (empty($_POST["email"])) {
+	    $emailErr = "Email is required";
+	  } else {
+	    $email = test_input($_POST["email"]);
+	  }
+
+	  if (empty($_POST["subject"])) {
+	    $subject = "";
+	  } else {
+	    $subject = test_input($_POST["subject"]);
+	  }
+
+	  if (empty($_POST["message"])) {
+	    $message = "";
+	  } else {
+	    $message = test_input($_POST["message"]);
+	  }
+	}
+*/
+
 ?>
 
 <!doctype html>
@@ -48,7 +81,7 @@
         <h2 class="hide">Contact Information</h2>
         <p class="small-12 show-for-small-only columns" id="contactInfoMobile">To learn more about Team Canada 1972, upcoming events, or have any questions, please feel free to reach out by filling out our form. We will be sure to get back to you as soon as possible!</p>
         <div class="small-12 medium-6 columns">
-          <form id="contactForm" action="contact.php" method="POST">
+          <form id="contactForm" action="contact.php?success" method="POST">
                 <fieldset>
                     <legend class="hide">Contact Form</legend>
 
