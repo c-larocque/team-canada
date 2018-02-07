@@ -19,9 +19,9 @@
               </div>
             </div>
             <video autoplay loop id="myVid">
-              <source src="video/homepage_back.mp4" type="video/mp4">
-              <source src="video/homepage_back.ogg" type="video/ogg">
-              <source src="video/homepage_back.webm" type="video/webm">
+              <source src="video/homepage_back.mp4" type="video/mp4" alt="Team Canada Background Video">
+              <source src="video/homepage_back.ogg" type="video/ogg" alt="Team Canada Background Video">
+              <source src="video/homepage_back.webm" type="video/webm" alt="Team Canada Background Video">
             </video>
           </section>
 

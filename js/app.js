@@ -1,4 +1,4 @@
-$(document).foundation()
+$(document).foundation() 
 
 var divs = ["Div1", "Div2", "Div3"];
     var visibleDivId = null;
@@ -22,3 +22,27 @@ var divs = ["Div1", "Div2", "Div3"];
         }
       }
     }
+
+
+var backButton = document.querySelector("#backTop");
+
+//Back to Top
+/*function backToTopFunc() {
+
+  if (document.body.scrollTop >= 500) {
+    backButton.style.display = "block";
+  }
+  else {
+    backButton.style.display= "none";
+  }
+
+}*/
+
+function scrollToTop() {
+  document.body.scrollTop = "0";
+  console.log("worked");
+}
+
+document.body.addEventListener("scroll", backToTopFunc, false);
+backButton.addEventListener("click", scrollToTop, false);
+backToTopFunc.call();

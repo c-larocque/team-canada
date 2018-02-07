@@ -1,3 +1,8 @@
+<div>
+  <h2 class="hide">Back To Top Button</h2>
+<a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true" id="backTop"></i></a>
+</div>
+
 <footer id="mainFooter" class="row">
   <h2 class="hide">Main Footer</h2>
   <section class="small-12 show-for-small-only columns">

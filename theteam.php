@@ -5,14 +5,6 @@
   require_once("admin/scripts/config.php");
 ?>
 
-<?php
-//Get Players
-  //Create query
-  $playersquery = 'SELECT * FROM tbl_players';
-
-  //Get Result
-  $playersresult = mysqli_query($link, $playersquery);
- ?>
 
 
 <!doctype html>
@@ -37,7 +29,25 @@
                 <!--Filter Form-->
                 <div class="row">
                   <div class="small-12 columns">
+                    <form method="post" action="playerselect.php">
 
+      <h3>Team</h3>
+      <select id="selectTeam">
+      <option value="%">All</option>
+      <option value="canada">Team Canada</option>
+      <option value="soviet">Soviet National Team</option>
+      </select>
+
+      <h3>Position</h3>
+      <select id="selectPosition">
+      <option value="%">All</option>
+      <option value="leftwing">Left Wing</option>
+      <option value="rightwing">Right Wing</option>
+      <option value="centre">Centre</option>
+      <option value="defence">Defence</option>
+      <option value="goaltender">Goaltender</option>
+      </select>
+      </form>
                   </div>
                 </div>
 
@@ -46,37 +56,7 @@
               <section>
 
                 <div class="row small-up-1 medium-up-3 large-up-4">
-                <?php
-                while($row=mysqli_fetch_array($playersresult)) {
-                  $dcard = $row[1];
-                  $dcardBack = $row[2];
-                  $mcard = $row[3];
-                  $name = $row[4];
-                  $position = $row[5];
-                  $hometown = $row[6];
-                  $number = $row[7];
-                  $desc = $row[8];
-                  $career = $row[9];
 
-                  echo "<div class=\"column column-block\">
-                      <img data-interchange=\"[images/player_cards/{$mcard}, small], [images/player_cards/{$dcard}, large]\" alt=\"{$name}\"/>
-                      <div class=\"cardInfo\">
-                      <h2>{$name} - #{$number}</h2>
-                      <h4>{$position}</h4>
-                      <h4>{$hometown}</h4>
-                      <p>{$desc}</p>
-                      <ul>
-                        {$career}
-                      </ul>
-                      </div>
-                      </div>
-                  ";
-                }
-
-
-
-
-                ?>
               </div>
 
 
