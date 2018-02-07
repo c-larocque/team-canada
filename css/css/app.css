@@ -1,11 +1,18 @@
+.greyPano {
+  width: 100%;
+  background-color: #363636; }
+
+.redPano {
+  width: 100%;
+  background-color: #a90000; }
+
+.footerPano {
+  width: 100%;
+  background-color: #000;
+  padding: 10px 0; }
+
 #pano {
   background-color: #666; }
-
-#aboutUs {
-  background-color: red; }
-
-#legacySeconds {
-  background-color: blue; }
 
 #socialMedia {
   background-color: #ccc; }
@@ -293,25 +300,18 @@
     border: 2px #fff solid;
     color: #fff; }
 
-#mainFooter {
-  background-color: #000; }
-  #mainFooter #searchForm {
-    margin-top: 20px; }
-    #mainFooter #searchForm #searchBut {
-      background-color: #a90000; }
-  #mainFooter #socialNav {
-    display: block;
-    margin: 0 auto;
-    width: 225px; }
-    #mainFooter #socialNav li {
-      display: inline-block;
-      margin: 10px; }
+#socialNav {
+  display: block;
+  margin: 0 auto;
+  width: 140px; }
+  #socialNav li {
+    display: inline-block;
+    margin: 10px; }
 
-#copyrightBar {
-  background-color: #111;
+#copyrightInfo p {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  text-align: center;
+  text-align: center !important;
   color: #fff;
   padding-top: 10px; }
 
@@ -493,7 +493,6 @@
       width: 100%; }
 
 #legacySeconds {
-  background-color: #a90000;
   padding: 15px;
   color: #fff; }
   #legacySeconds h2 {
@@ -658,11 +657,24 @@
   padding: 15px; }
   #relatedNews h2 {
     font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-    border-bottom: 2px solid #a90000;
     font-size: 2em;
-    padding: 0 5px 8px 15px;
     color: #000;
+    float: left; }
+  #relatedNews #newsHeading {
+    border-bottom: 2px solid #a90000;
     margin-bottom: 20px; }
+  #relatedNews #seeAllBut {
+    display: block;
+    float: right;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border: 2px #000 solid;
+    padding: 7px 20px;
+    color: #000;
+    font-size: 1em; }
+    #relatedNews #seeAllBut:hover {
+      background-color: #a90000;
+      color: #fff;
+      border: 2px #fff solid; }
   #relatedNews .news {
     margin-bottom: 20px; }
     #relatedNews .news img {
@@ -692,18 +704,6 @@
       text-align: center; }
     #relatedNews .news .readMore:hover {
       background-color: #363636; }
-  #relatedNews #seeMore {
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-    border: 4px solid #000;
-    text-align: center;
-    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-    font-size: 1.185em;
-    padding: 5px;
-    color: #000; }
-  #relatedNews #seeMore:hover {
-    background-color: #a90000; }
 
 @media screen and (min-width: 33.375em) {
   #charityPanel-label {
@@ -721,7 +721,8 @@
     width: 335px;
     height: 105px;
     display: inline-block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-repeat: no-repeat; }
 
   #videoCon #textCon {
     width: 100%; }
@@ -866,7 +867,10 @@
     #mediaHeading #mediaNav {
       position: absolute;
       width: 200px;
-      top: 50px; }
+      top: 60px; }
+
+  #seeAllBut {
+    font-size: 1.185em; }
 
   .news {
     padding: 10px; }
@@ -912,7 +916,8 @@
     width: 865px;
     height: 105px;
     display: inline-block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-repeat: no-repeat; }
 
   #videoCon {
     max-height: 750px;
@@ -1006,7 +1011,7 @@
     #mediaHeading #mediaNav {
       width: 385px;
       position: absolute;
-      top: 70px;
+      top: 100px;
       right: 100px; }
       #mediaHeading #mediaNav li {
         padding: 15px; }
@@ -1068,6 +1073,8 @@
 
   #relatedNews h2 {
     font-size: 2.5em !important; }
+  #relatedNews #seeAllBut {
+    margin-top: 10px; }
 
   .news h3 {
     font-size: 1.75em !important; }

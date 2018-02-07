@@ -10,6 +10,7 @@
 
     <?php include 'includes/header.php';?>
 
+<div class="greyPano">
 <section class="row" id="allTimeline">
   <section class="intro row">
   <div class="container">
@@ -169,6 +170,7 @@
   </ul>
 </section>
 </section><!--end all of timeline and intro text-->
+</div>
 
 
       <?php include 'includes/footer.php';?>

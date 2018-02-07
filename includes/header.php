@@ -12,7 +12,7 @@
           <ul class="mainNav">
             <li><a href="#">HOME</a></li>
             <li><a href="theteam.php">THE TEAM</a></li>
-            <li><a href="summitseries.php">SUMMIT SERIES</a></li>
+            <li><a href="summitseries.php">TIMELINE</a></li>
             <li><a href="legacy.php">LEGACY</a></li>
             <li><a href="gallery.php">GALLERY</a></li>
             <li><a href="media.php">MEDIA CENTRE</a></li>
@@ -33,7 +33,7 @@
           <ul class="vertical menu" data-menu>
             <li><a href="index.php">HOME</a></li>
             <li><a href="theteam.php">THE TEAM</a></li>
-            <li><a href="summitseries.php">SUMMIT SERIES</a></li>
+            <li><a href="summitseries.php">TIMELINE</a></li>
             <li><a href="legacy.php">LEGACY</a></li>
             <li><a href="gallery.php">GALLERY</a></li>
             <li><a href="media.php">MEDIA CENTRE</a></li>
