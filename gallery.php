@@ -284,7 +284,7 @@
             </div>
           </div>
           <div class="medium-3 large-3 columns">
-            <a data-open="openImg4"><img src="images/gallery_ss_4.jpg" alt="SS Img 3"></a>
+            <a data-open="openImg4"><img src="images/gallery_ss_4.jpg" alt="SS Img 4"></a>
             <div class="reveal medium" id="openImg4" data-reveal>
               <img src="images/gallery-ss-4.jpg" alt="SS Img 4 Large">
               <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -296,7 +296,7 @@
 
         <div class="row ssGallery">
           <div class="medium-3 large-3 columns">
-            <a data-open="openSSImg5"><img src="images/gallery_ss_4.jpg" alt="SS Img 4"></a>
+            <a data-open="openSSImg5"><img src="images/gallery_ss_5.jpg" alt="SS Img 5"></a>
             <div class="reveal medium" id="openSSImg5" data-reveal>
               <img src="images/gallery-ss-5.jpg" alt="SS Img 5 Large">
               <button class="close-button" data-close aria-label="Close modal" type="button">

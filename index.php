@@ -32,7 +32,7 @@
           <img src="images/summit_series.jpg" alt="Summit Series Img Icon" class="homeThumbnail">
           <h3>SUMMIT SERIES</h3>
           <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
-          <a href="summitseries.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="summitseries.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="teamHomepage" data-equalizer-watch>
@@ -41,7 +41,7 @@
           <p>Canada's "Team of the Century".</p>
           <p>The only team inducted into Canada's Sports Hall of Fame.</p>
           <p>The first squad ever named "Team Canada".</p>
-          <a href="theteam.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="theteam.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="partnersHomepage" data-equalizer-watch>
@@ -49,7 +49,7 @@
           <h3>PARTNERS</h3>
           <p>Team Canada 1972 is proud to include a growing number of partners, from the educational, charitable and corporate communities.</p>
           <p>Each partner assists the team by offering an opportunity to further the goals of the 28,800 Project.</p>
-          <a href="partners.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="partners.php" class="learnMoreBut">LEARN MORE</a>
         </section>
       </section>
     </div>
@@ -66,7 +66,7 @@ Summit Series, particularly those highlighting what can be achieved through tea
               </div>
               <div class="small-12 medium-4 large-4 columns" id="legacyButCon">
                 <ul>
-                  <li><a href="legacy.html">LEARN MORE</a></li>
+                  <li><a href="legacy.php">LEARN MORE</a></li>
                   <li><a href="portal.php">PORTAL</a></li>
                 </ul>
               </div>
