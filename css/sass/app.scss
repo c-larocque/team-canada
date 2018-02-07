@@ -3,6 +3,17 @@ $paraFont: 'Merriweather', Times, serif;
 $grey: #363636;
 $red: #a90000;
 
+//Global Styling
+
+p {
+  font-family: $paraFont;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $mainFont;
+}
+
 //Pano Background Styling
 
 .greyPano {
@@ -20,7 +31,6 @@ $red: #a90000;
 	background-color: #000;
 	padding: 10px 0;
 }
-
 
 #pano
 {
@@ -321,22 +331,38 @@ $red: #a90000;
 		line-height: 1.875em;
 	}
 
-	#moreNews
-	{
-		color: #000;
-		font-size: 1.125em;
-		border: 2px solid #000;
-		padding: 5px;
+  #moreBut {
 		display: block;
 		float: right;
-		margin-bottom: 10px;
 		font-family: $mainFont;
+		border: 2px #000 solid;
+		padding: 7px 20px;
+		color: #000;
+		font-size: 1em;
+
+		&:hover {
+			background-color: $red;
+			color: #fff;
+			border: 2px #fff solid;
+		}
 	}
 
-	#moreNews:hover
-	{
-		background-color: $red;
-	}
+	// #moreNews
+	// {
+	// 	color: #000;
+	// 	font-size: 1.125em;
+	// 	border: 2px solid #000;
+	// 	padding: 5px;
+	// 	display: block;
+	// 	float: right;
+	// 	margin-bottom: 10px;
+	// 	font-family: $mainFont;
+	// }
+  //
+	// #moreNews:hover
+	// {
+	// 	background-color: $red;
+	// }
 
 	#newsSection
 	{
@@ -386,34 +412,31 @@ $red: #a90000;
 		line-height: 1.875em;
 	}
 
-	#socialSection div
-	{
-		clear: both;
-	}
 		.socialImgs {
 			padding-bottom: 10px;
-			width: 100%;
-			display: inline-block;
+      clear: both;
+			//width: 100%;
+			//display: inline-block;
 		}
-	.socials
-	{
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 10px;
-	}
-	.socials:hover
-	{
-		box-shadow: 0px 0px 15px #000;
-		z-index: 2;
-	    -webkit-transition: all 200ms ease-in;
-	    -webkit-transform: scale(1.05);
-	    -ms-transition: all 200ms ease-in;
-	    -ms-transform: scale(1.05);
-	    -moz-transition: all 200ms ease-in;
-	    -moz-transform: scale(1.05);
-    	transition: all 200ms ease-in;
-    	transform: scale(1.05);
-	}
+	// .socials
+	// {
+	// 	display: block;
+	// 	margin: 0 auto;
+	// 	margin-bottom: 10px;
+	// }
+	// .socials:hover
+	// {
+	// 	box-shadow: 0px 0px 15px #000;
+	// 	z-index: 2;
+	//     -webkit-transition: all 200ms ease-in;
+	//     -webkit-transform: scale(1.05);
+	//     -ms-transition: all 200ms ease-in;
+	//     -ms-transform: scale(1.05);
+	//     -moz-transition: all 200ms ease-in;
+	//     -moz-transform: scale(1.05);
+  //   	transition: all 200ms ease-in;
+  //   	transform: scale(1.05);
+	// }
 	.fb {
 		max-height: 50px;
 	}
@@ -1166,6 +1189,63 @@ $red: #a90000;
 	}
 }
 
+// News Article Page Styling
+
+#newsArticle
+{
+	background-color: #fff;
+	padding: 15px;
+
+	h2 {
+		font-size: 2em;
+		color: #000;
+		float: left;
+	}
+
+	#newsHeading {
+		border-bottom: 2px solid $red;
+		margin-bottom: 20px;
+	}
+
+	#backBut {
+		display: block;
+		float: right;
+		font-family: $mainFont;
+		border: 2px #000 solid;
+		padding: 7px 20px;
+		color: #000;
+		font-size: 1em;
+
+		&:hover {
+			background-color: $red;
+			color: #fff;
+			border: 2px #fff solid;
+		}
+	}
+
+  p {
+    padding-bottom: 7px;
+  }
+
+  .newsTitle {
+    //text-transform: uppercase;
+    clear: both;
+  }
+
+  .newsDate {
+    clear: both;
+    padding: 0;
+  }
+
+  .newsImage {
+    padding: 25px 0;
+  }
+
+
+
+}
+
+
 @media screen and (min-width: 33.375em) {
 	#charityPanel-label
 	{
@@ -1303,14 +1383,9 @@ $red: #a90000;
 
 	#socialSection
 	{
-		div
-		{
-			clear: both;
-		    float: left;
-		    display: inline-block;
-		    margin: 0 auto;
-		}
-
+    .socials {
+      padding-right: 10px;
+    }
 		a
 		{
 			float: left;
@@ -1894,7 +1969,7 @@ $red: #a90000;
 	padding: 20px;
 
 	img {
-		
+
 	}
 
 

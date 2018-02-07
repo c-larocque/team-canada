@@ -1,3 +1,10 @@
+p {
+  font-family: "Merriweather", Times, serif;
+  font-size: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+
 .greyPano {
   width: 100%;
   background-color: #363636; }
@@ -198,17 +205,18 @@
   color: #666;
   float: left;
   line-height: 1.875em; }
-#mediaCentre #moreNews {
-  color: #000;
-  font-size: 1.125em;
-  border: 2px solid #000;
-  padding: 5px;
+#mediaCentre #moreBut {
   display: block;
   float: right;
-  margin-bottom: 10px;
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
-#mediaCentre #moreNews:hover {
-  background-color: #a90000; }
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  border: 2px #000 solid;
+  padding: 7px 20px;
+  color: #000;
+  font-size: 1em; }
+  #mediaCentre #moreBut:hover {
+    background-color: #a90000;
+    color: #fff;
+    border: 2px #fff solid; }
 #mediaCentre #newsSection {
   margin-bottom: 20px; }
   #mediaCentre #newsSection h4 {
@@ -238,27 +246,9 @@
   color: #666;
   float: left;
   line-height: 1.875em; }
-#mediaCentre #socialSection div {
-  clear: both; }
 #mediaCentre .socialImgs {
   padding-bottom: 10px;
-  width: 100%;
-  display: inline-block; }
-#mediaCentre .socials {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px; }
-#mediaCentre .socials:hover {
-  box-shadow: 0px 0px 15px #000;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.05);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.05);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.05);
-  transition: all 200ms ease-in;
-  transform: scale(1.05); }
+  clear: both; }
 #mediaCentre .fb {
   max-height: 50px; }
 #mediaCentre .twit {
@@ -705,6 +695,38 @@
     #relatedNews .news .readMore:hover {
       background-color: #363636; }
 
+#newsArticle {
+  background-color: #fff;
+  padding: 15px; }
+  #newsArticle h2 {
+    font-size: 2em;
+    color: #000;
+    float: left; }
+  #newsArticle #newsHeading {
+    border-bottom: 2px solid #a90000;
+    margin-bottom: 20px; }
+  #newsArticle #backBut {
+    display: block;
+    float: right;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border: 2px #000 solid;
+    padding: 7px 20px;
+    color: #000;
+    font-size: 1em; }
+    #newsArticle #backBut:hover {
+      background-color: #a90000;
+      color: #fff;
+      border: 2px #fff solid; }
+  #newsArticle p {
+    padding-bottom: 7px; }
+  #newsArticle .newsTitle {
+    clear: both; }
+  #newsArticle .newsDate {
+    clear: both;
+    padding: 0; }
+  #newsArticle .newsImage {
+    padding: 25px 0; }
+
 @media screen and (min-width: 33.375em) {
   #charityPanel-label {
     padding: 15px 0 !important; } }
@@ -781,11 +803,8 @@
     #newsContent a {
       float: left; }
 
-  #socialSection div {
-    clear: both;
-    float: left;
-    display: inline-block;
-    margin: 0 auto; }
+  #socialSection .socials {
+    padding-right: 10px; }
   #socialSection a {
     float: left;
     margin-right: 3px; }
