@@ -79,22 +79,24 @@ Summit Series, particularly those highlighting what can be achieved through tea
       <h2>MEDIA CENTRE</h2>
       <section class="small-12 columns" id="newsSection">
         <h3>NEWS</h3>
-        <a href="#" id="moreNews">MORE NEWS ></a>
+        <a href="news-page.php" id="moreBut">MORE NEWS ></a>
         <div id="newsContent">
           <img src="images/news_1.jpg" alt="news image" width="290" height="218" id="newsImg">
           <h4>Government of Canada honours Team Canada 1972</h4>
           <p>Team members Serge Savard and Pat Stapleton are joined by government officials and others, at the unveiling of a plaque celebrating the team’s significant contribution to Canadian history.</p>
-          <a href="#" id="readMore">READ MORE</a>
+          <a href="news-article.php" id="readMore">READ MORE</a>
         </div>
       </section>
 
       <section class="small-12 columns" id="socialSection">
         <h3>SOCIAL MEDIA</h3>
-        <div class="socialImgs small-12">
+        <div class="socialImgs row">
           <div class="small-12 medium-5 medium-push-1 columns facebook socials">
-            <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a></div>
-          <div class="small-12 medium-5 medium-push-1 columns twitter socials">
-            <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a></div>
+            <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a>
+          </div>
+          <div class="small-12 medium-5 medium-pull-1 columns twitter socials">
+            <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a>
+          </div>
         </div>
       </section>
     </section>
