@@ -18,9 +18,13 @@ Please install ruby if not already installed. Also note, during development, thi
 #### Installing
 
 *	To see if you have previously installed ruby:
-`$ ruby --version`
+```
+$ ruby --version
+```
 *	If you have already installed ruby, simply run the sass watch command from the root directory:
-`$ sass --watch css/sass:css/css`
+```
+$ sass --watch css/sass:css/css
+```
 
 Please ensure you have directed these files to the right location.
 
