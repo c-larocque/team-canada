@@ -7,7 +7,7 @@ $red: #a90000;
 
 .greyPano {
    width: 100%;
-	 background-color: $grey;
+	background-color: $grey;
 }
 
 .redPano {
@@ -576,6 +576,11 @@ $red: #a90000;
 	}
 }
 
+#contactBkgd {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 #contactCon
 {
 	background-color: $grey;
@@ -637,7 +642,7 @@ $red: #a90000;
 		text-transform: uppercase;
 		box-shadow: none;
 		width: 90%;
-		color: #fff;
+		color: #FFF;
 		border: none;
 		padding: 5px;
 		display: block;

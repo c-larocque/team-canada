@@ -367,6 +367,10 @@
     color: #fff;
     padding: 15px; }
 
+#contactBkgd {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 #contactCon {
   background-color: #363636; }
   #contactCon #contactInfoMobile {
@@ -405,7 +409,7 @@
     text-transform: uppercase;
     box-shadow: none;
     width: 90%;
-    color: #fff;
+    color: #FFF;
     border: none;
     padding: 5px;
     display: block;
