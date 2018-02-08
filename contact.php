@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 
-	require_once("admin/scripts/config.php");
+	/*require_once("admin/scripts/config.php");
 	require_once("admin/scripts/connect.php");
 
 	if(isset($_POST['name'])){
@@ -16,9 +16,9 @@
 			//echo "Street is empty";
 			//alert("Your email has been sent!")
 		}
-	}
+	}*/
 
-?>
+?> -->
 
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
