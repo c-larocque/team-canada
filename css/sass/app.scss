@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
 
 .greyPano {
    width: 100%;
-	 background-color: $grey;
+	background-color: $grey;
 }
 
 .redPano {
@@ -599,6 +599,11 @@ h1, h2, h3, h4 {
 	}
 }
 
+#contactBkgd {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 #contactCon
 {
 	background-color: $grey;
@@ -654,22 +659,33 @@ h1, h2, h3, h4 {
 		padding: 5px;
 	}
 
-	#contactForm input, textarea
-	{
-		box-shadow: 0 1px 3px rgba(0,0,0,.4) inset;
-	}
-
 	#submitForm
 	{
 		background-color: $red;
 		text-transform: uppercase;
 		box-shadow: none;
 		width: 90%;
-		color: #fff;
+		color: #FFF;
 		border: none;
 		padding: 5px;
 		display: block;
 		margin: 0 auto;
+	}
+
+	#submitForm:hover {
+		background-color: darken($red, 5%);
+	}
+
+	#contactForm .formInput
+	{
+		box-shadow: 0 1px 3px rgba(0,0,0,.4) inset;
+		background-color: #F1F1F1;
+	}
+
+	#contactForm .formInput:focus {
+		box-shadow: 0 2px 2px rgba(0,0,0,.5) inset;
+		border: 1px SOLID lighten($red, 35%);
+		background-color: #FFF;
 	}
 }
 
