@@ -297,6 +297,8 @@ h1, h2, h3, h4 {
   #socialNav li {
     display: inline-block;
     margin: 10px; }
+  #socialNav img {
+    width: 35px; }
 
 #copyrightInfo p {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
