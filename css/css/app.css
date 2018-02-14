@@ -1,3 +1,10 @@
+p {
+  font-family: "Merriweather", Times, serif;
+  font-size: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
+
 .greyPano {
   width: 100%;
   background-color: #363636; }
@@ -198,17 +205,18 @@
   color: #666;
   float: left;
   line-height: 1.875em; }
-#mediaCentre #moreNews {
-  color: #000;
-  font-size: 1.125em;
-  border: 2px solid #000;
-  padding: 5px;
+#mediaCentre #moreBut {
   display: block;
   float: right;
-  margin-bottom: 10px;
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
-#mediaCentre #moreNews:hover {
-  background-color: #a90000; }
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  border: 2px #000 solid;
+  padding: 7px 20px;
+  color: #000;
+  font-size: 1em; }
+  #mediaCentre #moreBut:hover {
+    background-color: #a90000;
+    color: #fff;
+    border: 2px #fff solid; }
 #mediaCentre #newsSection {
   margin-bottom: 20px; }
   #mediaCentre #newsSection h4 {
@@ -238,27 +246,9 @@
   color: #666;
   float: left;
   line-height: 1.875em; }
-#mediaCentre #socialSection div {
-  clear: both; }
 #mediaCentre .socialImgs {
   padding-bottom: 10px;
-  width: 100%;
-  display: inline-block; }
-#mediaCentre .socials {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px; }
-#mediaCentre .socials:hover {
-  box-shadow: 0px 0px 15px #000;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.05);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.05);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.05);
-  transition: all 200ms ease-in;
-  transform: scale(1.05); }
+  clear: both; }
 #mediaCentre .fb {
   max-height: 50px; }
 #mediaCentre .twit {
@@ -307,6 +297,8 @@
   #socialNav li {
     display: inline-block;
     margin: 10px; }
+  #socialNav img {
+    width: 35px; }
 
 #copyrightInfo p {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
@@ -367,6 +359,10 @@
     color: #fff;
     padding: 15px; }
 
+#contactBkgd {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 #contactCon {
   background-color: #363636; }
   #contactCon #contactInfoMobile {
@@ -400,18 +396,25 @@
     color: #fff;
     font-weight: bold;
     padding: 5px; }
-  #contactCon #contactForm input, #contactCon textarea {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset; }
   #contactCon #submitForm {
     background-color: #a90000;
     text-transform: uppercase;
     box-shadow: none;
     width: 90%;
-    color: #fff;
+    color: #FFF;
     border: none;
     padding: 5px;
     display: block;
     margin: 0 auto; }
+  #contactCon #submitForm:hover {
+    background-color: #900000; }
+  #contactCon #contactForm .formInput {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset;
+    background-color: #F1F1F1; }
+  #contactCon #contactForm .formInput:focus {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5) inset;
+    border: 1px SOLID #ff5d5d;
+    background-color: #FFF; }
 
 .backToTop {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
@@ -705,6 +708,38 @@
     #relatedNews .news .readMore:hover {
       background-color: #363636; }
 
+#newsArticle {
+  background-color: #fff;
+  padding: 15px; }
+  #newsArticle h2 {
+    font-size: 2em;
+    color: #000;
+    float: left; }
+  #newsArticle #newsHeading {
+    border-bottom: 2px solid #a90000;
+    margin-bottom: 20px; }
+  #newsArticle #backBut {
+    display: block;
+    float: right;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    border: 2px #000 solid;
+    padding: 7px 20px;
+    color: #000;
+    font-size: 1em; }
+    #newsArticle #backBut:hover {
+      background-color: #a90000;
+      color: #fff;
+      border: 2px #fff solid; }
+  #newsArticle p {
+    padding-bottom: 7px; }
+  #newsArticle .newsTitle {
+    clear: both; }
+  #newsArticle .newsDate {
+    clear: both;
+    padding: 0; }
+  #newsArticle .newsImage {
+    padding: 25px 0; }
+
 @media screen and (min-width: 33.375em) {
   #charityPanel-label {
     padding: 15px 0 !important; } }
@@ -781,11 +816,8 @@
     #newsContent a {
       float: left; }
 
-  #socialSection div {
-    clear: both;
-    float: left;
-    display: inline-block;
-    margin: 0 auto; }
+  #socialSection .socials {
+    padding-right: 10px; }
   #socialSection a {
     float: left;
     margin-right: 3px; }
@@ -1097,6 +1129,10 @@
 
   #mediaNav {
     right: 200px !important; } }
+#sortForm h2 {
+  color: white;
+  font-size: 1.2em; }
+
 .mainTitle {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
   color: #fff;
@@ -1126,6 +1162,18 @@
     margin-top: 10px;
     font-size: 16px; }
 
+.playerDesktop {
+  display: none;
+  padding: 0;
+  background-color: #363636 !important;
+  border: none; }
+  .playerDesktop p {
+    font-family: "Merriweather", Times, serif;
+    margin-bottom: 3px; }
+  .playerDesktop img {
+    display: block;
+    margin: 0 auto; }
+
 .playerMobile {
   padding: 0;
   background-color: #363636 !important;
@@ -1148,8 +1196,20 @@
   font-family: "Merriweather", Times, serif;
   margin-bottom: 3px; }
 
+.playerInfo {
+  border: none; }
+  .playerInfo h2 {
+    font-size: 1.5em;
+    color: #a90000; }
+  .playerInfo h4 {
+    font-size: 1.2em; }
+  .playerInfo ul {
+    font-family: "Merriweather", Times, serif; }
+
 .card {
-  position: relative; }
+  position: relative;
+  max-height: 401px;
+  min-height: 401px; }
 
 .front, .back {
   position: absolute;
@@ -1162,9 +1222,114 @@
   -webkit-transition: -webkit-transform 1s;
   transition: transform 1s; }
 
+.frontCon {
+  max-width: 271px;
+  max-height: 401px;
+  min-height: 401px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000; }
+  .frontCon img {
+    position: absolute;
+    z-index: 1;
+    max-height: 401px;
+    min-height: 401px; }
+  .frontCon h3 {
+    position: absolute;
+    z-index: 999;
+    padding-left: 15px;
+    font-size: 20px;
+    bottom: 105px; }
+  .frontCon h2 {
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 15px;
+    bottom: 65px; }
+  .frontCon h4 {
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    padding-left: 15px;
+    bottom: 10px;
+    font-size: 16px; }
+
+.frontConNumber {
+  right: 20px;
+  color: white;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 3em !important;
+  bottom: 0 !important; }
+
 .back {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg); }
+
+.backCon {
+  max-width: 271px;
+  max-height: 401px;
+  min-height: 401px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 2px;
+  position: relative;
+  background-color: white;
+  background-image: url("../../images/player_cards/card_back.png");
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000; }
+  .backCon ul {
+    color: black;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    list-style-type: none;
+    text-align: right; }
+  .backCon li {
+    margin-bottom: 10px; }
+  .backCon p {
+    color: black;
+    font-size: 14px; }
+
+.backConSummit {
+  font-size: 18px;
+  color: black;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  border-bottom: solid 1px black; }
+
+.backConTotal {
+  font-size: 18px;
+  color: black;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  border-bottom: solid 1px black;
+  text-align: right; }
+
+.backConNumber {
+  color: white;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  position: absolute;
+  bottom: 5px;
+  border: none; }
+
+.backConName {
+  color: white;
+  width: 100%;
+  max-width: 271px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7px;
+  text-transform: uppercase; }
 
 .card:hover .front {
   -webkit-transform: rotateY(-180deg);
@@ -1176,11 +1341,6 @@
 
 #playerCon {
   background-color: #363636; }
-  #playerCon h3 {
-    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-    color: #fff;
-    font-size: 1em;
-    border-bottom: solid 1px #a90000; }
 
 .playerRow {
   height: 400px;
@@ -1383,5 +1543,16 @@ time {
   margin-top: 20px;
   font-size: 0.9em;
   text-align: center; }
+
+/*ACTUAL foundation breakpoints*/
+@media screen and (min-width: 640px) {
+  .playerMobile {
+    display: none; }
+
+  .playerDesktop {
+    display: block; }
+
+  #sortForm select {
+    width: 50%; } }
 
 /*# sourceMappingURL=app.css.map */

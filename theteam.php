@@ -38,55 +38,114 @@
                   <h3 id="hoverTitle" class="show-for-large">Hover over each player card to see their stats!</h3>
                 </div>
 
-                <!--Filter Form-->
-                <div class="row">
-                  <div class="small-12 columns">
+                <!--
+                <div class="small-12 columns" id="sortForm">
+                  <h2>Sort By:</h2>
+                  <form method="post" action="includes/playercards.php">
+                  <select id="positionDD">
+                  <option value="%">All</option>
+                  <option value="Centre">Centre</option>
+                  <option value="Left Wing">Left Wing</option>
+                  <option value="Right Wing">Right Wing</option>
+                  <option value="Defence">Defence</option>
+                  <option value="Goaltender">Goaltender</option>
+                  </select>
 
-                  </div>
-                </div>
+                  </form>
+                </div>-->
+              </section>
+
+
+              <section class="row" id="teamCards">
+                <h2 class="hide">Team Cards</h2>
+
+                <div class="row small-up-1 medium-up-2 large-up-4" id="playerBlockCon">
+
+                  <?php
+                  while($row=mysqli_fetch_array($playersresult)) {
+                    $dcard = $row[1];
+                    $dcardBack = $row[2];
+                    $mcard = $row[3];
+                    $name = $row[4];
+                    $position = $row[5];
+                    $hometown = $row[6];
+                    $number = $row[7];
+                    $desc = $row[8];
+                    $career = $row[9];
+
+                    echo "
+
+                    <div class=\"column column-block\">
+
+                          <ul class=\"accordion\" data-accordion data-allow-all-closed=\"true\">
+                            <li class=\"accordion-item\" data-accordion-item>
+
+
+                              <a href=\"#\" class=\"accordion-title playerMobile\"><img src=\"images/player_cards/$mcard\" alt=\"$name\"></a>
+
+
+                              <div class=\"playerDesktop\">
+                                  <div class=\"card\">
+
+                                <div class=\"front\">
+                                  <div class=\"frontCon\">
+                                  <img src=\"images/player_cards/$dcard\" alt=\"$name\"></a>
+                                  <h3>$position</h3>
+                                  <h2>$name</h2>
+                                  <h4>$hometown</h4>
+                                  <h3 class=\"frontConNumber\">#$number</h3>
+                                </div>
+                                </div>
+
+                                <div class=\"back\">
+                                <div class=\"backCon\">
+                                <h2 class=\"backConName\">$name</h2>
+                                <h2 class=\"backConSummit\">Summit Series '72:</h2>
+                                <p>$desc</p>
+                                <h2 class=\"backConTotal\">NHL Career Totals:</h2>
+                                <ul>$career</ul>
+                                <h3 class=\"backConNumber\">#$number</h3>
+                                </div>
+                                </div>
+
+                                  </div>
+                              </div>
+
+
+                              <div class=\"accordion-content playerInfo\" data-tab-content>
+                                <h2>$name - #$number</h2>
+                                <h4>$position</h4>
+                                <h4>$hometown</h4>
+                                <h4 class=\"playerMobileCard\">SUMMIT SERIES '72:</h3>
+                                <p>$desc</p>
+                                <h4 class=\"playerMobileCard\">NHL CAREER TOTALS:</h4>
+                                <ul>$career</ul>
+                              </div>
+                            </li>
+                          </ul>
+                    </div>
+
+                         ";
+                  }
+
+                  ?>
+
+
+
+  </div>
 
               </section>
 
-              <section>
-
-                <div class="row small-up-1 medium-up-3 large-up-4">
-                <?php
-                while($row=mysqli_fetch_array($playersresult)) {
-                  $dcard = $row[1];
-                  $dcardBack = $row[2];
-                  $mcard = $row[3];
-                  $name = $row[4];
-                  $position = $row[5];
-                  $hometown = $row[6];
-                  $number = $row[7];
-                  $desc = $row[8];
-                  $career = $row[9];
-
-                  echo "<div class=\"column column-block\">
-                      <img data-interchange=\"[images/player_cards/{$mcard}, small], [images/player_cards/{$dcard}, large]\" alt=\"{$name}\"/>
-                      <div class=\"cardInfo\">
-                      <h2>{$name} - #{$number}</h2>
-                      <h4>{$position}</h4>
-                      <h4>{$hometown}</h4>
-                      <p>{$desc}</p>
-                      <ul>
-                        {$career}
-                      </ul>
-                      </div>
-                      </div>
-                  ";
-                }
-
-
-
-
-                ?>
-              </div>
-
-
-
 
               </section>
+
+
+
+
+
+
+
+
 
 
 <!--

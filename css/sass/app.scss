@@ -3,11 +3,22 @@ $paraFont: 'Merriweather', Times, serif;
 $grey: #363636;
 $red: #a90000;
 
+//Global Styling
+
+p {
+  font-family: $paraFont;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $mainFont;
+}
+
 //Pano Background Styling
 
 .greyPano {
    width: 100%;
-	 background-color: $grey;
+	background-color: $grey;
 }
 
 .redPano {
@@ -20,7 +31,6 @@ $red: #a90000;
 	background-color: #000;
 	padding: 10px 0;
 }
-
 
 #pano
 {
@@ -321,22 +331,38 @@ $red: #a90000;
 		line-height: 1.875em;
 	}
 
-	#moreNews
-	{
-		color: #000;
-		font-size: 1.125em;
-		border: 2px solid #000;
-		padding: 5px;
+  #moreBut {
 		display: block;
 		float: right;
-		margin-bottom: 10px;
 		font-family: $mainFont;
+		border: 2px #000 solid;
+		padding: 7px 20px;
+		color: #000;
+		font-size: 1em;
+
+		&:hover {
+			background-color: $red;
+			color: #fff;
+			border: 2px #fff solid;
+		}
 	}
 
-	#moreNews:hover
-	{
-		background-color: $red;
-	}
+	// #moreNews
+	// {
+	// 	color: #000;
+	// 	font-size: 1.125em;
+	// 	border: 2px solid #000;
+	// 	padding: 5px;
+	// 	display: block;
+	// 	float: right;
+	// 	margin-bottom: 10px;
+	// 	font-family: $mainFont;
+	// }
+  //
+	// #moreNews:hover
+	// {
+	// 	background-color: $red;
+	// }
 
 	#newsSection
 	{
@@ -386,34 +412,31 @@ $red: #a90000;
 		line-height: 1.875em;
 	}
 
-	#socialSection div
-	{
-		clear: both;
-	}
 		.socialImgs {
 			padding-bottom: 10px;
-			width: 100%;
-			display: inline-block;
+      clear: both;
+			//width: 100%;
+			//display: inline-block;
 		}
-	.socials
-	{
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 10px;
-	}
-	.socials:hover
-	{
-		box-shadow: 0px 0px 15px #000;
-		z-index: 2;
-	    -webkit-transition: all 200ms ease-in;
-	    -webkit-transform: scale(1.05);
-	    -ms-transition: all 200ms ease-in;
-	    -ms-transform: scale(1.05);
-	    -moz-transition: all 200ms ease-in;
-	    -moz-transform: scale(1.05);
-    	transition: all 200ms ease-in;
-    	transform: scale(1.05);
-	}
+	// .socials
+	// {
+	// 	display: block;
+	// 	margin: 0 auto;
+	// 	margin-bottom: 10px;
+	// }
+	// .socials:hover
+	// {
+	// 	box-shadow: 0px 0px 15px #000;
+	// 	z-index: 2;
+	//     -webkit-transition: all 200ms ease-in;
+	//     -webkit-transform: scale(1.05);
+	//     -ms-transition: all 200ms ease-in;
+	//     -ms-transform: scale(1.05);
+	//     -moz-transition: all 200ms ease-in;
+	//     -moz-transform: scale(1.05);
+  //   	transition: all 200ms ease-in;
+  //   	transform: scale(1.05);
+	// }
 	.fb {
 		max-height: 50px;
 	}
@@ -484,6 +507,10 @@ $red: #a90000;
 	li {
 		display: inline-block;
 		margin: 10px;
+	}
+
+	img {
+		width: 35px;
 	}
 }
 
@@ -576,6 +603,11 @@ $red: #a90000;
 	}
 }
 
+#contactBkgd {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 #contactCon
 {
 	background-color: $grey;
@@ -631,22 +663,33 @@ $red: #a90000;
 		padding: 5px;
 	}
 
-	#contactForm input, textarea
-	{
-		box-shadow: 0 1px 3px rgba(0,0,0,.4) inset;
-	}
-
 	#submitForm
 	{
 		background-color: $red;
 		text-transform: uppercase;
 		box-shadow: none;
 		width: 90%;
-		color: #fff;
+		color: #FFF;
 		border: none;
 		padding: 5px;
 		display: block;
 		margin: 0 auto;
+	}
+
+	#submitForm:hover {
+		background-color: darken($red, 5%);
+	}
+
+	#contactForm .formInput
+	{
+		box-shadow: 0 1px 3px rgba(0,0,0,.4) inset;
+		background-color: #F1F1F1;
+	}
+
+	#contactForm .formInput:focus {
+		box-shadow: 0 2px 2px rgba(0,0,0,.5) inset;
+		border: 1px SOLID lighten($red, 35%);
+		background-color: #FFF;
 	}
 }
 
@@ -1166,7 +1209,65 @@ $red: #a90000;
 	}
 }
 
+// News Article Page Styling
+
+#newsArticle
+{
+	background-color: #fff;
+	padding: 15px;
+
+	h2 {
+		font-size: 2em;
+		color: #000;
+		float: left;
+	}
+
+	#newsHeading {
+		border-bottom: 2px solid $red;
+		margin-bottom: 20px;
+	}
+
+	#backBut {
+		display: block;
+		float: right;
+		font-family: $mainFont;
+		border: 2px #000 solid;
+		padding: 7px 20px;
+		color: #000;
+		font-size: 1em;
+
+		&:hover {
+			background-color: $red;
+			color: #fff;
+			border: 2px #fff solid;
+		}
+	}
+
+  p {
+    padding-bottom: 7px;
+  }
+
+  .newsTitle {
+    //text-transform: uppercase;
+    clear: both;
+  }
+
+  .newsDate {
+    clear: both;
+    padding: 0;
+  }
+
+  .newsImage {
+    padding: 25px 0;
+  }
+
+
+
+}
+
+
 @media screen and (min-width: 33.375em) {
+
 	#charityPanel-label
 	{
 		padding: 15px 0 !important;
@@ -1303,14 +1404,9 @@ $red: #a90000;
 
 	#socialSection
 	{
-		div
-		{
-			clear: both;
-		    float: left;
-		    display: inline-block;
-		    margin: 0 auto;
-		}
-
+    .socials {
+      padding-right: 10px;
+    }
 		a
 		{
 			float: left;
@@ -1851,6 +1947,8 @@ $red: #a90000;
 }
 
 @media screen and (min-width: 90em) {
+
+
 	#legacyButCon
 	{
 		margin: 0 0 0 70px;
@@ -1871,6 +1969,17 @@ $red: #a90000;
 }
 
 
+#sortForm {
+  h2 {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  select {
+
+  }
+
+}
 
 .mainTitle
 	{
@@ -1894,7 +2003,7 @@ $red: #a90000;
 	padding: 20px;
 
 	img {
-		
+
 	}
 
 
@@ -1921,6 +2030,26 @@ $red: #a90000;
 	}
 }
 
+.playerDesktop
+{
+  display: none;
+  padding: 0;
+  background-color: $grey !important;
+  border: none;
+
+  p
+  {
+    font-family: $paraFont;
+    margin-bottom: 3px;
+  }
+
+  img
+  {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
 
 .playerMobile
 {
@@ -1958,13 +2087,29 @@ $red: #a90000;
 }
 
 
+.playerInfo {
+  border: none;
 
+  h2 {
+    font-size: 1.5em;
+    color: $red;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+
+  ul {
+    font-family: $paraFont;
+  }
+}
 
 
 
 .card
 {
 	position: relative;
+  max-height: 401px;
+  min-height: 401px;
 }
 
 
@@ -1983,10 +2128,144 @@ $red: #a90000;
 			transition: transform 1s;
 }
 
+
+.frontCon {
+  max-width: 271px;
+  max-height: 401px;
+  min-height: 401px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  background-size: cover;
+  overflow: hidden;
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+
+  img {
+    position: absolute;
+    z-index: 1;
+    max-height: 401px;
+    min-height: 401px;
+  }
+
+  h3 {
+    position: absolute;
+    z-index: 999;
+    padding-left: 15px;
+    font-size: 20px;
+    bottom: 105px;
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 15px;
+    bottom: 65px;
+  }
+
+  h4 {
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    padding-left: 15px;
+    bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.frontConNumber {
+  right: 20px;
+  color: white;
+  font-family: $mainFont;
+  font-size: 3em !important;
+  bottom: 0 !important;
+}
+
+
 .back
 {
 	-webkit-transform: rotateY(-180deg);
 			transform: rotateY(-180deg);
+}
+
+
+.backCon {
+  max-width: 271px;
+  max-height: 401px;
+  min-height: 401px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 2px;
+  position: relative;
+  background-color: white;
+  background-image: url("../../images/player_cards/card_back.png");
+  background-size: cover;
+  overflow: hidden;
+
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+
+
+  ul {
+    color: black;
+    font-family: $mainFont;
+    font-size: 14px;
+    list-style-type: none;
+    text-align: right;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+p {
+  color: black;
+  font-size: 14px;
+}
+}
+
+.backConSummit {
+  font-size: 18px;
+  color: black;
+  font-family: $mainFont;
+  border-bottom: solid 1px black;
+}
+
+.backConTotal {
+  font-size: 18px;
+  color: black;
+  font-family: $mainFont;
+  border-bottom: solid 1px black;
+  text-align: right;
+}
+
+.backConNumber {
+  color: white;
+  font-family: $mainFont;
+  font-size: 3em;
+  position: absolute;
+  bottom: 5px;
+  border: none;
+}
+
+.backConName {
+  color: white;
+  width: 100%;
+  max-width: 271px;
+  //background-color: black;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+
 }
 
 .card:hover .front
@@ -2007,10 +2286,10 @@ $red: #a90000;
 
 	h3
 	{
-	font-family: $mainFont;
-	color: #fff;
-	font-size: 1em;
-	border-bottom: solid 1px $red;
+	//font-family: $mainFont;
+	//color: #fff;
+	//font-size: 1em;
+	//border-bottom: solid 1px $red;
 	}
 }
 
@@ -2292,4 +2571,26 @@ p {
 	font-size: 0.9em;
 	text-align: center;
 }
+}
+
+/*ACTUAL foundation breakpoints*/
+
+@media screen and (min-width: 640px) {
+  .playerMobile {
+    display: none;
+  }
+
+  .playerDesktop {
+    display: block;
+  }
+
+  #sortForm {
+
+
+    select {
+      width: 50%;
+    }
+
+  }
+
 }
