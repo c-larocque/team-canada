@@ -407,13 +407,13 @@ h1, h2, h3, h4 {
     display: block;
     margin: 0 auto; }
   #contactCon #submitForm:hover {
-    background-color: #900000; }
+    background-color: #8f0000; }
   #contactCon #contactForm .formInput {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset;
     background-color: #F1F1F1; }
   #contactCon #contactForm .formInput:focus {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5) inset;
-    border: 1px SOLID #ff5d5d;
+    border: 1px SOLID #ff5c5c;
     background-color: #FFF; }
 
 .backToTop {
@@ -1271,49 +1271,64 @@ h1, h2, h3, h4 {
     margin-bottom: 25px; }
 
 /*summit series timeline page*/
-#subHeader {
-  font-family: "Merriweather", Times, serif;
-  font-size: 1em;
-  margin-top: 10px;
-  text-align: center; }
+/*
+
+#subHeader
+{
+	font-family: $paraFont;
+	font-size: 1em;
+	margin-top: 10px;
+	text-align: center;
+}
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-#allTimeline {
-  font-family: "Merriweather", Times, serif;
+#allTimeline
+{
+  font-family: $paraFont;
   color: #fff;
   overflow-x: hidden;
-  padding-bottom: 50px; }
-
-time {
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-  margin: 10px;
-  font-size: 2em; }
+  padding-bottom: 50px;
+}
+time
+{
+	font-family: $mainFont;
+	margin: 10px;
+	font-size: 2em;
+}
 
 .intro {
-  padding: 50px 0; }
+  padding: 50px 0;
+}
 
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center; }
-  .container h3 {
-    font-size: 1rem;
-    font-family: "Merriweather", Times, serif;
-    color: #fff;
-    margin-top: 20px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #a90000; }
+  text-align: center;
+
+	h3 {
+  font-size: 1rem;
+  font-family: $paraFont;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $red;
+}
+}
+
 
 /* TIMELINE */
-#allTimeline {
-  background-color: #363636; }
+/*
+{
+	background-color: $grey;
+}
 
 .timeline ul li {
   list-style-type: none;
@@ -1321,7 +1336,8 @@ time {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #000; }
+  background: #000;
+}
 
 .timeline ul li::after {
   content: '';
@@ -1332,78 +1348,50 @@ time {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: inherit; }
+  background: inherit;
+}
 
 .timeline ul li div {
   position: relative;
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #a90000; }
-
+  background: $red;
+}
+/*
 .timeline ul li div::before {
   content: '';
   position: absolute;
   bottom: 7px;
   width: 0;
   height: 0;
-  border-style: solid; }
+  border-style: solid;
+}
 
-.timeline ul li:nth-child(odd) div {
-  left: 45px; }
+/*
+.moreInfo
+{
+	font-family: $mainFont;
+	color: #fff;
+	padding: 10px;
+	border: 1px solid #fff;
+	display: block;
+	text-align: center;
+	width: 30%;
+	margin: 0 auto;
+}
 
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #a90000 transparent transparent; }
+.moreInfo:hover
+{
+	background-color: $grey;
+	color: #fff;
+}
 
-.timeline ul li:nth-child(even) div {
-  left: -439px; }
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #a90000; }
-
-.moreInfo {
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-  color: #fff;
-  padding: 10px;
-  border: 1px solid #fff;
-  display: block;
-  text-align: center;
-  width: 30%;
-  margin: 0 auto; }
-
-.moreInfo:hover {
-  background-color: #363636;
-  color: #fff; }
-
-.timeline p {
-  margin-bottom: 25px; }
-
-/*responsive*/
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px; }
-
-  .timeline ul li:nth-child(even) div {
-    left: -289px;
-    /*250+45-6*/ } }
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px; }
-
-  .timeline ul li div {
-    width: calc(100vw - 91px); }
-
-  .timeline ul li:nth-child(even) div {
-    left: 45px; }
-
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #a90000 transparent transparent; } }
+.timeline p
+{
+	margin-bottom: 25px;
+}
+*/
 .porthead h1 {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif; }
 .porthead .portallogo {
@@ -1415,5 +1403,25 @@ time {
   margin-top: 20px;
   font-size: 0.9em;
   text-align: center; }
+
+.timeline h2 {
+  color: #a90000;
+  font-size: 1.75em; }
+.timeline .example-orbit img {
+  border: 5px #363636 solid; }
+.timeline .buttons {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  padding-top: 50px; }
+  .timeline .buttons a {
+    background-color: #a90000;
+    border-radius: 15px; }
+  .timeline .buttons a:hover {
+    background-color: #8A0000; }
+.timeline .timeline-orbit a {
+  background-color: #a90000;
+  border-radius: 15px;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  column-rule: #fff; }
 
 /*# sourceMappingURL=app.css.map */

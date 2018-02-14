@@ -2193,7 +2193,7 @@ h1, h2, h3, h4 {
 
 
 /*summit series timeline page*/
-
+/*
 
 #subHeader
 {
@@ -2247,8 +2247,7 @@ time
 
 
 /* TIMELINE */
-
-#allTimeline
+/*
 {
 	background-color: $grey;
 }
@@ -2281,7 +2280,7 @@ time
   padding: 15px;
   background: $red;
 }
-
+/*
 .timeline ul li div::before {
   content: '';
   position: absolute;
@@ -2291,26 +2290,7 @@ time
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent $red transparent transparent;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent $red;
-}
-
+/*
 .moreInfo
 {
 	font-family: $mainFont;
@@ -2333,38 +2313,8 @@ time
 {
 	margin-bottom: 25px;
 }
+*/
 
-
-/*responsive*/
-
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px; /*250+45-6*/
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent $red transparent transparent;
-  }
-}
 
 //portal page
 
@@ -2388,3 +2338,36 @@ p {
 	text-align: center;
 }
 }
+
+//timeline
+.timeline {
+  h2 {
+    color: $red;
+    font-size:    1.75em;
+  }
+  .example-orbit {
+  img {
+    border: 5px $grey solid;
+  }
+}
+  .buttons {
+    a {
+    background-color: $red;
+    border-radius:    15px;
+  }
+  a:hover {
+    background-color: #8A0000;
+  }
+  font-family:    $mainFont;
+  padding-top:    50px;
+} //end of buttons
+    .timeline-orbit {
+  a {
+    background-color:    $red;
+    border-radius: 15px;
+    font-family: $mainFont;
+    padding:    10px;
+    column-rule:   #fff;
+  }
+}
+} //end of timeline
