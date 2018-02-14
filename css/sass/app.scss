@@ -2146,14 +2146,14 @@ h1, h2, h3, h4 {
 
   img {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     max-height: 401px;
     min-height: 401px;
   }
 
   h3 {
     position: absolute;
-    z-index: 999;
+    //z-index: 999;
     padding-left: 15px;
     font-size: 20px;
     bottom: 105px;
@@ -2161,7 +2161,7 @@ h1, h2, h3, h4 {
 
   h2 {
     position: absolute;
-    z-index: 999;
+    //z-index: 999;
     font-weight: 700;
     font-size: 30px;
     padding-left: 15px;
@@ -2170,7 +2170,7 @@ h1, h2, h3, h4 {
 
   h4 {
     position: absolute;
-    z-index: 999;
+    //z-index: 999;
     font-weight: 700;
     padding-left: 15px;
     bottom: 10px;

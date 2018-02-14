@@ -1237,25 +1237,22 @@ h1, h2, h3, h4 {
   border: 0px solid #000000; }
   .frontCon img {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     max-height: 401px;
     min-height: 401px; }
   .frontCon h3 {
     position: absolute;
-    z-index: 999;
     padding-left: 15px;
     font-size: 20px;
     bottom: 105px; }
   .frontCon h2 {
     position: absolute;
-    z-index: 999;
     font-weight: 700;
     font-size: 30px;
     padding-left: 15px;
     bottom: 65px; }
   .frontCon h4 {
     position: absolute;
-    z-index: 999;
     font-weight: 700;
     padding-left: 15px;
     bottom: 10px;
