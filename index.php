@@ -32,7 +32,7 @@
           <img src="images/summit_series.jpg" alt="Summit Series Img Icon" class="homeThumbnail">
           <h3>SUMMIT SERIES</h3>
           <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
-          <a href="summitseries.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="summitseries.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="teamHomepage" data-equalizer-watch>
@@ -41,7 +41,7 @@
           <p>Canada's "Team of the Century".</p>
           <p>The only team inducted into Canada's Sports Hall of Fame.</p>
           <p>The first squad ever named "Team Canada".</p>
-          <a href="theteam.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="theteam.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="partnersHomepage" data-equalizer-watch>
@@ -49,7 +49,7 @@
           <h3>PARTNERS</h3>
           <p>Team Canada 1972 is proud to include a growing number of partners, from the educational, charitable and corporate communities.</p>
           <p>Each partner assists the team by offering an opportunity to further the goals of the 28,800 Project.</p>
-          <a href="partners.html" class="learnMoreBut">LEARN MORE</a>
+          <a href="partners.php" class="learnMoreBut">LEARN MORE</a>
         </section>
       </section>
     </div>
@@ -66,7 +66,7 @@ Summit Series, particularly those highlighting what can be achieved through tea
               </div>
               <div class="small-12 medium-4 large-4 columns" id="legacyButCon">
                 <ul>
-                  <li><a href="legacy.html">LEARN MORE</a></li>
+                  <li><a href="legacy.php">LEARN MORE</a></li>
                   <li><a href="portal.php">PORTAL</a></li>
                 </ul>
               </div>
@@ -79,22 +79,24 @@ Summit Series, particularly those highlighting what can be achieved through tea
       <h2>MEDIA CENTRE</h2>
       <section class="small-12 columns" id="newsSection">
         <h3>NEWS</h3>
-        <a href="#" id="moreNews">MORE NEWS ></a>
+        <a href="news-page.php" id="moreBut">MORE NEWS ></a>
         <div id="newsContent">
           <img src="images/news_1.jpg" alt="news image" width="290" height="218" id="newsImg">
           <h4>Government of Canada honours Team Canada 1972</h4>
           <p>Team members Serge Savard and Pat Stapleton are joined by government officials and others, at the unveiling of a plaque celebrating the team’s significant contribution to Canadian history.</p>
-          <a href="#" id="readMore">READ MORE</a>
+          <a href="news-article.php" id="readMore">READ MORE</a>
         </div>
       </section>
 
       <section class="small-12 columns" id="socialSection">
         <h3>SOCIAL MEDIA</h3>
-        <div class="socialImgs small-12">
+        <div class="socialImgs row">
           <div class="small-12 medium-5 medium-push-1 columns facebook socials">
-            <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a></div>
-          <div class="small-12 medium-5 medium-push-1 columns twitter socials">
-            <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a></div>
+            <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a>
+          </div>
+          <div class="small-12 medium-5 medium-pull-1 columns twitter socials">
+            <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a>
+          </div>
         </div>
       </section>
     </section>
