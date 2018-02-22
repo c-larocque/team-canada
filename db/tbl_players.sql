@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Feb 14, 2018 at 04:53 PM
+-- Generation Time: Feb 22, 2018 at 02:26 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -37,7 +37,7 @@ CREATE TABLE `tbl_players` (
   `players_number` varchar(10) NOT NULL,
   `players_description` text NOT NULL,
   `players_career_totals` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_players`
@@ -70,7 +70,15 @@ INSERT INTO `tbl_players` (`players_id`, `players_card_desktop`, `players_card_d
 (44, '25-lapointe.png', '25-lapointe-back.png', '25-lapointe-mobile.png', 'Guy Lapointe', 'Defence', 'Montreal, QC', '25', 'Guy played for the team in seven games against the Soviets, picking up a point in Moscow (Game Five).', '<li>894 games played</li>\r\n<li>171 goals scored</li>\r\n<li>451 assists</li>\r\n<li>622 points</li>\r\n<li>893 penalty minutes</li>'),
 (47, '26-awrey.png', '26-awrey-back.png', '26-awrey-mobile.png', 'Don Awrey', 'Defence', 'Kitchener, ON', '26', 'Don skated against the Soviets in Montreal and Vancouver, and also played in Stockholm and Prague.', '<li>969 games played</li>\r\n<li>31 goals scored</li>\r\n<li>158 assists</li>\r\n<li>189 points</li>\r\n<li>1065 penalty minues</li>'),
 (48, '27-mahovlich.png', '27-mahovlich-back.png', '27-mahovlich-mobile.png', 'Frank Mahovlich', 'Left Wing', 'Timmins, ON', '27', 'Frank was an alternate captain, collecting a point in both Game One (Montreal) and Game Eight (Moscow).', '<li>1181 games played</li>\r\n<li>533 goals scored</li>\r\n<li>570 assists</li>\r\n<li>1103 points</li>\r\n<li>1056 penalty minutes</li>'),
-(49, '28-clarke.png', '28-clarke-back.png', '28-clarke-mobile.png', 'Bobby Clarke', 'Centre', 'Flin Flon, MB', '28', 'Bobby collected six points over eight games (including three in Game Five) and was also strong defensively.', '<li>1144 games played</li>\r\n<li>358 goals scored</li>\r\n<li>852 assists</li>\r\n<li>1210 points</li>\r\n<li>1453 penalty minutes</li>');
+(49, '28-clarke.png', '28-clarke-back.png', '28-clarke-mobile.png', 'Bobby Clarke', 'Centre', 'Flin Flon, MB', '28', 'Bobby collected six points over eight games (including three in Game Five) and was also strong defensively.', '<li>1144 games played</li>\r\n<li>358 goals scored</li>\r\n<li>852 assists</li>\r\n<li>1210 points</li>\r\n<li>1453 penalty minutes</li>'),
+(53, '29-dryden.png', '29-dryden-back.png', '29-dryden-mobile.png', 'Ken Dryden', 'Goaltender', 'Hamilton, ON', '29', 'Ken went 2-2 in the series, playing both the first game (23 saves and a loss) and the last (22 saves and a win).', '<li>397 games played</li>\r\n<li>0.919 save%</li>\r\n<li>2.24 goals against average</li>\r\n<li>46 shut outs</li>'),
+(54, '32-tallon.png', '32-tallon-back.png', '32-tallon-mobile.png', 'Dale Tallon', 'Defence', 'Rouyn-Noranda, QC', '32', 'Dale travelled with the team throughout the series and played in the tie games in Stockholm and Prague', '<li>642 games played</li>\r\n<li>98 goals scored</li>\r\n<li>238 assists</li>\r\n<li>336 points</li>\r\n<li>568 penalty minutes</li>'),
+(55, '33-perreault.png', '33-perreault-back.png', '33-perreault-mobile.png', 'Gilbert Perreault', 'Centre', 'Victoriavill, QC', '33', 'Gilbert played twice in the series, scoring in Game four (Vancouver) and assisting in Game Five (Moscow).', '<li>1191 games played</li>\r\n<li>512 goals scored</li>\r\n<li>814 assists</li>\r\n<li>1326 points</li>\r\n<li>500 penalty minutes</li>'),
+(56, '34-dionne.png', '34-dionne-back.png', '34-dionne-mobile.png', 'Marcel Dionne', 'Centre', 'Drummondville, QC', '34', 'Marcel was the youngest team member (by more than 15 years) and played in Stockholm and Prague.', '<li>642 games played</li>\r\n<li>98 goals scored</li>\r\n<li>238 assists</li>\r\n<li>336 points</li>\r\n<li>568 penalty minutes</li>'),
+(57, '35-esposito.png', '35-esposito-back.png', '35-esposito-mobile.png', 'Tony Esposito', 'Goaltender', 'Sault Ste. Marie, ON', '35', 'Tony went 2-1-1 against the Soviets, beating them in Toronto and in Moscow (with a strong Game Seven performance).', '<li>886 games played</li>\r\n<li>0.895 save %</li>\r\n<li>2.92 goals against average</li>\r\n<li>76 shut outs</li>'),
+(58, '36-martin.png', '36-martin-back.png', '36-martin-mobile.png', 'Richard Martin', 'Left wing', 'Verdun, QC', '36', 'Richard suited up for Team Canada in the second game in Stockholm, where he scored a third-period goal.', '<li>685 games played</li>\r\n<li>384 goals scored</li>\r\n<li>317 assists</li>\r\n<li>701 points</li>\r\n<li>477 penalty minutes</li>'),
+(59, '37-guevremont.png', '37-guevremont-back.png', '37-guevremont-mobile.png', 'Jocelyn Guevremont', 'Defence', 'Ste. Rose, QC', '37', 'Jocelyn, another of the younger players on Team Canada, suited up for the second game in Stockholm.', '<li>571 games played</li>\r\n<li>84 goals scored</li>\r\n<li>223 assists</li>\r\n<li>307 points</li>\r\n<li>319 penalty minutes</li>'),
+(60, '38-glennie.png', '38-glennie-back.png', '38-glennie-mobile.png', 'Brian Glennie', 'Defence', 'Toronto, ON', '38', 'Brian (who played in Stockholm and Prague) had competed against the Soviets at the 1968 Olympics.', '<li>572 games played</li>\r\n<li>14 goals scored</li>\r\n<li>100 assists</li>\r\n<li>114 points</li>\r\n<li>621 penalty minutes</li>');
 
 --
 -- Indexes for dumped tables
@@ -90,7 +98,7 @@ ALTER TABLE `tbl_players`
 -- AUTO_INCREMENT for table `tbl_players`
 --
 ALTER TABLE `tbl_players`
-  MODIFY `players_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=53;
+  MODIFY `players_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=69;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

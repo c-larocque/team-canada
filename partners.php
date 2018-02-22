@@ -55,6 +55,18 @@
             </a>
           </section>
 
+          <section class="row" id="partnerInfo">
+            <h2 class="hide">Becoming a Partner</h2>
+            <div class="small-12 columns">
+              <h2>Become a Partner</h2>
+              <p>The Team Canada 72 brand carries a tremendous emotional connection for Canadians. In addition, the 1972 Summit Series story is captivating and inspirational, whether experiencing it for the first time or reliving it again. Now as part of the 28,800 Second initiative, our brand can help YOUR brand connect to YOUR customers.</p>
+              <p>Partnering with our brand brings the passion and emotion for Team Canada 72 to the heart of your customers. Take that engagement to another level by creating customized experiences and events with our team members and some of hockey's biggest legends, specifically for your target market, aligned with your marketing and promotion objectives.<p>
+              <p>In 1972 the country stopped - frozen in suspense, anticipation, and finally, jubilation. Authentically reconnecting with those powerful emotions provides your brand with an amazing opportunity to connect with customers. Help us establish the legacy of Team Canada 72 without sacrificing the ROI for your marketing dollars.</p>
+              <p>This site outlines some of the projects, interactive experiences, and initiatives currently underway. These are our ideas and are turn-key marketing opportunities we've developed for your brand to be part of our legacy venture. Not the right fit? We're ready to explore new ideas and opportunities designed to help you reach your marketing objectives. Our team is ready to work with your team. Let's get started!</p>
+              <p>To learn more about working with Team Canada 1972, visit our <a href="contact.php">contact page</a>.</p> 
+            </div>
+          </section>
+
           <?php include 'includes/footer.php';?>
 
         </div>

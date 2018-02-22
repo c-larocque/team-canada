@@ -416,6 +416,15 @@ h1, h2, h3, h4 {
     border: 1px SOLID #ff5d5d;
     background-color: #FFF; }
 
+#partnerInfo {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #partnerInfo p {
+    margin-bottom: 20px;
+    line-height: 30px; }
+  #partnerInfo a {
+    color: #a90000; }
+
 .backToTop {
   font-family: "Fjalla One", Helvetica, Arial, sans-serif;
   background-color: #000;
