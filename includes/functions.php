@@ -71,7 +71,114 @@
         }   
       }
 		}
-		// ----- end function ----- //      
+		// ----- end function ----- //    
+
+
+	// Display Summer Series Timeline
+	function ssTimeline() {
+		global $connection;
+
+    $query = "SELECT * FROM summit_series_timeline";
+      
+    $ssTimeline = mysqli_query($connection, $query);
+
+    $ssTimeline_check = mysqli_num_rows($ssTimeline);
+
+    if ($ssTimeline_check > 0) {
+      while($row = mysqli_fetch_assoc($ssTimeline)) {
+        $ssTimeline_title = escape($row['ss_timeline_title']);
+        $ssTimeline_content = escape($row['ss_timeline_content']);
+        // $ssTimeline_content_cut = substr($ssTimeline_content, 0, 400)."...";
+
+	 ?>
+
+	    <li>
+	      <div>
+	        <time><?php echo "{$ssTimeline_title}"; ?></time>
+	        <?php echo "<p>{$ssTimeline_content}</p>"; ?>
+	      <!--   <a href="#" class="moreInfo">READ MORE</a> -->
+	      </div>
+	    </li>
+	    <?php    
+	      }   
+	    }
+		}
+		// ----- end function ----- //   
+
+	// Display Summer Series Gallery images
+	function ssGallery() {
+		global $connection;
+	    $query = "SELECT * FROM summit_series";
+	    $ssImages = mysqli_query($connection, $query);
+	    $ssImages_check = mysqli_num_rows($ssImages);
+
+	    if ($ssImages_check > 0) {
+	      while($row = mysqli_fetch_assoc($ssImages)) {
+	        $ss_image = escape($row['ss_image']);
+
+	    ?>
+
+	    <div class="row ssGallery">
+	      <div class="small-12 columns">
+	        <?php echo"<img src='images/{$ss_image}' alt='SS Img{$ss_id}'>";?>
+	      </div> 
+	    </div>              
+	  <?php  
+	      }   
+	    } 
+		}
+		// ----- end function ----- // 
+
+
+			// Display Press Conference Gallery images
+			function pcGallery() {
+				global $connection;
+		      $query = "SELECT * FROM press_conf";
+		      $pcImages = mysqli_query($connection, $query);
+		      $pcImages_check = mysqli_num_rows($pcImages);
+
+		      if ($pcImages_check > 0) {
+		        while($row = mysqli_fetch_assoc($pcImages)) {
+		          $pc_image = escape($row['pc_image']);
+
+		      ?>
+
+		      <div class="row ssGallery">
+		        <div class="small-12 columns">
+		          <?php echo"<img src='images/{$pc_image}' alt='PC Img{$pc_id}'>";?>
+		        </div> 
+		      </div>              
+		    <?php  
+		        }   
+		      }  
+				}
+				// ----- end function ----- // 
+
+
+			// Display Legend Legacy Gallery images
+			function llGallery() {
+				global $connection;
+
+	        $query = "SELECT * FROM legend_legacy";
+	        $llImages = mysqli_query($connection, $query);
+	        $llImages_check = mysqli_num_rows($llImages);
+
+	        if ($llImages_check > 0) {
+	          while($row = mysqli_fetch_assoc($llImages)) {
+	            $ll_image = escape($row['ll_image']);
+
+	        ?>
+
+	        <div class="row ssGallery">
+	          <div class="small-12 columns">
+	            <?php echo"<img src='images/{$ll_image}' alt='PC Img{$ll_id}'>";?>
+	          </div> 
+	        </div>              
+	      <?php  
+	          }   
+	        } 
+				}
+				// ----- end function ----- // 
 
 
  ?>

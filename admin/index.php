@@ -16,7 +16,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Bootstrap Admin Template</title>
+  <title>SB Admin - Team Canada 72</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">

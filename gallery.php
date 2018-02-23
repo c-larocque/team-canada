@@ -28,27 +28,7 @@
 
           <div class="accordion-content" data-tab-content>
 
-        <?php  
-
-            $query = "SELECT * FROM summit_series";
-            $ssImages = mysqli_query($connection, $query);
-            $ssImages_check = mysqli_num_rows($ssImages);
-
-            if ($ssImages_check > 0) {
-              while($row = mysqli_fetch_assoc($ssImages)) {
-                $ss_image = escape($row['ss_image']);
-
-            ?>
-
-            <div class="row ssGallery">
-              <div class="small-12 columns">
-                <?php echo"<img src='images/{$ss_image}' alt='SS Img{$ss_id}'>";?>
-              </div> 
-            </div>              
-          <?php  
-              }   
-            } 
-          ?>
+        <?php ssGallery(); ?>
 
           </div>
         </li>
@@ -58,27 +38,7 @@
 
           <div class="accordion-content" data-tab-content>
 
-          <?php  
-
-            $query = "SELECT * FROM press_conf";
-            $pcImages = mysqli_query($connection, $query);
-            $pcImages_check = mysqli_num_rows($pcImages);
-
-            if ($pcImages_check > 0) {
-              while($row = mysqli_fetch_assoc($pcImages)) {
-                $pc_image = escape($row['pc_image']);
-
-            ?>
-
-            <div class="row ssGallery">
-              <div class="small-12 columns">
-                <?php echo"<img src='images/{$pc_image}' alt='PC Img{$pc_id}'>";?>
-              </div> 
-            </div>              
-          <?php  
-              }   
-            } 
-          ?>
+          <?php pcGallery(); ?>
 
           </div>
         </li>
@@ -89,27 +49,7 @@
           <div class="accordion-content" data-tab-content>
 
 
-          <?php  
-
-            $query = "SELECT * FROM legend_legacy";
-            $llImages = mysqli_query($connection, $query);
-            $llImages_check = mysqli_num_rows($llImages);
-
-            if ($llImages_check > 0) {
-              while($row = mysqli_fetch_assoc($llImages)) {
-                $ll_image = escape($row['ll_image']);
-
-            ?>
-
-            <div class="row ssGallery">
-              <div class="small-12 columns">
-                <?php echo"<img src='images/{$ll_image}' alt='PC Img{$ll_id}'>";?>
-              </div> 
-            </div>              
-          <?php  
-              }   
-            } 
-          ?>
+          <?php llGallery(); ?>
 
           </div>
         </li>
