@@ -1,5 +1,5 @@
 <!-- connection to database -->
-<?php include '../includes/db_news.php';?>
+<?php include '../includes/db_timeline.php';?>
 
 <!-- connection to functions file -->
 <?php include 'includes/functions.php'; ?>
@@ -92,7 +92,7 @@
 
         </ul>
       </div>
-      <!-- ADMIN SideBar -->
+      <!-- ADMIN SideBar end-->
     </nav>
 
     <div id="page-wrapper">
@@ -104,8 +104,8 @@
           <div class="col-lg-12">
             <h1 class="page-header">Welcome to ADMIN Dashboard</h1>
 
-            <!-- GET request for CRUD in articles -->
-            <?php  newsArticleAddEdit(); ?>
+            <!-- GET request for CRUD in timeline -->
+            <?php  timelineAddEdit(); ?>
 
         </div>
         <!-- /.row -->

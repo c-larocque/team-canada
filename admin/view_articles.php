@@ -15,12 +15,14 @@ if (isset($_GET['delete'])) {
 <table class="table table-bordered table-hover">
   <thead>
     <tr>
-      <th>article_id</th>
-      <th>article_category_id</th>
-      <th>article_title</th>
-      <th>article_date</th>
-      <th>article_image</th>
-      <th>article_content</th>
+      <th>id</th>
+      <th>Article Category</th>
+      <th>Article Title</th>
+      <th>Article Date</th>
+      <th>Article Image</th>
+      <th>Article Content</th>
+      <th>edit</th>
+      <th>delete</th>
     </tr>
   </thead>
   <tbody>
