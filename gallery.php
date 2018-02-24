@@ -28,7 +28,7 @@
 
           <div class="accordion-content" data-tab-content>
 
-        <?php ssGallery(); ?>
+        <?php ssGallery_small(); ?>
 
           </div>
         </li>
@@ -38,7 +38,7 @@
 
           <div class="accordion-content" data-tab-content>
 
-          <?php pcGallery(); ?>
+          <?php pcGallery_small(); ?>
 
           </div>
         </li>
@@ -49,7 +49,7 @@
           <div class="accordion-content" data-tab-content>
 
 
-          <?php llGallery(); ?>
+          <?php llGallery_small(); ?>
 
           </div>
         </li>
@@ -79,32 +79,7 @@
         <div class="row ssGallery">
         <h2>SUMMIT SERIES GAME ACTION</h2>
 
-        <?php  
-
-            $query = "SELECT * FROM summit_series";
-            $ssImages = mysqli_query($connection, $query);
-            $ssImages_check = mysqli_num_rows($ssImages);
-
-            if ($ssImages_check > 0) {
-              while($row = mysqli_fetch_assoc($ssImages)) {
-                $ss_image = escape($row['ss_image']);
-
-            ?>
-
-            <div class="medium-3 large-3 columns">
-            <a data-open="openImg"><?php echo"<img src='images/{$ss_image}' alt='SS Image'>";?></a>
-            <div class="reveal medium" id="openImg" data-reveal>
-              <?php echo"<img src='images/{$ss_image}' alt='SS Image {$ss_id} Large'>";?>
-           <!--    <img src="images/gallery-ss-1.jpg" alt="SS Image 1 Large"> -->
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          </div>
-          <?php  
-              }   
-            } 
-          ?>
+        <?php ssGallery(); ?>
 
         </div>
       </section><!--end of div 1-->
@@ -116,31 +91,7 @@
         <div class="row ssGallery">
           <h2>PRESS CONFERENCE - AUGUST 27, 2014</h2>
 
-        <?php  
-
-            $query = "SELECT * FROM press_conf";
-            $pcImages = mysqli_query($connection, $query);
-            $pcImages_check = mysqli_num_rows($pcImages);
-
-            if ($pcImages_check > 0) {
-              while($row = mysqli_fetch_assoc($pcImages)) {
-                $pc_image = escape($row['pc_image']);
-
-            ?>
-
-            <div class="medium-3 large-3 columns">
-            <a data-open="openImg"><?php echo"<img src='images/{$pc_image}' alt='PC Image'>";?></a>
-            <div class="reveal medium" id="openImg" data-reveal>
-              <?php echo"<img src='images/{$pc_image}' alt='PC Image {$pc_id} Large'>";?>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          </div>
-          <?php  
-              }   
-            } 
-          ?>
+        <?php pcGallery(); ?>
 
         </div>
       </section><!--end of div 2-->
@@ -149,41 +100,17 @@
 
     <div class="galleryLargeCon hide-for-small-only">
 
-
     <section id="Div3" style="display: none;">
         <div class="row ssGallery">
           <h2>"LEGENDS TO LEGACY" REUNION GALA - OCTOBER 2, 2014</h2>
 
 
-          <?php  
-
-            $query = "SELECT * FROM legend_legacy";
-            $llImages = mysqli_query($connection, $query);
-            $llImages_check = mysqli_num_rows($llImages);
-
-            if ($llImages_check > 0) {
-              while($row = mysqli_fetch_assoc($llImages)) {
-                $ll_image = escape($row['ll_image']);
-
-            ?>
-
-            <div class="medium-3 large-3 columns">
-            <a data-open="openImg"><?php echo"<img src='images/{$ll_image}' alt='LL Image'>";?></a>
-            <div class="reveal medium" id="openImg" data-reveal>
-              <?php echo"<img src='images/{$ll_image}' alt='LL Image {$ll_id} Large'>";?>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          </div>
-          <?php  
-              }   
-            } 
-          ?>
+          <?php llGallery(); ?>
 
         </div>
       </section><!--end of div 3-->
     </div>
+
 
     <?php include 'includes/footer.php';?>
 

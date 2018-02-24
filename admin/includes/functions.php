@@ -43,7 +43,7 @@
 
 
 	// ADMIN REDIRECT TO ADD, EDIT ARTICLES
-	function adminArticleAddEdit() {
+	function newsArticleAddEdit() {
 		global $connection;
 	    if (isset($_GET['source'])) {
 	     $source = $_GET['source'];
@@ -64,6 +64,34 @@
 	      default:
 	        include "view_articles.php";
 	        break;
+
+	    }
+
+	}
+
+		// ADMIN REDIRECT TO ADD, EDIT TIMELINE
+	function timelineAddEdit() {
+		global $connection;
+	    if (isset($_GET['source'])) {
+	     $source = $_GET['source'];
+	    } else {
+	      $source = "";
+	    }
+
+	    switch ($source) {
+
+	      case 'addTo_timeline':
+	      include "addTo_timeline.php";
+	      break;              
+
+	      case 'edit_timeline':
+	      include "edit_timeline.php";
+	      break;
+	      
+	      default:
+	        include "view_timeline.php";
+	        break;
+
 	    }
 
 	}

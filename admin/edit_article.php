@@ -105,12 +105,12 @@
 	</div>
 
 	<div class="form-group">
-		<label for="artcile_date">Article Date</label>
+		<label for="article_date">Article Date</label>
     <input type="date" name="article_date" class="form-control value="<?php echo $article_date ?>" >
 	</div>
 
 	<div class="form-group">
-		<label for="artcile_content">Article Content</label>
+		<label for="article_content">Article Content</label>
     <textarea name="article_content" class="form-control" id="" cols="30" rows="10"><?php echo $article_content ?></textarea>
 	</div>
 		

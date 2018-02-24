@@ -13,8 +13,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
   <title>SB Admin - Team Canada 72</title>
 
@@ -26,13 +24,6 @@
 
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -62,25 +53,42 @@
       </ul>
 
 
-      <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+      <!-- ADMIN SideBar -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
-          <li><a href="javascript:;" data-toggle="collapse" data-target="#articles_dropdown"><i class="fa fa-fw fa-arrows-v"></i> News Articles <i class="fa fa-fw fa-caret-down"></i></a>
+          <li>
+            <a href="index.php"><i class="fa fa-fw fa-home"></i> Home </a>
+          </li>
+          <li><a href="javascript:;" data-toggle="collapse" data-target="#articles_dropdown"><i class="fa fa-fw fa-newspaper-o"></i> News Articles <i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="articles_dropdown" class="collapse">
+            <li>
+              <a href="categories.php">Categories </a>
+            </li>
               <li>
                 <a href="articles.php"> View Articles </a>
               </li>
           <li>
-                <a href="articles.php?source=add_article"> Add Article </a>
-              </li>
+            <a href="articles.php?source=add_article"> Add Article </a>
+          </li>        
         </ul>
         </li>
+          <li><a href="javascript:;" data-toggle="collapse" data-target="#timeline_dropdown"><i class="fa fa-fw fa-list-ul"></i> Timeline <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="timeline_dropdown" class="collapse">
+              <li>
+                <a href="timeline.php"> View Timeline </a>
+              </li>
           <li>
-            <a href="categories.php"><i class="fa fa-fw fa-desktop"></i> Categories </a>
+            <a href="timeline.php?source=addTo_timeline"> Add To Timeline </a>
+          </li>        
+        </ul>
+        </li>         
+          <li>
+            <a href="#"><i class="fa fa-fw fa-photo"></i> Gallery Update </a>
           </li>
+
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
+      <!-- ADMIN SideBar end -->
     </nav>
 
     <div id="page-wrapper">
@@ -91,6 +99,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h1 class="page-header">Welcome to ADMIN Dashboard</h1>
+            <img src="../images/logo_medium.svg" alt="logo">
           </div>
         </div>
         <!-- /.row -->
