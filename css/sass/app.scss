@@ -107,13 +107,55 @@ h1, h2, h3, h4 {
 	background-color: #ccc;
 }
 
-.slidesjs-container {
-  background-color: red !important;
+h1 {
+  text-transform: uppercase;
+  border-bottom: solid 2px #a90000;
 }
 
-.ssTimelineSlides {
-  background-color: red;
-  z-index: -1;
+.slidesjs-navigation i {
+  color: #a90000;
+  font-size: 40px;
+  padding: 15px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.icon-chevron-right {
+  float: right;
+}
+
+.ssTimelineSlides img {
+  height: 375px;
+}
+
+.ssTimelineSlides h2 {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.slidesjs-pagination {
+  display: none;
+}
+
+.slidesjs-container {
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 1023px)
+{
+  .slidesjs-navigation i {
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .ssTimelineSlides h2 {
+    font-size: 22px;
+  }
+
+  .ssTimelineSlides p {
+    font-size: 13px;
+  }
 }
 
 //Header and Navigation
@@ -670,6 +712,12 @@ li {
 		border: 2px #fff solid;
 		color: #fff;
 	}
+}
+
+#merchOverlay {
+  background-color: rgba(255,255,255,.7);
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -2622,39 +2670,60 @@ time
 
 
 /* TIMELINE */
-/*
+
+.timeline {
+  h2 {
+    color: $red;
+    font-size: 1.75em;
+  }
+
+}
+  .buttons {
+    a {
+    background-color: $red;
+    border-radius:    15px;
+  }
+  a:hover {
+    background-color: #8A0000;
+  }
+  font-family:    $mainFont;
+  padding-top:    50px;
+} //end of buttons
+
+
+#allTimeline
 {
 	background-color: $grey;
 }
 
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #000;
-}
-
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-}
-
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 15px;
-  background: $red;
-}
+// .timeline ul li {
+//   list-style-type: none;
+//   position: relative;
+//   width: 6px;
+//   margin: 0 auto;
+//   padding-top: 50px;
+//   background: #000;
+// }
+//
+// .timeline ul li::after {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   bottom: 0;
+//   transform: translateX(-50%);
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   background: inherit;
+// }
+//
+// .timeline ul li div {
+//   position: relative;
+//   bottom: 0;
+//   width: 400px;
+//   padding: 15px;
+//   background: $red;
+// }
 /*
 .timeline ul li div::before {
   content: '';
@@ -2736,34 +2805,34 @@ p {
 
 }
 //timeline
-.timeline {
-  h2 {
-    color: $red;
-    font-size:    1.75em;
-  }
-  .example-orbit {
-  img {
-    border: 5px $grey solid;
-  }
-}
-  .buttons {
-    a {
-    background-color: $red;
-    border-radius:    15px;
-  }
-  a:hover {
-    background-color: #8A0000;
-  }
-  font-family:    $mainFont;
-  padding-top:    50px;
-} //end of buttons
-    .timeline-orbit {
-  a {
-    background-color:    $red;
-    border-radius: 15px;
-    font-family: $mainFont;
-    padding:    10px;
-    column-rule:   #fff;
-  }
-}
-} //end of timeline
+// .timeline {
+//   h2 {
+//     color: $red;
+//     font-size:    1.75em;
+//   }
+//   .example-orbit {
+//   img {
+//     border: 5px $grey solid;
+//   }
+// }
+//   .buttons {
+//     a {
+//     background-color: $red;
+//     border-radius:    15px;
+//   }
+//   a:hover {
+//     background-color: #8A0000;
+//   }
+//   font-family:    $mainFont;
+//   padding-top:    50px;
+// } //end of buttons
+//     .timeline-orbit {
+//   a {
+//     background-color:    $red;
+//     border-radius: 15px;
+//     font-family: $mainFont;
+//     padding:    10px;
+//     column-rule:   #fff;
+//   }
+// }
+// } //end of timeline
