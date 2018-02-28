@@ -36,7 +36,7 @@
           <ul class="vertical menu" data-menu>
             <li><a href="index.php">HOME</a></li>
             <li><a href="theteam.php">THE TEAM</a></li>
-            <li><a href="summitseries.php">TIMELINE</a></li>
+            <li><a href="timeline.php">TIMELINE</a></li>
             <li><a href="legacy.php">LEGACY</a></li>
             <li><a href="gallery.php">GALLERY</a></li>
             <li><a href="media.php">MEDIA CENTRE</a></li>

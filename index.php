@@ -30,9 +30,9 @@
         <h2 class="hide">Main Homepage Information</h2>
         <section class="small-12 medium-4 large-4 columns homeSections" id="summitSeriesHomepage" data-equalizer-watch>
           <img src="images/summit_series.jpg" alt="Summit Series Img Icon" class="homeThumbnail">
-          <h3>SUMMIT SERIES</h3>
+          <h3>TIMELINE</h3>
           <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
-          <a href="summitseries.php" class="learnMoreBut">LEARN MORE</a>
+          <a href="timeline.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="teamHomepage" data-equalizer-watch>

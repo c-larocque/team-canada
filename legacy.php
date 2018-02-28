@@ -18,7 +18,7 @@
                   <h3 class="hide">Legacy Navigation</h3>
                   <ul>
                     <li><a href="#aboutUs">ABOUT US</a></li>
-                    <li><a href="summitseries.php">TIMELINE</a></li>
+                    <li><a href="timeline.php">TIMELINE</a></li>
                     <li><a href="#legacySeconds">28,800 SECONDS VENTURE</a></li>
                     <li><a href="#pillarSection">3 PILLARS</a></li>
                     <li><a href="#ssTour">2016 CANADA TOUR</a></li>
