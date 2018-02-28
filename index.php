@@ -140,7 +140,9 @@ Summit Series, particularly those highlighting what can be achieved through tea
       </section>
     </div>
 
+    <?php include 'includes/survey_popup.php';?>
     <?php include 'includes/footer.php';?>
+
 
         </div>
       </div>

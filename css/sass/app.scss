@@ -32,6 +32,55 @@ h1, h2, h3, h4 {
 	padding: 10px 0;
 }
 
+/* Survey Pop up Stlying */
+
+#surveyPopUp {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  max-width: 400px;
+  border: solid 2px $red;
+  padding: 20px;
+
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+
+  h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: $red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  button:hover {
+    background-color: lighten($red,5%);
+  }
+}
+
+#surveyButton {
+  margin: 0 auto;
+}
+
+
 #pano
 {
 	background-color: #666;
