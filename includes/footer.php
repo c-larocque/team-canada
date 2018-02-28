@@ -1,7 +1,12 @@
+
+
 <div class="footerPano">
+
+  <div id="toTop">
+      <a href="#">Back To Top</a>
+  </div>
   <footer id="mainFooter" class="row">
     <h2 class="hide">Main Footer</h2>
-
     <nav class="small-12 columns">
       <h3 class="hide">Social Media Navigation</h3>
       <ul id="socialNav">

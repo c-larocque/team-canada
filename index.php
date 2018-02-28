@@ -92,10 +92,10 @@ Summit Series, particularly those highlighting what can be achieved through tea
         <h3>SOCIAL MEDIA</h3>
         <div class="socialImgs row">
           <div class="small-12 medium-5 medium-push-1 columns facebook socials">
-            <a href="http://www.facebook.com/teamcanada1972">Join our Facebook Fans<img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a>
+            <a href="http://www.facebook.com/teamcanada1972"><h3>Join our Facebook Fans</h3><img src="images/facebook-app-logo.svg" class="fb" alt="socialbuttons"></a>
           </div>
           <div class="small-12 medium-5 medium-pull-1 columns twitter socials">
-            <a href="http://www.twitter.com/teamcanada1972">Join the Conversation on Twitter<img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a>
+            <a href="http://www.twitter.com/teamcanada1972"><h3>Join the Conversation on Twitter</h3><img src="images/twitter-app-logo.svg" class="twit" alt="socialbuttons"></a>
           </div>
         </div>
       </section>
@@ -142,10 +142,12 @@ Summit Series, particularly those highlighting what can be achieved through tea
       </div>
     </div>
 
+    <?php include 'includes/survey_popup.php';?>
     <?php include 'includes/footer.php';?>
 
-        <!-- </div>
-      </div> -->
+
+        </div>
+      </div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>

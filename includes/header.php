@@ -26,7 +26,10 @@
 <!--Mobile Header and Nav CLOSE-->
 
 <!--Medium/Large Header and Nav-->
-    <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper" id="navBG">
+      <div id="backToMenu">
+        <a href="#">Back To Menu</a>
+      </div>
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <nav class="off-canvas position-left mainNav" id="offCanvasNav" data-off-canvas>
           <h2 class="hide">Medium/Large Navigation</h2>
@@ -40,6 +43,7 @@
             <li><a href="partners.php">PARTNERS</a></li>
             <li><a href="contact.php">CONTACT</a></li>
           </ul>
+
         </nav>
 
         <div class="off-canvas-content" data-off-canvas-content>
@@ -55,4 +59,5 @@
               </div>
             </div>
           </header>
+
 <!--Medium/Large Header and Nav CLOSE-->

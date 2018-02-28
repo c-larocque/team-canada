@@ -32,6 +32,71 @@ h1, h2, h3, h4 {
 	padding: 10px 0;
 }
 
+
+/* Survey Pop up Stlying */
+
+#surveyPopUp {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  max-width: 400px;
+  border: solid 2px $red;
+  padding: 20px;
+  z-index: 999;
+
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+
+  h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1em;
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: $red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    line-height: 1.5em;
+    min-height: 70px;
+    max-height: 70px;
+  }
+
+  button:hover {
+    background-color: lighten($red,5%);
+  }
+}
+
+
+#closeSurvey button{
+  background: none;
+  border: solid 2px black;
+  color: black;
+}
+
+#closeSurvey button:hover {
+  background: none;
+  border: solid 2px $red;
+  color: $red;
+}
+
+
 #pano
 {
 	background-color: #666;
@@ -40,6 +105,15 @@ h1, h2, h3, h4 {
 #socialMedia
 {
 	background-color: #ccc;
+}
+
+.slidesjs-container {
+  background-color: red !important;
+}
+
+.ssTimelineSlides {
+  background-color: red;
+  z-index: -1;
 }
 
 //Header and Navigation
@@ -135,14 +209,74 @@ h1, h2, h3, h4 {
 #offCanvasNav
 {
 	background-color: #000;
-	height: 100%;
+	height: 100vh;
+
+ul {
+  position: relative;
 }
+
+li {
+
+}
+
+}
+
+#navBG {
+  background-color: #000;
+}
+
+#backToMenu {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  padding: 15px;
+  position: fixed;
+  bottom: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-family: $mainFont;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px;
+  a {
+    color: white;
+  }
+
+}
+
 
 #offCanvasNav li a
 {
 	@extend .mainNav;
 	padding: 15px 0;
 	font-size: 1.375em;
+}
+
+
+
+#mainFooter {
+
+}
+
+#toTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+
+  a {
+    color: white !important;
+    font-family: $mainFont;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: $red;
+    border: solid 2px black;
+  }
 }
 
 //Homepage
@@ -446,13 +580,53 @@ h1, h2, h3, h4 {
 	.facebook {
 		background-color: #3b5998;
 		height: 150px;
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+
+    h3 {
+      color: white !important;
+      font-size: 1.5em;
+      font-family: $mainFont;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 15px;
+    }
+    a {
+      color: white;
+    }
 	}
 
 	.twitter {
 		background-color: #00aced;
 		height:	150px;
+    position: relative;
+
+    img {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+
+    h3 {
+      color: white !important;
+      font-size: 1.5em;
+      font-family: $mainFont;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 15px;
+    }
+    a {
+      color: white;
+    }
+
 	}
 }
+
 
 #merchCon
 {
@@ -1427,12 +1601,14 @@ h1, h2, h3, h4 {
 	{
     .socials {
       padding-right: 10px;
+      position: relative;
     }
 		a
 		{
 			float: left;
 			margin-right: 3px;
 		}
+
 	}
 
 	#storeBut
@@ -2398,7 +2574,7 @@ p {
 
 
 /*summit series timeline page*/
-
+/*
 
 #subHeader
 {
@@ -2506,7 +2682,7 @@ time
   padding: 15px;
   background: $red;
 }
-
+/*
 .timeline ul li div::before {
   content: '';
   position: absolute;
@@ -2516,26 +2692,7 @@ time
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent $red transparent transparent;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent $red;
-}
-
+/*
 .moreInfo
 {
 	font-family: $mainFont;
@@ -2558,38 +2715,8 @@ time
 {
 	margin-bottom: 25px;
 }
+*/
 
-
-/*responsive*/
-
-@media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px; /*250+45-6*/
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent $red transparent transparent;
-  }
-}
 
 //portal page
 
@@ -2635,3 +2762,35 @@ p {
   }
 
 }
+//timeline
+.timeline {
+  h2 {
+    color: $red;
+    font-size:    1.75em;
+  }
+  .example-orbit {
+  img {
+    border: 5px $grey solid;
+  }
+}
+  .buttons {
+    a {
+    background-color: $red;
+    border-radius:    15px;
+  }
+  a:hover {
+    background-color: #8A0000;
+  }
+  font-family:    $mainFont;
+  padding-top:    50px;
+} //end of buttons
+    .timeline-orbit {
+  a {
+    background-color:    $red;
+    border-radius: 15px;
+    font-family: $mainFont;
+    padding:    10px;
+    column-rule:   #fff;
+  }
+}
+} //end of timeline

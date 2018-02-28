@@ -1,8 +1,8 @@
 <?php
   ini_set('display_errors',1);
     error_reporting(E_ALL);
-  require_once("admin/scripts/connect.php");
-  require_once("admin/scripts/config.php");
+  require_once("includes/db_players.php");
+  //require_once("admin/scripts/config.php");
 ?>
 
 <?php
