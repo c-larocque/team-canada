@@ -1,6 +1,6 @@
 $(document).foundation()
 
-var divs = ["Div1", "Div2", "Div3", "Div4", "Div5"];
+var divs = ["Div1", "Div2", "Div3"];
     var visibleDivId = null;
     function divVisibility(divId) {
       if(visibleDivId === divId) {
