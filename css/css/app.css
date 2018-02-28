@@ -73,13 +73,44 @@ h1, h2, h3, h4 {
 #socialMedia {
   background-color: #ccc; }
 
+h1 {
+  text-transform: uppercase;
+  border-bottom: solid 2px #a90000; }
+
+.slidesjs-navigation i {
+  color: #a90000;
+  font-size: 40px;
+  padding: 15px;
+  margin-top: 15px;
+  display: inline-block; }
+
+.icon-chevron-right {
+  float: right; }
+
+.ssTimelineSlides img {
+  height: 375px; }
+
+.ssTimelineSlides h2 {
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+.slidesjs-pagination {
+  display: none; }
+
 .slidesjs-container {
-  background-color: red !important; }
+  margin: 25px 0; }
 
-.ssTimelineSlides {
-  background-color: red;
-  z-index: -1; }
+@media screen and (max-width: 1023px) {
+  .slidesjs-navigation i {
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 15px; }
 
+  .ssTimelineSlides h2 {
+    font-size: 22px; }
+
+  .ssTimelineSlides p {
+    font-size: 13px; } }
 #mobileNav {
   width: 100%;
   background-color: #000; }
@@ -1604,32 +1635,6 @@ time
 #allTimeline {
   background-color: #363636; }
 
-.timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #000; }
-
-.timeline ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit; }
-
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 15px;
-  background: #a90000; }
-
 /*
 .timeline ul li div::before {
   content: '';
@@ -1686,24 +1691,5 @@ time
 
   #sortForm select {
     width: 50%; } }
-.timeline h2 {
-  color: #a90000;
-  font-size: 1.75em; }
-.timeline .example-orbit img {
-  border: 5px #363636 solid; }
-.timeline .buttons {
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-  padding-top: 50px; }
-  .timeline .buttons a {
-    background-color: #a90000;
-    border-radius: 15px; }
-  .timeline .buttons a:hover {
-    background-color: #8A0000; }
-.timeline .timeline-orbit a {
-  background-color: #a90000;
-  border-radius: 15px;
-  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
-  padding: 10px;
-  column-rule: #fff; }
 
 /*# sourceMappingURL=app.css.map */

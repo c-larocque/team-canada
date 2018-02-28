@@ -2,60 +2,7 @@
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <?php include 'includes/head.php';?>
-    <style>
 
-    h1 {
-      text-transform: uppercase;
-      border-bottom: solid 2px #a90000;
-    }
-
-    .slidesjs-navigation i {
-      color: #a90000;
-      font-size: 40px;
-      padding: 15px;
-      margin-top: 15px;
-      display: inline-block;
-    }
-
-    .icon-chevron-right {
-      float: right;
-    }
-
-    .ssTimelineSlides img {
-      height: 375px;
-    }
-
-    .ssTimelineSlides h2 {
-      text-transform: uppercase;
-      padding-top: 10px;
-    }
-
-    .slidesjs-pagination {
-      display: none;
-    }
-
-    .slidesjs-container {
-      margin: 25px 0;
-    }
-
-    @media screen and (max-width: 1023px)
-    {
-      .slidesjs-navigation i {
-        font-size: 24px;
-        padding: 5px;
-        margin-top: 15px;
-      }
-
-      .ssTimelineSlides h2 {
-        font-size: 22px;
-      }
-
-      .ssTimelineSlides p {
-        font-size: 13px;
-      }
-    }
-
-    </style>
     <title>HOME - Team Canada 1972</title>
   </head>
 
