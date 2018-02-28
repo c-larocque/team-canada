@@ -5,7 +5,6 @@
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/example.css">
-
   <link rel="stylesheet" href="css/foundation-icons.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/css/app.css">

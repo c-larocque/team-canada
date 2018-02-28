@@ -42,6 +42,15 @@ h1, h2, h3, h4 {
 	background-color: #ccc;
 }
 
+.slidesjs-container {
+  background-color: red !important;
+}
+
+.ssTimelineSlides {
+  background-color: red;
+  z-index: -1;
+}
+
 //Header and Navigation
 
 #mobileNav
