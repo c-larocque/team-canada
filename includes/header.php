@@ -3,7 +3,7 @@
       <h2 class="hide">Mobile Header</h2>
       <nav class="small-12 columns">
         <h2 class="hide">Mobile Navigation</h2>
-        <div class="title-bar" data-responsive-toggle="mobileNav">
+        <div class="title-bar" data-responsive-toggle="offCanvasNav">
           <button class="menu-icon float-left" type="button" data-toggle></button>
           <a href="index.php"><img src="images/logo.svg" alt="logo" width="60" height="61" class="title-bar-title" id="logoMobile"></a>
         </div>
@@ -12,7 +12,7 @@
           <ul class="mainNav">
             <li><a href="#">HOME</a></li>
             <li><a href="theteam.php">THE TEAM</a></li>
-            <li><a href="summitseries.php">TIMELINE</a></li>
+            <li><a href="timeline.php">TIMELINE</a></li>
             <li><a href="legacy.php">LEGACY</a></li>
             <li><a href="gallery.php">GALLERY</a></li>
             <li><a href="media.php">MEDIA CENTRE</a></li>
@@ -33,7 +33,7 @@
           <ul class="vertical menu" data-menu>
             <li><a href="index.php">HOME</a></li>
             <li><a href="theteam.php">THE TEAM</a></li>
-            <li><a href="summitseries.php">TIMELINE</a></li>
+            <li><a href="timeline.php">TIMELINE</a></li>
             <li><a href="legacy.php">LEGACY</a></li>
             <li><a href="gallery.php">GALLERY</a></li>
             <li><a href="media.php">MEDIA CENTRE</a></li>

@@ -290,6 +290,11 @@ h1, h2, h3, h4 {
     border: 2px #fff solid;
     color: #fff; }
 
+#merchOverlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%; }
+
 #socialNav {
   display: block;
   margin: 0 auto;
@@ -1446,6 +1451,19 @@ time {
     border-bottom: 1px solid #a90000; }
 
 /* TIMELINE */
+.timeline h2 {
+  color: #a90000;
+  font-size: 1.75em; }
+
+.buttons {
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  padding-top: 50px; }
+  .buttons a {
+    background-color: #a90000;
+    border-radius: 15px; }
+  .buttons a:hover {
+    background-color: #8A0000; }
+
 #allTimeline {
   background-color: #363636; }
 

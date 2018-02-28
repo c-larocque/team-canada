@@ -32,7 +32,7 @@
           <img src="images/summit_series.jpg" alt="Summit Series Img Icon" class="homeThumbnail">
           <h3>SUMMIT SERIES</h3>
           <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
-          <a href="summitseries.php" class="learnMoreBut">LEARN MORE</a>
+          <a href="timeline.php" class="learnMoreBut">LEARN MORE</a>
         </section>
 
         <section class="small-12 medium-4 large-4 columns homeSections" id="teamHomepage" data-equalizer-watch>
@@ -102,48 +102,50 @@ Summit Series, particularly those highlighting what can be achieved through tea
     </section>
 
     <div class="greyPano">
-      <section class="row" id="merchCon">
-          <h2>MERCHANDISE</h2>
-          <a href="#" id="storeBut">GO TO STORE ></a>
-          <div class="small-12 medium-6 large-3 columns merch">
-          <div id="jerseyCon">
-            <img src="images/home_jersey.jpg" alt="Home Jersey" width="225" height="300" id="jerseyImg">
-            <p>Team Canada ‘72 Jersey - Home</p>
-            <p>$129.99</p>
-            <a href="#" class="addToCart">ADD TO CART</a>
+      <div id="merchOverlay">
+        <section class="row" id="merchCon">
+            <h2>MERCHANDISE</h2>
+            <a href="#" id="storeBut">GO TO STORE ></a>
+            <div class="small-12 medium-6 large-3 columns merch">
+            <div id="jerseyCon">
+              <img src="images/home_jersey.jpg" alt="Home Jersey" width="225" height="300" id="jerseyImg">
+              <p>Team Canada ‘72 Jersey - Home</p>
+              <p>$129.99</p>
+              <a href="#" class="addToCart">ADD TO CART</a>
+            </div>
           </div>
-        </div>
-        <div class="show-for-medium medium-6 large-3 columns merch">
-          <div id="puckCon">
-            <img src="images/1972_puck.jpg" alt="Paul Henderson Puck" width="225" height="300" id="puckImg">
-            <p>Paul Henderson Signed ‘72 Puck</p>
-            <p>$79.99</p>
-            <a href="#" class="addToCart">ADD TO CART</a>
+          <div class="show-for-medium medium-6 large-3 columns merch">
+            <div id="puckCon">
+              <img src="images/1972_puck.jpg" alt="Paul Henderson Puck" width="225" height="300" id="puckImg">
+              <p>Paul Henderson Signed ‘72 Puck</p>
+              <p>$79.99</p>
+              <a href="#" class="addToCart">ADD TO CART</a>
+            </div>
           </div>
-        </div>
-        <div class="large-3 show-for-large columns merch">
-          <div id="shirtCon">
-            <img src="images/home_jersey.jpg" alt="Shirt" width="225" height="300" id="shirtImg">
-            <p>Team Canada ‘72 T-Shirt</p>
-            <p>$19.99</p>
-            <a href="#" class="addToCart">ADD TO CART</a>
+          <div class="large-3 show-for-large columns merch">
+            <div id="shirtCon">
+              <img src="images/home_jersey.jpg" alt="Shirt" width="225" height="300" id="shirtImg">
+              <p>Team Canada ‘72 T-Shirt</p>
+              <p>$19.99</p>
+              <a href="#" class="addToCart">ADD TO CART</a>
+            </div>
           </div>
-        </div>
-        <div class="large-3 columns show-for-large merch">
-          <div id="dvdCon">
-            <img src="images/1972_dvd.jpg" alt="DVD Image" width="225" height="300" id="dvdImg">
-            <p>Team Canada ‘72 Story DVD</p>
-            <p>$9.99</p>
-            <a href="#" class="addToCart">ADD TO CART</a>
+          <div class="large-3 columns show-for-large merch">
+            <div id="dvdCon">
+              <img src="images/1972_dvd.jpg" alt="DVD Image" width="225" height="300" id="dvdImg">
+              <p>Team Canada ‘72 Story DVD</p>
+              <p>$9.99</p>
+              <a href="#" class="addToCart">ADD TO CART</a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
     <?php include 'includes/footer.php';?>
 
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
     </div>
 
     <script src="js/vendor/jquery.js"></script>
