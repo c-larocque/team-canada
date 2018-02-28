@@ -29,6 +29,7 @@ h1, h2, h3, h4 {
   max-width: 400px;
   border: solid 2px #a90000;
   padding: 20px;
+  z-index: 999;
   -webkit-transition: all .3s ease-in;
   -ms-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
@@ -47,12 +48,24 @@ h1, h2, h3, h4 {
     color: white;
     padding: 10px;
     width: 100%;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    min-height: 70px;
+    max-height: 70px; }
   #surveyPopUp button:hover {
     background-color: #c30000; }
 
-#surveyButton {
-  margin: 0 auto; }
+#closeSurvey button {
+  background: none;
+  border: solid 2px black;
+  color: black; }
+
+#closeSurvey button:hover {
+  background: none;
+  border: solid 2px #a90000;
+  color: #a90000; }
 
 #pano {
   background-color: #666; }
@@ -124,11 +137,50 @@ h1, h2, h3, h4 {
 
 #offCanvasNav {
   background-color: #000;
-  height: 100%; }
+  height: 100vh; }
+  #offCanvasNav ul {
+    position: relative; }
+
+#navBG {
+  background-color: #000; }
+
+#backToMenu {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  padding: 15px;
+  position: fixed;
+  bottom: 10px;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px; }
+  #backToMenu a {
+    color: white; }
 
 #offCanvasNav li a {
   padding: 15px 0;
   font-size: 1.375em; }
+
+#toTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+  #toTop a {
+    color: white !important;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #a90000;
+    border: solid 2px black; }
 
 #myvid {
   position: fixed;
@@ -291,10 +343,38 @@ h1, h2, h3, h4 {
   max-height: 50px; }
 #mediaCentre .facebook {
   background-color: #3b5998;
-  height: 150px; }
+  height: 150px;
+  position: relative; }
+  #mediaCentre .facebook img {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+  #mediaCentre .facebook h3 {
+    color: white !important;
+    font-size: 1.5em;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px; }
+  #mediaCentre .facebook a {
+    color: white; }
 #mediaCentre .twitter {
   background-color: #00aced;
-  height: 150px; }
+  height: 150px;
+  position: relative; }
+  #mediaCentre .twitter img {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+  #mediaCentre .twitter h3 {
+    color: white !important;
+    font-size: 1.5em;
+    font-family: "Fjalla One", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px; }
+  #mediaCentre .twitter a {
+    color: white; }
 
 #merchCon {
   background-color: #363636;
@@ -862,7 +942,8 @@ h1, h2, h3, h4 {
       float: left; }
 
   #socialSection .socials {
-    padding-right: 10px; }
+    padding-right: 10px;
+    position: relative; }
   #socialSection a {
     float: left;
     margin-right: 3px; }

@@ -32,8 +32,11 @@ var closeSurvBut = document.querySelector("#closeSurvey");
 var ifOpen = true;
 var randomBool = Math.random() >= 0.5;
 
+var toTop = document.querySelector("#toTop");
+
 //50% Chance user will get the survey (randomBool)
 function userScroll() {
+
   if(randomBool) {
   if(ifOpen) {
   var fromTop = window.pageYOffset;
@@ -58,7 +61,19 @@ function closeSurvey() {
   ifOpen = false;
 }
 
+function backToTop() {
+  var fromTop = window.pageYOffset;
+    if (fromTop > 800){
+  toTop.style.opacity = "1";
+  toTop.style.visibility = "visible";
+} else {
+  toTop.style.opacity = "0";
+  toTop.style.visibility = "hidden";
+}
+}
+
 
 //Listener
 closeSurvBut.addEventListener("click", closeSurvey, false);
 document.addEventListener("scroll", userScroll, false);
+document.addEventListener("scroll", backToTop, false);
