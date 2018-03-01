@@ -19,10 +19,10 @@
 
     <?php include 'includes/header.php';?>
 
-<!-- <div class="buttons row">
+<div class="buttons row">
     <a href="#" class="button small-10 small-push-1 medium-4 large-3 large-push-2 columns" onclick="divVisibility('Div4');">Summit Series</a>
     <a href="#" class="button small-10 small-pull-1 medium-4 large-3 large-pull-2 columns" onclick="divVisibility('Div5');">Current Events</a>
-</div> -->
+</div>
 
 <section id="Div4" class="row" style="display: block;">
     <h1>Summit Series Timeline</h1>
@@ -33,7 +33,7 @@
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
-  <?php ssTimeline(); ?> 
+  <?php ssTimeline(); ?>
 
 </div>
 </section><!--end summit series section-->
@@ -46,7 +46,7 @@
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
-    <?php ceTimeline(); ?> 
+    <?php ceTimeline(); ?>
 
 </div>
 
