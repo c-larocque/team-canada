@@ -72,7 +72,7 @@
           </li>        
         </ul>
         </li>
-          <li><a href="javascript:;" data-toggle="collapse" data-target="#timeline_dropdown"><i class="fa fa-fw fa-list-ul"></i> Timeline <i class="fa fa-fw fa-caret-down"></i></a>
+          <li><a href="javascript:;" data-toggle="collapse" data-target="#timeline_dropdown"><i class="fa fa-fw fa-list-ul"></i> Summit Series Timeline <i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="timeline_dropdown" class="collapse">
               <li>
                 <a href="timeline.php"> View Timeline </a>
@@ -81,10 +81,18 @@
             <a href="timeline.php?source=addTo_timeline"> Add To Timeline </a>
           </li>        
         </ul>
-        </li>         
+        </li>   
+
+          <li><a href="javascript:;" data-toggle="collapse" data-target="#cetimeline_dropdown"><i class="fa fa-fw fa-list-ul"></i> Current Events Timeline <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="cetimeline_dropdown" class="collapse">
+              <li>
+                <a href="currentEventsTimeline.php"> View Timeline </a>
+              </li>
           <li>
-            <a href="#"><i class="fa fa-fw fa-photo"></i> Gallery Update </a>
-          </li>
+            <a href="currentEventsTimeline.php?source=addTo_CEtimeline"> Add To Timeline </a>
+          </li>        
+        </ul>
+        </li>       
 
         </ul>
       </div>

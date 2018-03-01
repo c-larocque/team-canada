@@ -14,7 +14,7 @@
 
 
 
-		$query = "INSERT INTO summit_series_timeline(ss_timeline_title, ss_timeline_img, ss_timeline_content) ";
+		$query = "INSERT INTO current_events_timeline(ce_timeline_title, ce_timeline_img, ce_timeline_content) ";
 
 		$query .= "VALUES('{$tl_title}', '{$tl_image}', '{$tl_content}' ) ";
 

@@ -53,6 +53,20 @@
 
           </div>
         </li>
+
+        <!-- Added Gallery -->
+        <li class="accordion" data-accordion data-allow-all-closed="true">
+          <a href="#" class="accordion-title">Team Canada 72 - Gallery</a>
+
+          <div class="accordion-content" data-tab-content>
+
+
+  
+
+          </div>
+        </li>
+        <!-- End of added Gallery -->
+
       </ul>
     </section><!--close mobile gallery-->
 
@@ -70,6 +84,12 @@
         <a href="#" onclick="divVisibility('Div3');">
           <img src="images/gallery-ll-logo-cap.jpg" alt="Legends to Legacy Logo" class="pic"/>
         </a>
+
+        <!-- added Gallery -->
+<!--         <a href="#" onclick="divVisibility('Div4');">
+          <img src="images/logo.svg" alt="TC Logo" class="pic"/>
+        </a> -->
+
       </div>
     </section>
 
@@ -111,6 +131,19 @@
       </section><!--end of div 3-->
     </div>
 
+
+<!--     <div class="galleryLargeCon hide-for-small-only">
+
+    <section id="Div4" style="display: none;">
+        <div class="row ssGallery">
+          <h2>Team Canada 72 - Gallery</h2>
+
+
+
+        </div>
+      </section>
+    </div> -->
+    <!--end of div 4-->
 
     <?php include 'includes/footer.php';?>
 

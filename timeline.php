@@ -1,3 +1,10 @@
+<!-- connection to database -->
+<?php include 'includes/db_timeline.php';?>
+
+<!-- connection to functions file-->
+<?php include 'includes/functions.php';?>
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -26,6 +33,8 @@
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
+  <?php ssTimeline(); ?> 
+
 </div>
 </section><!--end summit series section-->
 
@@ -37,6 +46,7 @@
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
+    <?php ceTimeline(); ?> 
 
 </div>
 

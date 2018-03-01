@@ -70,7 +70,7 @@
 	}
 
 		// ADMIN REDIRECT TO ADD, EDIT TIMELINE
-	function timelineAddEdit() {
+	function ssTimelineAddEdit() {
 		global $connection;
 	    if (isset($_GET['source'])) {
 	     $source = $_GET['source'];
@@ -90,6 +90,33 @@
 	      
 	      default:
 	        include "view_timeline.php";
+	        break;
+
+	    }
+
+	}
+
+			// ADMIN REDIRECT TO ADD, EDIT current events TIMELINE
+	function ceTimelineAddEdit() {
+		global $connection;
+	    if (isset($_GET['source'])) {
+	     $source = $_GET['source'];
+	    } else {
+	      $source = "";
+	    }
+
+	    switch ($source) {
+
+	      case 'addTo_CEtimeline':
+	      include "addTo_CEtimeline.php";
+	      break;              
+
+	      case 'edit_CEtimeline':
+	      include "edit_CEtimeline.php";
+	      break;
+	      
+	      default:
+	        include "view_CEtimeline.php";
 	        break;
 
 	    }
