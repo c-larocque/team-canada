@@ -102,9 +102,8 @@ Summit Series, particularly those highlighting what can be achieved through tea
     </section>
 
     <div class="greyPano">
-      <div id="merchOverlay">
         <section class="row" id="merchCon">
-            <h2>MERCHANDISE</h2>
+            <h2>MERCHANDISE - COMING SOON!</h2>
             <a href="#" id="storeBut">GO TO STORE ></a>
             <div class="small-12 medium-6 large-3 columns merch">
             <div id="jerseyCon">
@@ -139,7 +138,6 @@ Summit Series, particularly those highlighting what can be achieved through tea
             </div>
           </div>
         </section>
-      </div>
     </div>
 
     <?php include 'includes/survey_popup.php';?>
