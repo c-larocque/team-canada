@@ -17,7 +17,7 @@
     <a href="#" class="button small-10 small-pull-1 medium-4 large-3 large-pull-2 columns" onclick="divVisibility('Div5');">Current Events</a>
 </div>
 
-<section id="Div4" class="row">
+<section id="Div4" class="row" style="display: block;">
     <h1>Summit Series Timeline</h1>
     <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
 
@@ -27,7 +27,8 @@
   <div class="ssTimelineSlides row">
     <img src="images/gallery_ll_1.jpg" alt="Before" class="small-12 medium-6 columns">
     <h2 class="small-12 medium-6 columns">Before</h2>
-    <p class="small-12 medium-6 columns">After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War" why is this not working anymore this makes no sense omg just scroll already OKay i guess ill why is this not working, it makes no </p>
+    <p class="small-12 medium-6 columns">After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.
+	</p>
   </div>
   <div class="ssTimelineSlides">
     <img src="images/gallery_ll_2.jpg" alt="Before" class="small-12 medium-6 columns">
@@ -53,7 +54,7 @@
   <div class="ssTimelineSlides row">
     <img src="images/gallery_ll_1.jpg" alt="Before" class="small-12 medium-6 columns">
     <h2>Before</h2>
-    <p>After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War" why is this not working anymore this makes no sense omg just scroll already OKay i guess ill why is this not working, it makes no </p>
+    <p>After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.</p>
   </div>
   <div class="ssTimelineSlides">
     <img src="images/gallery_ll_2.jpg" alt="Before" class="small-12 medium-6 columns">
