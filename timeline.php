@@ -12,14 +12,15 @@
 
     <?php include 'includes/header.php';?>
 
-<div class="buttons row">
+<!-- <div class="buttons row">
     <a href="#" class="button small-10 small-push-1 medium-4 large-3 large-push-2 columns" onclick="divVisibility('Div4');">Summit Series</a>
     <a href="#" class="button small-10 small-pull-1 medium-4 large-3 large-pull-2 columns" onclick="divVisibility('Div5');">Current Events</a>
-</div>
+</div> -->
 
 <section id="Div4" class="row" style="display: block;">
     <h1>Summit Series Timeline</h1>
     <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
+	<p>Click through the timeline to learn more about the series!</p>
 
 <div id="slides">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
