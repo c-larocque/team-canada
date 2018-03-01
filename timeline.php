@@ -1,3 +1,10 @@
+<!-- connection to database -->
+<?php include 'includes/db_timeline.php';?>
+
+<!-- connection to functions file-->
+<?php include 'includes/functions.php';?>
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -24,21 +31,8 @@
 <div id="slides">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
-  <div class="ssTimelineSlides row">
-    <img src="images/gallery_ll_1.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2 class="small-12 medium-6 columns">Before</h2>
-    <p class="small-12 medium-6 columns">After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War" why is this not working anymore this makes no sense omg just scroll already OKay i guess ill why is this not working, it makes no </p>
-  </div>
-  <div class="ssTimelineSlides">
-    <img src="images/gallery_ll_2.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2 class="small-12 medium-6 columns">Canada</h2>
-    <p class="small-12 medium-6 columns">Reigning Stanley-Cup winner Harry Sinder, was named head coach and John Ferguson, originally invited as a player, just before he retired - was named his assistant.</p>
-  </div>
-  <div class="ssTimelineSlides">
-    <img src="images/gallery_ll_3.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2 class="small-12 medium-6 columns">Game One</h2>
-    <p class="small-12 medium-6 columns">On a sweltering night in Montreal...</p>
-  </div>
+
+  <?php ssTimeline(); ?> 
 
 </div>
 </section><!--end summit series section-->
@@ -50,21 +44,8 @@
 <div class="slides">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
-  <div class="ssTimelineSlides row">
-    <img src="images/gallery_ll_1.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2>Before</h2>
-    <p>After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide. After the second World War, the Western countries and the Soviet Union turned from allies to enemies. In the 1950's, the division between communist and non-communist nations deepened until the two sides teetered on the brink of nuclear warfare. Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War", it was a situation that threatened to escalate worldwide.fdsfsdfsdfsdfsdfsdf sdf sdfsdf sdf sdf sdfsdfs d Known as the "Cold War" why is this not working anymore this makes no sense omg just scroll already OKay i guess ill why is this not working, it makes no </p>
-  </div>
-  <div class="ssTimelineSlides">
-    <img src="images/gallery_ll_2.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2>Canada</h2>
-    <p>Reigning Stanley-Cup winner Harry Sinder, was named head coach and John Ferguson, originally invited as a player, just before he retired - was named his assistant.</p>
-  </div>
-  <div class="ssTimelineSlides">
-    <img src="images/gallery_ll_3.jpg" alt="Before" class="small-12 medium-6 columns">
-    <h2>Game One</h2>
-    <p>On a sweltering night in Montreal...</p>
-  </div>
+
+    <?php ceTimeline(); ?> 
 
 </div>
 

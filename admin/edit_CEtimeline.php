@@ -1,20 +1,20 @@
 <?php  
 
-	if(isset($_GET['t_id'])) {
-		$getTimelineId = $_GET['t_id'];	
+	if(isset($_GET['cet_id'])) {
+		$getTimelineId = $_GET['cet_id'];	
 	}
 
 
-	$query = "SELECT * FROM summit_series_timeline WHERE ss_timeline_id = {$getTimelineId}";
+	$query = "SELECT * FROM current_events_timeline WHERE ce_timeline_id = {$getTimelineId}";
 	$tl_by_id = mysqli_query($connection, $query);
 	$tl_check = mysqli_num_rows($tl_by_id);
 
 	if ($tl_check > 0) {
 		while($row = mysqli_fetch_assoc($tl_by_id)) {
-		  $tl_id = $row['ss_timeline_id'];
-		  $tl_title = $row['ss_timeline_title'];
-		  $tl_image = $row['ss_timeline_img'];
-		  $tl_content = $row['ss_timeline_content'];
+		  $tl_id = $row['ce_timeline_id'];
+		  $tl_title = $row['ce_timeline_title'];
+		  $tl_image = $row['ce_timeline_img'];
+		  $tl_content = $row['ce_timeline_content'];
 		}
 	}
 
@@ -28,24 +28,24 @@
 		$tl_content =  $_POST['tl_content'];
 
 		// move img from temporary location to images folder
-		move_uploaded_file($tl_image_temp, "../images/$tl_image" );
+		move_uploaded_file($tl_image_temp, "../images/timeline/$tl_image" );
 
 
 		// handle empty image field when editing
 		if(empty($tl_image)) {
-			$query = "SELECT * FROM summit_series_timeline WHERE ss_timeline_id = {$getTimelineId}";
+			$query = "SELECT * FROM current_events_timeline WHERE ce_timeline_id = {$getTimelineId}";
 			$select_image = mysqli_query($connection, $query);
 
 			while($row = mysqli_fetch_array($select_image)) {
-				$tl_image = $row['ss_timeline_img'];
+				$tl_image = $row['ce_timeline_img'];
 			}
 		}
 
-		$query = "UPDATE summit_series_timeline SET ";
-		$query .="ss_timeline_title = '{$tl_title}', ";
-		$query .="ss_timeline_img = '{$tl_image}', ";
-		$query .="ss_timeline_content = '{$tl_content}' ";
-		$query .= "WHERE ss_timeline_id = {$getTimelineId} ";
+		$query = "UPDATE current_events_timeline SET ";
+		$query .="ce_timeline_title = '{$tl_title}', ";
+		$query .="ce_timeline_img = '{$tl_image}', ";
+		$query .="ce_timeline_content = '{$tl_content}' ";
+		$query .= "WHERE ce_timeline_id = {$getTimelineId} ";
 
 		$edit_timeline_query = mysqli_query($connection, $query);
 
@@ -59,7 +59,7 @@
 
 ?>
 
-<h2>SUMMIT SERIES TIMELINE</h2>
+<h2>CURRENT EVENTS TIMELINE</h2>
 <form action="" method="post" enctype="multipart/form-data">
 
 	<div class="form-group">

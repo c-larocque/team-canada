@@ -1,6 +1,7 @@
 <!-- connection to database -->
-<?php include '../includes/db_news.php';?>
+<?php include '../includes/db_timeline.php';?>
 
+<!-- connection to functions file -->
 <?php include 'includes/functions.php'; ?>
 
 <!-- Redirecting Function -->
@@ -54,7 +55,6 @@
       </ul>
       </li>
       </ul>
-
 
       <!-- ADMIN SideBar -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -110,49 +110,10 @@
         <div class="row">
           <div class="col-lg-12">
             <h1 class="page-header">Welcome to ADMIN Dashboard</h1>
-          
-          <!-- Form -->
-          <div class="col-xs-6">
 
-            <!-- ADD CATEGORY -->
-            <?php adminAddCategory(); ?>
+            <!-- GET request for CRUD in timeline -->
+            <?php  ceTimelineAddEdit(); ?>
 
-            <form action="" method="post">
-              <div class="form-group">
-                <label for="cat-title">Category</label>
-                <input type="text" class="form-control" name="cat_title">
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Category" name="submit" class="btn btn-primary">
-              </div>
-            </form>
-          </div>
-          <!-- Form End -->
-
-          <!-- Category Table -->
-          <div class="col-xs-6">
-
-
-
-            <table class="table table-bordered table-hover">
-            <thead>
-              <tr>
-                <th>cat_id</th>
-                <th>cat_title</th>
-              </tr>
-            </thead>
-            <tbody>
-  
-            <!-- FIND CATEGORIES FROM DATABASE  -->
-            <?php adminFindCategory(); ?>
-
-
-            </tbody>
-            </table>
-          </div>
-          <!-- Category Table End -->
-
-          </div>
         </div>
         <!-- /.row -->
 

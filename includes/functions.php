@@ -73,38 +73,6 @@
 		}
 		// ----- end function ----- //    
 
-
-	// Display Summer Series Timeline
-	function ssTimeline() {
-		global $connection;
-
-    $query = "SELECT * FROM summit_series_timeline";
-      
-    $ssTimeline = mysqli_query($connection, $query);
-
-    $ssTimeline_check = mysqli_num_rows($ssTimeline);
-
-    if ($ssTimeline_check > 0) {
-      while($row = mysqli_fetch_assoc($ssTimeline)) {
-        $ssTimeline_title = escape($row['ss_timeline_title']);
-        $ssTimeline_content = escape($row['ss_timeline_content']);
-        // $ssTimeline_content_cut = substr($ssTimeline_content, 0, 400)."...";
-
-	 ?>
-
-	    <li>
-	      <div>
-	        <time><?php echo "{$ssTimeline_title}"; ?></time>
-	        <?php echo "<p>{$ssTimeline_content}</p>"; ?>
-	      <!--   <a href="#" class="moreInfo">READ MORE</a> -->
-	      </div>
-	    </li>
-	    <?php    
-	      }   
-	    }
-		}
-		// ----- end function ----- //   
-
 	// Display Summer Series Gallery images SMALL SCREEN
 	function ssGallery_small() {
 		global $connection;
@@ -269,6 +237,69 @@
           } 
 				}
 				// ----- end function ----- // 
+
+	// Display Summer Series Timeline
+	function ssTimeline() {
+		global $connection;
+
+    $query = "SELECT * FROM summit_series_timeline";
+      
+    $ssTimeline = mysqli_query($connection, $query);
+
+    $ssTimeline_check = mysqli_num_rows($ssTimeline);
+
+    if ($ssTimeline_check > 0) {
+      while($row = mysqli_fetch_assoc($ssTimeline)) {
+        $ssTimeline_title = escape($row['ss_timeline_title']);
+        $ssTimeline_img = escape($row['ss_timeline_img']);
+        $ssTimeline_content = escape($row['ss_timeline_content']);
+
+	 ?>
+
+	<div class="ssTimelineSlides row">
+    <img src="images/timeline/<?php echo "{$ssTimeline_img}"; ?>" alt="Before" class="small-12 medium-6 columns">
+    <h2 class="small-12 medium-6 columns"><?php echo "{$ssTimeline_title}"; ?></h2>
+    <p class="small-12 medium-6 columns"><?php echo "<p>{$ssTimeline_content}</p>"; ?></p>
+  </div>
+
+	    <?php    
+	      }   
+	    }
+		}
+		// ----- end function ----- //   
+
+
+			// Display Current Events Timeline
+	function ceTimeline() {
+		global $connection;
+
+    $query = "SELECT * FROM current_events_timeline";
+      
+    $ceTimeline = mysqli_query($connection, $query);
+
+    $ceTimeline_check = mysqli_num_rows($ceTimeline);
+
+    if ($ceTimeline_check > 0) {
+      while($row = mysqli_fetch_assoc($ceTimeline)) {
+        $ceTimeline_title = escape($row['ce_timeline_title']);
+        $ceTimeline_img = escape($row['ce_timeline_img']);
+        $ceTimeline_content = escape($row['ce_timeline_content']);
+
+	 ?>
+
+	<div class="ssTimelineSlides row">
+    <img src="images/timeline/<?php echo "{$ceTimeline_img}"; ?>" alt="Before" class="small-12 medium-6 columns">
+    <h2 class="small-12 medium-6 columns"><?php echo "{$ceTimeline_title}"; ?></h2>
+    <p class="small-12 medium-6 columns"><?php echo "<p>{$ceTimeline_content}</p>"; ?></p>
+  </div>
+
+	    <?php    
+	      }   
+	    }
+		}
+		// ----- end function ----- //  
+
+
 
 
  ?>
