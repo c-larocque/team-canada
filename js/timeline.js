@@ -28,5 +28,10 @@ var divs = ["Div4", "Div5"];
         width: 940,
         height: 300,
         navigation: false
+      });      
+      $('#slides2').slidesjs({
+        width: 940,
+        height: 300,
+        navigation: false
       });
     });

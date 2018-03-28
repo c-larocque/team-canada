@@ -87,7 +87,7 @@
 	    ?>
 
 	    <div class="row ssGallery">
-	      <div class="small-12 columns">
+	      <div class="small-12 columns end">
 	        <?php echo"<img src='images/{$ss_image}' alt='SS Img{$ss_id}'>";?>
 	      </div> 
 	    </div>              
@@ -162,7 +162,7 @@
 
             ?>
 
-            <div class="medium-3 large-3 columns">
+            <div class="medium-3 large-3 columns end">
             <a data-open="openImg"><?php echo"<img src='images/{$ss_image}' alt='SS Image'>";?></a>
             <div class="reveal medium" id="openImg" data-reveal>
               <?php echo"<img src='images/{$ss_image}' alt='SS Image {$ss_id} Large'>";?>
@@ -193,7 +193,7 @@
 
           ?>
 
-          <div class="medium-3 large-3 columns">
+          <div class="medium-3 large-3 columns end">
           <a data-open="openImg"><?php echo"<img src='images/{$pc_image}' alt='PC Image'>";?></a>
           <div class="reveal medium" id="openImg" data-reveal>
             <?php echo"<img src='images/{$pc_image}' alt='PC Image {$pc_id} Large'>";?>
@@ -223,7 +223,7 @@
 
           ?>
 
-          <div class="medium-3 large-3 columns">
+          <div class="medium-3 large-3 columns end">
           <a data-open="openImg"><?php echo"<img src='images/{$ll_image}' alt='LL Image'>";?></a>
           <div class="reveal medium" id="openImg" data-reveal>
             <?php echo"<img src='images/{$ll_image}' alt='LL Image {$ll_id} Large'>";?>
