@@ -42,7 +42,7 @@
     <h1>Current Events Timeline</h1>
 <p>Since 1972, Team Canada has had many honours bestowed upon them, for their triumph, teamwork, and ability to bring a nation together.</p>
 
-<div class="slides">
+<div id="slides2">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
