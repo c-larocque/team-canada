@@ -3,7 +3,7 @@
       <h2 class="hide">Mobile Header</h2>
       <nav class="small-12 columns">
         <h2 class="hide">Mobile Navigation</h2>
-        <div class="title-bar" data-responsive-toggle="offCanvasNav">
+        <div class="title-bar" data-responsive-toggle="mobileNav">
           <button class="menu-icon float-left" type="button" data-toggle></button>
           <a href="index.php"><img src="images/logo.svg" alt="logo" width="60" height="61" class="title-bar-title" id="logoMobile"></a>
         </div>
