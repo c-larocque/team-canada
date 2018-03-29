@@ -24,12 +24,12 @@
     <a href="#" class="button small-10 small-pull-1 medium-4 large-3 large-pull-2 columns" onclick="divVisibility('Div5');">Current Events</a>
 </div>
 
-<section id="Div4" class="row" style="display: block;">
+<section id="Div4" class="row">
     <h1>Summit Series Timeline</h1>
     <p>In 1972, an eight-game hockey series took place between Canada and the Soviet Union. Intended to improve relations between the two rivals, it ended up as the closest thing to open conflict ever experienced between the two nations.</p>
-	<p>Click through the timeline to learn more about the series!</p>
+  <p>Click through the timeline to learn more about the series!</p>
 
-<div id="slides">
+<div id="slides5">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
@@ -38,11 +38,11 @@
 </div>
 </section><!--end summit series section-->
 
-<section id="Div5" class="row" style="display: none;">
+<section id="Div5" class="row">
     <h1>Current Events Timeline</h1>
 <p>Since 1972, Team Canada has had many honours bestowed upon them, for their triumph, teamwork, and ability to bring a nation together.</p>
 
-<div id="slides2">
+<div id="slides6">
   <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
   <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
@@ -55,6 +55,7 @@
         <?php include 'includes/footer.php';?>
 
 </div><!--end container-->
+
 
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/what-input.js"></script>

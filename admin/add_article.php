@@ -22,7 +22,7 @@
 
 		$create_article_query = mysqli_query($connection, $query);
 
-		echo 'DONE. Please, click on View Articles to see the new article.';
+		echo '<h2 style="color:red">DONE. Please, click on View Articles to see the new article.</h2>';
 
 		// echo  $article_date;
 
@@ -76,7 +76,7 @@
 
 	<div class="form-group">
 		<label for="artcile_date">Article Date</label>
-    <input type="date" name="article_date" class="form-control">
+    <input type="date" name="article_date" class="form-control" required>
 	</div>
 
 	<div class="form-group">

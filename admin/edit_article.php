@@ -55,9 +55,8 @@
 
 		$edit_article_query = mysqli_query($connection, $query);
 
-		echo "Article has been updated; click on View Articles to see changes.";
+		echo "<h2 style='color:red'>Article has been updated; click on View Articles to see changes.</h2>";
 
-		// echo  $article_date;
 
 		global $connection;
 		if (!$edit_article_query) {
@@ -106,7 +105,7 @@
 
 	<div class="form-group">
 		<label for="article_date">Article Date</label>
-    <input type="date" name="article_date" class="form-control value="<?php echo $article_date ?>" >
+    <input type="date" name="article_date" class="form-control value="<?php echo $article_date ?>" required>
 	</div>
 
 	<div class="form-group">

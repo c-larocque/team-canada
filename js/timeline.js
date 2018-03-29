@@ -1,5 +1,7 @@
 $(document).foundation()
 
+
+
 var divs = ["Div4", "Div5"];
     var visibleDivId = null;
     function divVisibility(divId) {
@@ -24,14 +26,17 @@ var divs = ["Div4", "Div5"];
     }
 
     $(function() {
-      $('#slides').slidesjs({
-        width: 940,
-        height: 300,
-        navigation: false
-      });      
-      $('#slides2').slidesjs({
+      $('#slides5').slidesjs({
         width: 940,
         height: 300,
         navigation: false
       });
+      $('#slides6').slidesjs({
+        width: 940,
+        height: 300,
+        navigation: false,
+      });
+       document.querySelector("#Div5").style.display = "none"; 
     });
+
+
