@@ -19,7 +19,7 @@
 	  if ($categories_check > 0) {
 	    while($row = mysqli_fetch_assoc($categories)) {
 	      $cat_title = $row['cat_title'];
-	      echo "<li><a href='news-page.php?category={$cat_title}'>{$cat_title}</a></li>";
+	      echo "<a href='news-page.php?category={$cat_title}' id='backBut' style='margin-left: 10px;'>{$cat_title}</a>";
 	    }   
 	  }	
 	}
@@ -46,7 +46,7 @@
 	        $article_image = escape($row['article_image']);
 	        $article_date = escape($row['article_date']);
 	        $article_content = escape($row['article_content']);
-	        $article_content = substr($article_content, 0, 400)."...";
+	        // $article_content = substr($article_content, 0, 400)."...";
 
       ?>
 
@@ -60,9 +60,9 @@
             echo "<h3>{$article_title}</h3>";
             echo "<h4>{$article_date}</h4>";
             echo "<p>{$article_content}</p>";
-            echo "<a href='#' class='readMore'>READ MORE</a>";
-            echo "<br>";
-            echo "<br>";
+            // echo "<a href='#' class='readMore'>READ MORE</a>";
+            // echo "<br>";
+            // echo "<br>";
           ?>
           </div>
         </section>
@@ -163,14 +163,7 @@
             ?>
 
             <div class="medium-3 large-3 columns end">
-            <a data-open="openImg"><?php echo"<img src='images/{$ss_image}' alt='SS Image'>";?></a>
-            <div class="reveal medium" id="openImg" data-reveal>
-              <?php echo"<img src='images/{$ss_image}' alt='SS Image {$ss_id} Large'>";?>
-           <!--    <img src="images/gallery-ss-1.jpg" alt="SS Image 1 Large"> -->
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+							<?php echo"<img src='images/{$ss_image}' alt='SS Image'>";?>
           </div>
           <?php  
               }   
@@ -194,13 +187,7 @@
           ?>
 
           <div class="medium-3 large-3 columns end">
-          <a data-open="openImg"><?php echo"<img src='images/{$pc_image}' alt='PC Image'>";?></a>
-          <div class="reveal medium" id="openImg" data-reveal>
-            <?php echo"<img src='images/{$pc_image}' alt='PC Image {$pc_id} Large'>";?>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          	<?php echo"<img src='images/{$pc_image}' alt='PC Image'>";?>
         </div>
         <?php  
             }   
@@ -224,13 +211,7 @@
           ?>
 
           <div class="medium-3 large-3 columns end">
-          <a data-open="openImg"><?php echo"<img src='images/{$ll_image}' alt='LL Image'>";?></a>
-          <div class="reveal medium" id="openImg" data-reveal>
-            <?php echo"<img src='images/{$ll_image}' alt='LL Image {$ll_id} Large'>";?>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+         		<?php echo"<img src='images/{$ll_image}' alt='LL Image'>";?>
         </div>
         <?php  
             }   
