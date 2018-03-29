@@ -5,45 +5,53 @@
 <?php include 'includes/functions.php';?>
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en" dir="ltr">
+  <head>
+    <?php include 'includes/head.php';?>
+    <title>NEWS ARTICLE - Team Canada 1972</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEWS - Team Canada 1972</title>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Merriweather:400,400i,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/foundation-icons.css">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/css/app.css">
-</head>
+  <body>
+    <h1 class="hide">Team Canada 1972</h1>
 
-<body>
+    <?php include 'includes/header.php';?>
+          <section class="row" id="newsArticle">
 
-  <section class="row" id="mediaCentre">
+            <div class="small-12 columns" id="newsHeading">
+              <h2>NEWS</h2>
+              <a href="index.php" id="backBut"> < HOME</a>
+            </div>
 
-<!-- display news categories from database   -->
-<?php  displayCategory(); ?>
+            <div class="small-12 columns">
+               <section class="row" id="mediaCentre">
 
-  <br>
-  <a href="news-page.php">All News</a>
-  <br>
-  <a href="index.php">HOME</a>
-  <h2>RELATED NEWS</h2>
+                <!-- display news categories from database   -->
+                <?php  displayCategory(); ?>
 
+                  <a href="news-page.php" id="backBut" style='margin-bottom: 20px;'>All News</a>
+                  <br>
+                  <br>
+                  <br>
+             
 
-  <!-- news articles dynamically dispalyed from database -->
-  <?php articlesByCategory();?>
+                  <!-- news articles dynamically dispalyed from database -->
+                  <?php articlesByCategory();?>
 
-  </section>
-  
-  <!-- scripts -->
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
-  <script src="js/app.js"></script>
+                </section>
+              </div>
+          </section>
 
-</body>
+    <?php include 'includes/footer.php';?>
 
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
+
