@@ -1,3 +1,9 @@
+<!-- connection to database -->
+<?php include 'includes/db_news.php';?>
+
+<!-- connection to functions file-->
+<?php include 'includes/functions.php';?>
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -80,12 +86,18 @@ Summit Series, particularly those highlighting what can be achieved through tea
       <section class="small-12 columns" id="newsSection">
         <h3>NEWS</h3>
         <a href="news-page.php" id="moreBut">MORE NEWS ></a>
-        <div id="newsContent">
+
+<?php singleNewsHomePage(); ?>
+
+<!--      MOVED TO BACKEND
+   
+          <div id="newsContent">
           <img src="images/news_1.jpg" alt="news image" width="290" height="218" id="newsImg">
           <h4>Government of Canada honours Team Canada 1972</h4>
           <p>Team members Serge Savard and Pat Stapleton are joined by government officials and others, at the unveiling of a plaque celebrating the team’s significant contribution to Canadian history.</p>
           <a href="news-article.php" id="readMore">READ MORE</a>
-        </div>
+        </div> -->
+
       </section>
 
       <section class="small-12 columns" id="socialSection">
