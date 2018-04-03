@@ -74,7 +74,7 @@
 
           <section id="partOpp">
             <h3>Partnership Opportunities:</h3>
-            <p>For any information regarding partnering with the historic Team Canada 1972, please contact our <a href="mailto:BoardofDirectors@TeamCanada1972.ca">Board of Directors.</a></p>
+            <p>For any information regarding partnering with the historic Team Canada 1972, please contact us via the form, using the title "Partnership."</a></p>
           </section>
         </div>
       </section>
