@@ -19,7 +19,7 @@
               </div>
 
               <div class="small-12 large-4 columns">
-                <a href="mailto:BoardofDirectors@TeamCanada1972.ca" id="partnersBut">BECOME A PARTNER</a>
+                <a href="contact.php" id="partnersBut">BECOME A PARTNER</a>
               </div>
             </section>
           </div>
