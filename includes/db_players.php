@@ -4,7 +4,7 @@
 $user = "root";
 $pass = "root";
 $url = "localhost";
-$db = "db_players";
+$db = "tc_players";
 
 ini_set('error_reporting', -1);
 ini_set('display_errors', 1);
