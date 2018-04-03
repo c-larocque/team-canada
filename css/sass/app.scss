@@ -1,3 +1,4 @@
+
 $mainFont: 'Fjalla One', Helvetica, Arial, sans-serif;
 $paraFont: 'Merriweather', Times, serif;
 $grey: #363636;
@@ -125,7 +126,8 @@ h1 {
 }
 
 .ssTimelineSlides img {
-  height: 375px;
+	float: left;
+	margin-right: 20px;
 }
 
 .ssTimelineSlides h2 {
@@ -133,13 +135,28 @@ h1 {
   padding-top: 10px;
 }
 
+.ssTimelineSlides p {
+ width: 95%!important;
+}
+
 .slidesjs-pagination {
   display: none;
 }
 
 .slidesjs-container {
-  margin: 25px 0;
+  margin: 25px 0px 25px 0px;
+  overflow-x: hidden!important;
+  overflow-y: auto!important;
+  height: 600px!important;
 }
+
+.slidesjs-control {
+	height: auto!important;
+}
+
+#slides {
+      display:none;
+   }
 
 @media screen and (max-width: 1023px)
 {

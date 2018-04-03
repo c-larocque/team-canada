@@ -2,7 +2,7 @@
 //This file will connect us to the database using user credentials
 
 $user = "root";
-$pass = "teamcanada72";
+$pass = "root";
 $url = "localhost";
 $db = "db_players";
 

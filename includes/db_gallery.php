@@ -3,7 +3,7 @@
 // database constants
 define('HOST', 'localhost');
 define('USERNAME', 'root');
-define('PASSWORD', 'teamcanada72'); // to be given
+define('PASSWORD', 'root'); // to be given
 define('DB', 'tc_gallery');
 
 // database connection

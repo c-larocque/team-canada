@@ -236,11 +236,10 @@
         $ssTimeline_content = escape($row['ss_timeline_content']);
 
 	 ?>
-
-	<div class="ssTimelineSlides row">
-    <img src="images/timeline/<?php echo "{$ssTimeline_img}"; ?>" alt="Before" class="small-12 medium-6 columns">
-    <h2 class="small-12 medium-6 columns"><?php echo "{$ssTimeline_title}"; ?></h2>
-    <p class="small-12 medium-6 columns"><?php echo "<p>{$ssTimeline_content}</p>"; ?></p>
+	<div class="ssTimelineSlides">
+    <img src="images/timeline/<?php echo "{$ssTimeline_img}"; ?>" alt="Before">
+    <h2><?php echo "{$ssTimeline_title}"; ?></h2>
+    <p><?php echo "<p>{$ssTimeline_content}</p>"; ?></p>
   </div>
 
 	    <?php    
@@ -267,11 +266,10 @@
         $ceTimeline_content = escape($row['ce_timeline_content']);
 
 	 ?>
-
-	<div class="ssTimelineSlides row">
-    <img src="images/timeline/<?php echo "{$ceTimeline_img}"; ?>" alt="Before" class="small-12 medium-6 columns">
-    <h2 class="small-12 medium-6 columns"><?php echo "{$ceTimeline_title}"; ?></h2>
-    <p class="small-12 medium-6 columns"><?php echo "<p>{$ceTimeline_content}</p>"; ?></p>
+	<div class="ssTimelineSlides">
+    <img src="images/timeline/<?php echo "{$ceTimeline_img}"; ?>" alt="Before">
+    <h2><?php echo "{$ceTimeline_title}"; ?></h2>
+    <p><?php echo "<p>{$ceTimeline_content}</p>"; ?></p>
   </div>
 
 	    <?php    
