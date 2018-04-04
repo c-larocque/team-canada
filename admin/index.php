@@ -1,10 +1,7 @@
-<!-- connection to database -->
-<?php include '../includes/db_news.php';?>
-
-<!-- Redirecting Function -->
-<?php ob_start(); ?>
-
-
+<?php include '../includes/db_news.php';
+include 'includes/session.php'; 
+confirm_logged_in();
+session_destroy();?>
 <!DOCTYPE html>
 <html lang="en">
 
