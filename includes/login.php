@@ -1,7 +1,9 @@
-<?php // VALIDATE LOGIN
-  ob_start();  // Redirecting Function 
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+include 'db_news.php';
 
-  include 'db_news.php';
+  session_start();
 
   if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -13,18 +15,16 @@
 
     $query = "SELECT * FROM admin WHERE username='{$username}' ";
     $login_query = mysqli_query($connection, $query);
-    if(!$login_query) {
-      die("QUERY FAILED " . mysqli_error($connection));
-    }
-    while ($row = mysqli_fetch_array($login_query)) {
+    if($login_query) {
+      $row = mysqli_fetch_array($login_query);
       $admin_id = $row['admin_id'];
       $admin_username = $row['username'];
       $admin_password = $row['password'];
-    }
 
+      $_SESSION['userId'] = $admin_id;
     if($username === $admin_username && $password === $admin_password) {
-      header ("Location: ../admin");
+      header ("Location: ../admin/index.php");
     }
   }
-
+}
 ?>

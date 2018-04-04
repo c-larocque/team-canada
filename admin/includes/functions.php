@@ -1,6 +1,4 @@
-<?php 
-
-	// ADMIN ADD CATEGORY
+<?php
 	function adminAddCategory() {
 		global $connection;
   	if (isset($_POST['submit'])) {

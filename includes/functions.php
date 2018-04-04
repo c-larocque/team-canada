@@ -1,5 +1,6 @@
 <?php 
 
+
 	// MySQL injection protection
 	function escape($string) {
   global $connection;
@@ -7,6 +8,8 @@
   return stripslashes($escapedString);
 	}
 	// ----- end function ----- //
+
+
 
 
 	// Display single news in Home Page 
