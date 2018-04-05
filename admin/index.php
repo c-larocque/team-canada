@@ -1,4 +1,4 @@
-<?php include '../includes/db_news.php';
+<?php include '../includes/db_teamcanada.php';
 include 'includes/functions.php';
 include 'includes/session.php'; 
 confirm_logged_in();?>
