@@ -1,13 +1,7 @@
-<!-- connection to database -->
-<?php include '../includes/db_timeline.php';?>
-
-<!-- connection to functions file -->
-<?php include 'includes/functions.php'; ?>
-
-<!-- Redirecting Function -->
-<?php ob_start(); ?>
-
-
+<?php include '../includes/db_timeline.php';
+include 'includes/functions.php';
+include 'includes/session.php';
+confirm_logged_in();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,17 +37,10 @@
       </div>
 
       <!-- Top Menu Items -->
-      <ul class="nav navbar-right top-nav">
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> TC72 ADMIN <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-        <li class="divider"></li>
-        <li>
-              <a href="../"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-            </li>
-      </ul>
-      </li>
+     <ul class="nav navbar-right top-nav">
+        <form action="includes/logout.php" method="post">
+          <button type="submit" name="submit" class="btn btn-danger" style="margin-top: 8px; margin-right: 10px;">LOGOUT</button>
+        </form>
       </ul>
 
       <!-- ADMIN SideBar -->
