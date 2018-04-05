@@ -34,6 +34,9 @@
 		// move img from temporary location to images folder
 		move_uploaded_file($article_image_temp, "../images/$article_image" );
 
+		$article_title = str_replace("'", "''", $article_title);
+		$article_content = str_replace("'", "''", $article_content);
+
 
 		// handle empty image field when editing
 		if(empty($article_image)) {

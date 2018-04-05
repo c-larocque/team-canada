@@ -12,12 +12,12 @@
 		// move img from temporary location to images folder
 		move_uploaded_file($tl_image_temp, "../images/timeline/$tl_image" );
 
+		$tl_title = str_replace("'", "''", $tl_title);
+		$tl_content = str_replace("'", "''", $tl_content);
 
-
-		$query = "INSERT INTO summit_series_timeline(ss_timeline_title, ss_timeline_img, ss_timeline_content) ";
+		$query = "INSERT INTO `summit_series_timeline` (`ss_timeline_title`, `ss_timeline_img`, `ss_timeline_content`) ";
 
 		$query .= "VALUES('{$tl_title}', '{$tl_image}', '{$tl_content}' ) ";
-
 		$create_tl_query = mysqli_query($connection, $query);
 
 		echo '<h2 style="color:red">DONE. Please, click on VIEW TIMELINE to see the new entry.</h2>';
