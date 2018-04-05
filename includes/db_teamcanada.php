@@ -3,8 +3,8 @@
 // database constants
 define('HOST', 'localhost');
 define('USERNAME', 'root');
-define('PASSWORD', 'root'); // to be given
-define('DB', 'tc_gallery');
+define('PASSWORD', 'root'); 
+define('DB', 'teamcanada');
 
 // database connection
 $connection = mysqli_connect(HOST, USERNAME, PASSWORD, DB);
@@ -13,5 +13,4 @@ $connection = mysqli_connect(HOST, USERNAME, PASSWORD, DB);
 if(!$connection) {
   die ('No connection to DB' . mysqli_error($connection));
 }
-
 ?>

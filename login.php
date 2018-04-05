@@ -7,9 +7,8 @@
 
             <!-- LOGIN FORM -->
             <div class="well">
-              <h4>Admin Login</h4>
               <form action="includes/login.php" method="post">
-                <h2 class="form-signin-heading">Please sign in</h2>
+                <h1 class="form-signin-heading">Please sign in to Admin</h1>
                 <label for="inputEmail" class="sr-only">Email address</label>
                 <input type="username" name="username" class="form-control" placeholder="Enter Username">
                 <label for="inputPassword" class="sr-only">Password</label>
@@ -27,3 +26,4 @@
          </div>    
       </div>    
     </div> 
+

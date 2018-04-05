@@ -1,5 +1,5 @@
 <!-- connection to database -->
-<?php include 'includes/db_gallery.php';?>
+<?php include 'includes/db_teamcanada.php';?>
 
 <!-- connection to functions file-->
 <?php include 'includes/functions.php';?>
