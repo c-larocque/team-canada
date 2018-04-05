@@ -9,7 +9,7 @@
             <div class="well">
               <form action="includes/login.php" method="post">
                 <h1 class="form-signin-heading">Please sign in to Admin</h1>
-                <label for="inputEmail" class="sr-only">Email address</label>
+                <label for="inputEmail" class="sr-only">Username</label>
                 <input type="username" name="username" class="form-control" placeholder="Enter Username">
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" name="password" class="form-control" placeholder="Enter Password">

@@ -30,6 +30,8 @@
 		// move img from temporary location to images folder
 		move_uploaded_file($tl_image_temp, "../images/timeline/$tl_image" );
 
+		$tl_title = str_replace("'", "''", $tl_title);
+		$tl_content = str_replace("'", "''", $tl_content);
 
 		// handle empty image field when editing
 		if(empty($tl_image)) {

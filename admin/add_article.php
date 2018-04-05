@@ -14,7 +14,8 @@
 		// move img from temporary location to images folder
 		move_uploaded_file($article_image_temp, "../images/$article_image" );
 
-
+		$article_title = str_replace("'", "''", $article_title);
+		$article_content = str_replace("'", "''", $article_content);
 
 		$query = "INSERT INTO articles(article_category_id, article_title, article_date, article_image, article_content) ";
 

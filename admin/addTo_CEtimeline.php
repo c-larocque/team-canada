@@ -12,7 +12,8 @@
 		// move img from temporary location to images folder
 		move_uploaded_file($tl_image_temp, "../images/timeline/$tl_image" );
 
-
+		$tl_title = str_replace("'", "''", $tl_title);
+		$tl_content = str_replace("'", "''", $tl_content);
 
 		$query = "INSERT INTO current_events_timeline(ce_timeline_title, ce_timeline_img, ce_timeline_content) ";
 
