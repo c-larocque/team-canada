@@ -46,7 +46,8 @@
               <div class="small-12 medium-6 columns">
                 <a href="http://www.twitter.com/teamcanada1972" class="widgetLabel">TWITTER</a>
                 <div class="hide-for-small-only">
-                  <a class="twitter-timeline" data-height="500" href="https://twitter.com/TeamCanada1972">Tweets by TeamCanada1972</a>
+                  <!-- <a class="twitter-timeline" data-height="500" href="https://twitter.com/TeamCanada1972">Tweets by TeamCanada1972</a> -->
+                  <a class="twitter-timeline" data-height="500" href="https://twitter.com/TeamCanada1972">Tweets by TeamCanada1972</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
                 </div>
               </div>
             </section>
