@@ -45,7 +45,7 @@
           <img src="images/team.jpg" alt="Team Img Icon" class="homeThumbnail">
           <h3>THE TEAM</h3>
           <p>Canada's "Team of the Century".</p>
-          <p>The only team inducted into Canada's Sports Hall of Fame.</p>
+          <p>The first team inducted into Canada’s Sports Hall of Fame.</p>
           <p>The first squad ever named "Team Canada".</p>
           <a href="theteam.php" class="learnMoreBut">LEARN MORE</a>
         </section>
