@@ -78,7 +78,7 @@
 
 	<div class="form-group">
 		<label for="tl_content">Timeline Content</label>
-    <textarea name="tl_content" class="form-control" id="" cols="30" rows="30"><?php echo $tl_content ?></textarea>
+    <textarea name="tl_content" class="form-control" id="" cols="30" rows="30" ><?php echo $tl_content ?></textarea>
 	</div>
 		
 	<div class="form-group">
