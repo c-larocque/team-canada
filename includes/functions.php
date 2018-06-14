@@ -301,13 +301,13 @@
       while($row = mysqli_fetch_assoc($ssTimeline)) {
         $ssTimeline_title = escape($row['ss_timeline_title']);
         $ssTimeline_img = escape($row['ss_timeline_img']);
-        $ssTimeline_content = escape($row['ss_timeline_content']);
+        $ssTimeline_content = $row['ss_timeline_content'];
 
 	 ?>
 	<div class="ssTimelineSlides">
-    <img src="images/timeline/<?php echo "{$ssTimeline_img}"; ?>" alt="Before">
+    <img src="images/timeline/<?php echo "{$ssTimeline_img}"; ?>" alt="Before" width="50%">
     <h2><?php echo "{$ssTimeline_title}"; ?></h2>
-    <p><?php echo "<p>{$ssTimeline_content}</p>"; ?></p>
+    <p><?php echo nl2br ("<p>{$ssTimeline_content}</p>"); ?></p>
   </div>
 
 	    <?php    
@@ -331,13 +331,13 @@
       while($row = mysqli_fetch_assoc($ceTimeline)) {
         $ceTimeline_title = escape($row['ce_timeline_title']);
         $ceTimeline_img = escape($row['ce_timeline_img']);
-        $ceTimeline_content = escape($row['ce_timeline_content']);
+        $ceTimeline_content = $row['ce_timeline_content'];
 
 	 ?>
 	<div class="ssTimelineSlides">
-    <img src="images/timeline/<?php echo "{$ceTimeline_img}"; ?>" alt="Before">
+    <img src="images/timeline/<?php echo "{$ceTimeline_img}"; ?>" alt="Before" width="50%">
     <h2><?php echo "{$ceTimeline_title}"; ?></h2>
-    <p><?php echo "<p>{$ceTimeline_content}</p>"; ?></p>
+    <p><?php echo nl2br("<p>{$ceTimeline_content}</p>"); ?></p>
   </div>
 
 	    <?php    
