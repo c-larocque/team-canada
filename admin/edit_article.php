@@ -17,6 +17,7 @@
 		  $article_date = $row['article_date'];
 		  $article_image = $row['article_image'];
 		  $article_content = $row['article_content'];
+		  $article_content = str_replace("<br />", "\n", $article_content);
 		}
 	}
 
